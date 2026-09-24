@@ -1,0 +1,460 @@
+district,rank_in_district,species,total_qty_tonnes_2022_25,avg_qty_tonnes_per_year,years_observed
+ALP,1,oil_sardine,53475.0,17825.0,3
+ALP,2,indian_mackerel,13354.0,4451.3,3
+ALP,3,anchovy,6482.0,2160.7,3
+ALP,4,penaeid_prawn,5249.0,1749.7,3
+ALP,5,perches,2388.0,796.0,3
+ALP,6,lesser_sardines,2216.0,738.7,3
+ALP,7,Other Clupeids,937.0,312.3,3
+ALP,8,seer_fish,623.0,207.7,3
+ALP,9,barracuda,391.0,130.3,3
+ALP,10,Sciaenids,384.0,128.0,3
+ALP,11,tuna,381.0,127.0,3
+ALP,12,Other Carangids,350.0,175.0,2
+ALP,13,Soles,342.0,114.0,3
+ALP,14,Trisocles,325.0,108.3,3
+ALP,15,Lactrious,254.0,254.0,1
+ALP,16,crab,182.0,60.7,3
+ALP,17,indian_squid,118.0,39.3,3
+ALP,18,Leiognathus,115.0,38.3,3
+ALP,19,Miscellaneous,91.0,30.3,3
+ALP,20,Caranx,54.0,18.0,3
+ALP,21,Hemirhamphus & Belone,49.0,24.5,2
+ALP,22,cat_fish,39.0,13.0,3
+ALP,23,Coryphaena,35.0,11.7,3
+ALP,24,Lactarius,33.0,16.5,2
+ALP,25,ribbon_fish,31.0,10.3,3
+ALP,26,Chirocentrus,28.0,14.0,2
+ALP,27,silver_pomfret,23.0,7.7,3
+ALP,28,shark_ray,21.0,7.0,3
+ALP,29,Chorinemus,20.0,6.7,3
+ALP,30,Other Hilsa,9.0,3.0,3
+ALP,31,Mugil,8.0,2.7,3
+ALP,32,Red Mullets,7.0,7.0,1
+ALP,33,Chirocentrius,6.0,6.0,1
+ALP,34,Hemirhamphus& Belone,4.0,4.0,1
+ALP,35,Saurida & Saurus,3.0,1.0,3
+ALP,36,Thachynotus,1.0,1.0,1
+ALP,37,Elacate,1.0,1.0,1
+ALP,38,Eels,0.0,0.0,3
+ALP,39,Hilsa Ilisha,0.0,0.0,3
+ALP,40,Harpodon Nehereus,0.0,0.0,3
+ALP,41,flying_fish,0.0,0.0,3
+ALP,42,Polynemids,0.0,0.0,3
+ALP,43,Gazza,0.0,0.0,3
+ALP,44,Bregmaceros,0.0,0.0,3
+ALP,45,non_penaeid_prawn,0.0,0.0,3
+ALP,46,lobster,0.0,0.0,3
+ALP,47,Stomatopodes,0.0,0.0,1
+ALP,48,Goatfishes,0.0,0.0,2
+ALP,49,Trachinotus,0.0,0.0,2
+ALP,50,Elagatis,0.0,0.0,2
+ALP,51,Stomatopods,0.0,0.0,2
+EKM,1,perches,91788.0,30596.0,3
+EKM,2,Miscellaneous,81696.0,27232.0,3
+EKM,3,oil_sardine,69877.0,23292.3,3
+EKM,4,indian_mackerel,55485.0,18495.0,3
+EKM,5,indian_squid,48395.0,16131.7,3
+EKM,6,tuna,38425.0,12808.3,3
+EKM,7,ribbon_fish,31098.0,10366.0,3
+EKM,8,penaeid_prawn,30597.0,10199.0,3
+EKM,9,Other Carangids,18315.0,9157.5,2
+EKM,10,anchovy,17013.0,5671.0,3
+EKM,11,Saurida & Saurus,14068.0,4689.3,3
+EKM,12,shark_ray,8343.0,2781.0,3
+EKM,13,barracuda,8304.0,2768.0,3
+EKM,14,Soles,5243.0,1747.7,3
+EKM,15,crab,4692.0,1564.0,3
+EKM,16,seer_fish,4120.0,1373.3,3
+EKM,17,Sciaenids,4046.0,1348.7,3
+EKM,18,Coryphaena,3013.0,1004.3,3
+EKM,19,Trisocles,2284.0,761.3,3
+EKM,20,Caranx,2116.0,705.3,3
+EKM,21,Eels,1975.0,658.3,3
+EKM,22,Leiognathus,1545.0,515.0,3
+EKM,23,silver_pomfret,1383.0,461.0,3
+EKM,24,Other Clupeids,1279.0,426.3,3
+EKM,25,Chorinemus,645.0,215.0,3
+EKM,26,Red Mullets,508.0,508.0,1
+EKM,27,lesser_sardines,484.0,161.3,3
+EKM,28,Chirocentrus,266.0,133.0,2
+EKM,29,Hemirhamphus & Belone,262.0,131.0,2
+EKM,30,cat_fish,256.0,85.3,3
+EKM,31,Hemirhamphus& Belone,239.0,239.0,1
+EKM,32,Other Hilsa,221.0,73.7,3
+EKM,33,non_penaeid_prawn,218.0,72.7,3
+EKM,34,Elacate,206.0,206.0,1
+EKM,35,Lactarius,178.0,89.0,2
+EKM,36,Stomatopods,154.0,77.0,2
+EKM,37,Goatfishes,149.0,74.5,2
+EKM,38,Elagatis,122.0,61.0,2
+EKM,39,Chirocentrius,82.0,82.0,1
+EKM,40,Lactrious,57.0,57.0,1
+EKM,41,Stomatopodes,46.0,46.0,1
+EKM,42,lobster,45.0,15.0,3
+EKM,43,Mugil,31.0,10.3,3
+EKM,44,flying_fish,19.0,6.3,3
+EKM,45,Thachynotus,2.0,2.0,1
+EKM,46,Bregmaceros,2.0,0.7,3
+EKM,47,Trachinotus,2.0,1.0,2
+EKM,48,Polynemids,1.0,0.3,3
+EKM,49,Hilsa Ilisha,0.0,0.0,3
+EKM,50,Harpodon Nehereus,0.0,0.0,3
+EKM,51,Gazza,0.0,0.0,3
+KKD,1,oil_sardine,67935.0,22645.0,3
+KKD,2,perches,46116.0,15372.0,3
+KKD,3,indian_mackerel,32354.0,10784.7,3
+KKD,4,anchovy,22510.0,7503.3,3
+KKD,5,Other Carangids,22408.0,11204.0,2
+KKD,6,indian_squid,22345.0,7448.3,3
+KKD,7,Miscellaneous,18310.0,6103.3,3
+KKD,8,ribbon_fish,15236.0,5078.7,3
+KKD,9,penaeid_prawn,14279.0,4759.7,3
+KKD,10,tuna,7302.0,2434.0,3
+KKD,11,Soles,6162.0,2054.0,3
+KKD,12,Saurida & Saurus,4494.0,1498.0,3
+KKD,13,seer_fish,4462.0,1487.3,3
+KKD,14,crab,3777.0,1259.0,3
+KKD,15,silver_pomfret,2787.0,929.0,3
+KKD,16,barracuda,2782.0,927.3,3
+KKD,17,Other Clupeids,2409.0,803.0,3
+KKD,18,lesser_sardines,1741.0,580.3,3
+KKD,19,Coryphaena,1683.0,561.0,3
+KKD,20,Sciaenids,1518.0,506.0,3
+KKD,21,Leiognathus,1309.0,436.3,3
+KKD,22,Trisocles,1254.0,418.0,3
+KKD,23,Other Hilsa,932.0,310.7,3
+KKD,24,Lactarius,747.0,373.5,2
+KKD,25,Chorinemus,676.0,225.3,3
+KKD,26,Eels,612.0,204.0,3
+KKD,27,shark_ray,408.0,136.0,3
+KKD,28,Caranx,271.0,90.3,3
+KKD,29,Hemirhamphus & Belone,257.0,128.5,2
+KKD,30,Elagatis,250.0,125.0,2
+KKD,31,Lactrious,248.0,248.0,1
+KKD,32,cat_fish,223.0,74.3,3
+KKD,33,Hemirhamphus& Belone,196.0,196.0,1
+KKD,34,Chirocentrus,152.0,76.0,2
+KKD,35,flying_fish,69.0,23.0,3
+KKD,36,Chirocentrius,53.0,53.0,1
+KKD,37,Stomatopods,36.0,18.0,2
+KKD,38,Red Mullets,15.0,15.0,1
+KKD,39,Mugil,13.0,4.3,3
+KKD,40,Polynemids,8.0,2.7,3
+KKD,41,Elacate,5.0,5.0,1
+KKD,42,lobster,4.0,1.3,3
+KKD,43,Goatfishes,4.0,2.0,2
+KKD,44,Thachynotus,2.0,2.0,1
+KKD,45,Trachinotus,1.0,0.5,2
+KKD,46,Hilsa Ilisha,0.0,0.0,3
+KKD,47,Harpodon Nehereus,0.0,0.0,3
+KKD,48,Gazza,0.0,0.0,3
+KKD,49,Bregmaceros,0.0,0.0,3
+KKD,50,non_penaeid_prawn,0.0,0.0,3
+KKD,51,Stomatopodes,0.0,0.0,1
+KLM,1,oil_sardine,65146.0,21715.3,3
+KLM,2,anchovy,45521.0,15173.7,3
+KLM,3,indian_mackerel,44110.0,14703.3,3
+KLM,4,penaeid_prawn,38005.0,12668.3,3
+KLM,5,indian_squid,32324.0,10774.7,3
+KLM,6,Miscellaneous,31849.0,10616.3,3
+KLM,7,perches,28001.0,9333.7,3
+KLM,8,tuna,23790.0,7930.0,3
+KLM,9,Other Carangids,20282.0,10141.0,2
+KLM,10,lesser_sardines,14555.0,4851.7,3
+KLM,11,Saurida & Saurus,13271.0,4423.7,3
+KLM,12,ribbon_fish,12337.0,4112.3,3
+KLM,13,non_penaeid_prawn,11033.0,3677.7,3
+KLM,14,Soles,6660.0,2220.0,3
+KLM,15,barracuda,6217.0,2072.3,3
+KLM,16,crab,4369.0,1456.3,3
+KLM,17,seer_fish,2281.0,760.3,3
+KLM,18,Sciaenids,1328.0,442.7,3
+KLM,19,Leiognathus,1261.0,420.3,3
+KLM,20,Trisocles,1241.0,413.7,3
+KLM,21,Other Clupeids,1181.0,393.7,3
+KLM,22,silver_pomfret,1001.0,333.7,3
+KLM,23,shark_ray,905.0,301.7,3
+KLM,24,Coryphaena,712.0,237.3,3
+KLM,25,Caranx,525.0,175.0,3
+KLM,26,Lactrious,462.0,462.0,1
+KLM,27,Hemirhamphus & Belone,307.0,153.5,2
+KLM,28,lobster,151.0,50.3,3
+KLM,29,Chorinemus,118.0,39.3,3
+KLM,30,Lactarius,114.0,57.0,2
+KLM,31,Hemirhamphus& Belone,88.0,88.0,1
+KLM,32,cat_fish,76.0,25.3,3
+KLM,33,Chirocentrus,65.0,32.5,2
+KLM,34,Other Hilsa,63.0,21.0,3
+KLM,35,Goatfishes,55.0,27.5,2
+KLM,36,Elacate,48.0,48.0,1
+KLM,37,Elagatis,48.0,24.0,2
+KLM,38,Eels,40.0,13.3,3
+KLM,39,Chirocentrius,38.0,38.0,1
+KLM,40,Red Mullets,34.0,34.0,1
+KLM,41,Mugil,3.0,1.0,3
+KLM,42,Trachinotus,3.0,1.5,2
+KLM,43,Stomatopodes,1.0,1.0,1
+KLM,44,Stomatopods,1.0,0.5,2
+KLM,45,Hilsa Ilisha,0.0,0.0,3
+KLM,46,Harpodon Nehereus,0.0,0.0,3
+KLM,47,flying_fish,0.0,0.0,3
+KLM,48,Polynemids,0.0,0.0,3
+KLM,49,Thachynotus,0.0,0.0,1
+KLM,50,Gazza,0.0,0.0,3
+KLM,51,Bregmaceros,0.0,0.0,3
+KNR,1,oil_sardine,81441.0,27147.0,3
+KNR,2,indian_mackerel,16073.0,5357.7,3
+KNR,3,penaeid_prawn,5006.0,1668.7,3
+KNR,4,Other Carangids,3717.0,1858.5,2
+KNR,5,Other Clupeids,1592.0,530.7,3
+KNR,6,indian_squid,1263.0,421.0,3
+KNR,7,perches,1169.0,389.7,3
+KNR,8,Soles,1143.0,381.0,3
+KNR,9,ribbon_fish,1130.0,376.7,3
+KNR,10,crab,975.0,325.0,3
+KNR,11,tuna,884.0,294.7,3
+KNR,12,anchovy,845.0,281.7,3
+KNR,13,seer_fish,703.0,234.3,3
+KNR,14,Trisocles,636.0,212.0,3
+KNR,15,Sciaenids,586.0,195.3,3
+KNR,16,Miscellaneous,440.0,146.7,3
+KNR,17,Other Hilsa,361.0,120.3,3
+KNR,18,Leiognathus,353.0,117.7,3
+KNR,19,barracuda,252.0,84.0,3
+KNR,20,Coryphaena,229.0,76.3,3
+KNR,21,Lactarius,149.0,74.5,2
+KNR,22,silver_pomfret,129.0,43.0,3
+KNR,23,lesser_sardines,124.0,41.3,3
+KNR,24,Saurida & Saurus,109.0,36.3,3
+KNR,25,Hemirhamphus & Belone,73.0,36.5,2
+KNR,26,shark_ray,61.0,20.3,3
+KNR,27,Lactrious,42.0,42.0,1
+KNR,28,Caranx,35.0,11.7,3
+KNR,29,cat_fish,30.0,10.0,3
+KNR,30,Eels,27.0,9.0,3
+KNR,31,Hemirhamphus& Belone,21.0,21.0,1
+KNR,32,Chorinemus,19.0,6.3,3
+KNR,33,Polynemids,12.0,4.0,3
+KNR,34,Mugil,9.0,3.0,3
+KNR,35,Chirocentrus,9.0,4.5,2
+KNR,36,Elagatis,5.0,2.5,2
+KNR,37,Trachinotus,3.0,1.5,2
+KNR,38,Chirocentrius,2.0,2.0,1
+KNR,39,non_penaeid_prawn,2.0,0.7,3
+KNR,40,flying_fish,1.0,0.3,3
+KNR,41,Elacate,1.0,1.0,1
+KNR,42,Hilsa Ilisha,0.0,0.0,3
+KNR,43,Harpodon Nehereus,0.0,0.0,3
+KNR,44,Red Mullets,0.0,0.0,1
+KNR,45,Thachynotus,0.0,0.0,1
+KNR,46,Gazza,0.0,0.0,3
+KNR,47,Bregmaceros,0.0,0.0,3
+KNR,48,lobster,0.0,0.0,3
+KNR,49,Stomatopodes,0.0,0.0,1
+KNR,50,Goatfishes,0.0,0.0,2
+KNR,51,Stomatopods,0.0,0.0,2
+KSD,1,oil_sardine,14646.0,4882.0,3
+KSD,2,indian_mackerel,9660.0,3220.0,3
+KSD,3,penaeid_prawn,2702.0,900.7,3
+KSD,4,Other Carangids,1316.0,658.0,2
+KSD,5,Soles,1168.0,389.3,3
+KSD,6,Other Clupeids,980.0,326.7,3
+KSD,7,crab,694.0,231.3,3
+KSD,8,perches,564.0,188.0,3
+KSD,9,Sciaenids,442.0,147.3,3
+KSD,10,Trisocles,361.0,120.3,3
+KSD,11,tuna,329.0,109.7,3
+KSD,12,Miscellaneous,282.0,94.0,3
+KSD,13,anchovy,245.0,81.7,3
+KSD,14,seer_fish,220.0,73.3,3
+KSD,15,indian_squid,207.0,69.0,3
+KSD,16,Stomatopods,141.0,70.5,2
+KSD,17,ribbon_fish,114.0,38.0,3
+KSD,18,Other Hilsa,99.0,33.0,3
+KSD,19,silver_pomfret,94.0,31.3,3
+KSD,20,Coryphaena,75.0,25.0,3
+KSD,21,barracuda,71.0,23.7,3
+KSD,22,Lactarius,69.0,34.5,2
+KSD,23,Leiognathus,65.0,21.7,3
+KSD,24,shark_ray,59.0,19.7,3
+KSD,25,Saurida & Saurus,38.0,12.7,3
+KSD,26,Caranx,29.0,9.7,3
+KSD,27,Hemirhamphus & Belone,21.0,10.5,2
+KSD,28,cat_fish,13.0,4.3,3
+KSD,29,lesser_sardines,12.0,4.0,3
+KSD,30,Eels,6.0,2.0,3
+KSD,31,Polynemids,6.0,2.0,3
+KSD,32,Chorinemus,6.0,2.0,3
+KSD,33,Hemirhamphus& Belone,4.0,4.0,1
+KSD,34,Gazza,4.0,1.3,3
+KSD,35,Mugil,4.0,1.3,3
+KSD,36,Chirocentrus,2.0,1.0,2
+KSD,37,Elagatis,2.0,1.0,2
+KSD,38,Elacate,1.0,1.0,1
+KSD,39,Lactrious,1.0,1.0,1
+KSD,40,Chirocentrius,0.0,0.0,1
+KSD,41,Hilsa Ilisha,0.0,0.0,3
+KSD,42,Harpodon Nehereus,0.0,0.0,3
+KSD,43,flying_fish,0.0,0.0,3
+KSD,44,Red Mullets,0.0,0.0,1
+KSD,45,Thachynotus,0.0,0.0,1
+KSD,46,Bregmaceros,0.0,0.0,3
+KSD,47,non_penaeid_prawn,0.0,0.0,3
+KSD,48,lobster,0.0,0.0,3
+KSD,49,Stomatopodes,0.0,0.0,1
+KSD,50,Goatfishes,0.0,0.0,2
+KSD,51,Trachinotus,0.0,0.0,2
+MLPM,1,oil_sardine,29173.0,9724.3,3
+MLPM,2,indian_mackerel,10659.0,3553.0,3
+MLPM,3,Miscellaneous,7836.0,2612.0,3
+MLPM,4,perches,7272.0,2424.0,3
+MLPM,5,penaeid_prawn,6149.0,2049.7,3
+MLPM,6,indian_squid,4541.0,1513.7,3
+MLPM,7,Other Carangids,4509.0,2254.5,2
+MLPM,8,anchovy,3729.0,1243.0,3
+MLPM,9,Soles,3524.0,1174.7,3
+MLPM,10,Sciaenids,2332.0,777.3,3
+MLPM,11,Trisocles,1908.0,636.0,3
+MLPM,12,lesser_sardines,1844.0,614.7,3
+MLPM,13,crab,1222.0,407.3,3
+MLPM,14,ribbon_fish,1097.0,365.7,3
+MLPM,15,Saurida & Saurus,1078.0,359.3,3
+MLPM,16,silver_pomfret,899.0,299.7,3
+MLPM,17,seer_fish,498.0,166.0,3
+MLPM,18,tuna,412.0,137.3,3
+MLPM,19,Leiognathus,350.0,116.7,3
+MLPM,20,Other Clupeids,285.0,95.0,3
+MLPM,21,barracuda,260.0,86.7,3
+MLPM,22,shark_ray,188.0,62.7,3
+MLPM,23,Chirocentrus,147.0,73.5,2
+MLPM,24,Eels,132.0,44.0,3
+MLPM,25,Coryphaena,91.0,30.3,3
+MLPM,26,Chorinemus,88.0,29.3,3
+MLPM,27,Lactarius,86.0,43.0,2
+MLPM,28,Hemirhamphus & Belone,82.0,41.0,2
+MLPM,29,Caranx,40.0,13.3,3
+MLPM,30,Hemirhamphus& Belone,32.0,32.0,1
+MLPM,31,Chirocentrius,22.0,22.0,1
+MLPM,32,Lactrious,19.0,19.0,1
+MLPM,33,Polynemids,4.0,1.3,3
+MLPM,34,non_penaeid_prawn,4.0,1.3,3
+MLPM,35,Elacate,3.0,3.0,1
+MLPM,36,cat_fish,2.0,0.7,3
+MLPM,37,Gazza,2.0,0.7,3
+MLPM,38,Trachinotus,2.0,1.0,2
+MLPM,39,Thachynotus,1.0,1.0,1
+MLPM,40,Elagatis,1.0,0.5,2
+MLPM,41,Hilsa Ilisha,0.0,0.0,3
+MLPM,42,Other Hilsa,0.0,0.0,3
+MLPM,43,Harpodon Nehereus,0.0,0.0,3
+MLPM,44,flying_fish,0.0,0.0,3
+MLPM,45,Red Mullets,0.0,0.0,1
+MLPM,46,Mugil,0.0,0.0,3
+MLPM,47,Bregmaceros,0.0,0.0,3
+MLPM,48,lobster,0.0,0.0,3
+MLPM,49,Stomatopodes,0.0,0.0,1
+MLPM,50,Goatfishes,0.0,0.0,2
+MLPM,51,Stomatopods,0.0,0.0,2
+TCR,1,oil_sardine,42644.0,14214.7,3
+TCR,2,indian_mackerel,26410.0,8803.3,3
+TCR,3,penaeid_prawn,10634.0,3544.7,3
+TCR,4,Other Carangids,2986.0,1493.0,2
+TCR,5,Soles,2845.0,948.3,3
+TCR,6,tuna,1718.0,572.7,3
+TCR,7,anchovy,1716.0,572.0,3
+TCR,8,perches,739.0,246.3,3
+TCR,9,lesser_sardines,700.0,233.3,3
+TCR,10,seer_fish,699.0,233.0,3
+TCR,11,Other Clupeids,676.0,225.3,3
+TCR,12,indian_squid,552.0,184.0,3
+TCR,13,crab,543.0,181.0,3
+TCR,14,Sciaenids,482.0,160.7,3
+TCR,15,Trisocles,308.0,102.7,3
+TCR,16,silver_pomfret,269.0,89.7,3
+TCR,17,Miscellaneous,256.0,85.3,3
+TCR,18,barracuda,114.0,38.0,3
+TCR,19,Leiognathus,103.0,34.3,3
+TCR,20,Coryphaena,99.0,33.0,3
+TCR,21,Other Hilsa,75.0,25.0,3
+TCR,22,Saurida & Saurus,62.0,20.7,3
+TCR,23,Caranx,49.0,16.3,3
+TCR,24,shark_ray,46.0,15.3,3
+TCR,25,ribbon_fish,34.0,11.3,3
+TCR,26,Chorinemus,22.0,7.3,3
+TCR,27,Hemirhamphus& Belone,21.0,21.0,1
+TCR,28,Hemirhamphus & Belone,20.0,10.0,2
+TCR,29,Mugil,11.0,3.7,3
+TCR,30,cat_fish,10.0,3.3,3
+TCR,31,Lactrious,10.0,10.0,1
+TCR,32,Lactarius,10.0,5.0,2
+TCR,33,Polynemids,3.0,1.0,3
+TCR,34,Chirocentrus,3.0,1.5,2
+TCR,35,Stomatopods,3.0,1.5,2
+TCR,36,non_penaeid_prawn,2.0,0.7,3
+TCR,37,Goatfishes,1.0,0.5,2
+TCR,38,Trachinotus,1.0,0.5,2
+TCR,39,Eels,0.0,0.0,3
+TCR,40,Chirocentrius,0.0,0.0,1
+TCR,41,Hilsa Ilisha,0.0,0.0,3
+TCR,42,Harpodon Nehereus,0.0,0.0,3
+TCR,43,flying_fish,0.0,0.0,3
+TCR,44,Red Mullets,0.0,0.0,1
+TCR,45,Thachynotus,0.0,0.0,1
+TCR,46,Elacate,0.0,0.0,1
+TCR,47,Gazza,0.0,0.0,3
+TCR,48,Bregmaceros,0.0,0.0,3
+TCR,49,lobster,0.0,0.0,3
+TCR,50,Stomatopodes,0.0,0.0,1
+TCR,51,Elagatis,0.0,0.0,2
+TVPM,1,Other Carangids,31210.0,15605.0,2
+TVPM,2,indian_mackerel,24699.0,8233.0,3
+TVPM,3,anchovy,24529.0,8176.3,3
+TVPM,4,tuna,23659.0,7886.3,3
+TVPM,5,indian_squid,13251.0,4417.0,3
+TVPM,6,ribbon_fish,9431.0,3143.7,3
+TVPM,7,lesser_sardines,9357.0,3119.0,3
+TVPM,8,perches,5829.0,1943.0,3
+TVPM,9,oil_sardine,4174.0,1391.3,3
+TVPM,10,Miscellaneous,2871.0,957.0,3
+TVPM,11,barracuda,2690.0,896.7,3
+TVPM,12,Caranx,2058.0,686.0,3
+TVPM,13,seer_fish,1816.0,605.3,3
+TVPM,14,Leiognathus,1474.0,491.3,3
+TVPM,15,Saurida & Saurus,1352.0,450.7,3
+TVPM,16,Sciaenids,1290.0,430.0,3
+TVPM,17,shark_ray,1022.0,340.7,3
+TVPM,18,Other Clupeids,969.0,323.0,3
+TVPM,19,penaeid_prawn,886.0,295.3,3
+TVPM,20,Soles,854.0,284.7,3
+TVPM,21,Coryphaena,748.0,249.3,3
+TVPM,22,crab,519.0,173.0,3
+TVPM,23,Hemirhamphus & Belone,292.0,146.0,2
+TVPM,24,Chorinemus,263.0,87.7,3
+TVPM,25,Elacate,243.0,243.0,1
+TVPM,26,Elagatis,229.0,114.5,2
+TVPM,27,Trisocles,198.0,66.0,3
+TVPM,28,Hemirhamphus& Belone,184.0,184.0,1
+TVPM,29,Lactrious,126.0,126.0,1
+TVPM,30,Chirocentrus,121.0,60.5,2
+TVPM,31,Mugil,101.0,33.7,3
+TVPM,32,Lactarius,94.0,47.0,2
+TVPM,33,Goatfishes,78.0,39.0,2
+TVPM,34,silver_pomfret,60.0,20.0,3
+TVPM,35,Chirocentrius,59.0,59.0,1
+TVPM,36,Red Mullets,42.0,42.0,1
+TVPM,37,cat_fish,35.0,11.7,3
+TVPM,38,lobster,33.0,11.0,3
+TVPM,39,non_penaeid_prawn,18.0,6.0,3
+TVPM,40,flying_fish,13.0,4.3,3
+TVPM,41,Other Hilsa,7.0,2.3,3
+TVPM,42,Eels,3.0,1.0,3
+TVPM,43,Trachinotus,3.0,1.5,2
+TVPM,44,Thachynotus,1.0,1.0,1
+TVPM,45,Hilsa Ilisha,0.0,0.0,3
+TVPM,46,Harpodon Nehereus,0.0,0.0,3
+TVPM,47,Polynemids,0.0,0.0,3
+TVPM,48,Gazza,0.0,0.0,3
+TVPM,49,Bregmaceros,0.0,0.0,3
+TVPM,50,Stomatopodes,0.0,0.0,1
+TVPM,51,Stomatopods,0.0,0.0,2

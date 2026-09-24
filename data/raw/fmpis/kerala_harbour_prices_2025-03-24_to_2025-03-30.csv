@@ -1,0 +1,15 @@
+report_start_date,report_end_date,state,source_type,species_name_raw,price_inr_per_kg,data_source,source_report_file
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Indian oil sardine,38,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Sin croaker,85,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Thread Fin Breams,117,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Karikkadi/ kiddi shrimp,119,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Sole fish,121,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Poovalan/ Kadal shrimp,127,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Indian mackeral,136,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Ribbon Fish,145,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Three spot swimming crab,157,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Malabar tonguesole,168,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Brown/Pink/Kazhanthan,230,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Indian squid,276,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Pharaoh cuttlefish,288,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf
+2025-03-24,2025-03-30,Kerala,fishing_harbour,Indian White shrimp,350,"NETFISH, MPEDA",FMPIS_WFPR_24.03.2025_30.03.2025.pdf

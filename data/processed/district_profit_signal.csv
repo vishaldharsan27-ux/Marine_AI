@@ -1,0 +1,55 @@
+district,rank_in_district,species_key,species_english,avg_catch_tonnes_per_year,price_inr_per_kg_2025_03_24_30,estimated_annual_value_inr
+ALP,1,oil_sardine,Indian Oil Sardine,17825.0,38.0,677350000
+ALP,2,indian_mackerel,Indian Mackerel,4451.3,136.0,605381333
+ALP,3,penaeid_prawn,Penaeid Prawn / Shrimp,1749.7,119.0,208210333
+ALP,4,indian_squid,Indian Squid,39.3,276.0,10856000
+ALP,5,crab,Crab,60.7,157.0,9524667
+ALP,6,ribbon_fish,Ribbon Fish,10.3,145.0,1498333
+EKM,1,indian_squid,Indian Squid,16131.7,276.0,4452340000
+EKM,2,indian_mackerel,Indian Mackerel,18495.0,136.0,2515320000
+EKM,3,ribbon_fish,Ribbon Fish,10366.0,145.0,1503070000
+EKM,4,penaeid_prawn,Penaeid Prawn / Shrimp,10199.0,119.0,1213681000
+EKM,5,oil_sardine,Indian Oil Sardine,23292.3,38.0,885108667
+EKM,6,crab,Crab,1564.0,157.0,245548000
+KKD,1,indian_squid,Indian Squid,7448.3,276.0,2055740000
+KKD,2,indian_mackerel,Indian Mackerel,10784.7,136.0,1466714667
+KKD,3,oil_sardine,Indian Oil Sardine,22645.0,38.0,860510000
+KKD,4,ribbon_fish,Ribbon Fish,5078.7,145.0,736406667
+KKD,5,penaeid_prawn,Penaeid Prawn / Shrimp,4759.7,119.0,566400333
+KKD,6,crab,Crab,1259.0,157.0,197663000
+KLM,1,indian_squid,Indian Squid,10774.7,276.0,2973808000
+KLM,2,indian_mackerel,Indian Mackerel,14703.3,136.0,1999653333
+KLM,3,penaeid_prawn,Penaeid Prawn / Shrimp,12668.3,119.0,1507531667
+KLM,4,oil_sardine,Indian Oil Sardine,21715.3,38.0,825182667
+KLM,5,ribbon_fish,Ribbon Fish,4112.3,145.0,596288333
+KLM,6,crab,Crab,1456.3,157.0,228644333
+KNR,1,oil_sardine,Indian Oil Sardine,27147.0,38.0,1031586000
+KNR,2,indian_mackerel,Indian Mackerel,5357.7,136.0,728642667
+KNR,3,penaeid_prawn,Penaeid Prawn / Shrimp,1668.7,119.0,198571333
+KNR,4,indian_squid,Indian Squid,421.0,276.0,116196000
+KNR,5,ribbon_fish,Ribbon Fish,376.7,145.0,54616667
+KNR,6,crab,Crab,325.0,157.0,51025000
+KSD,1,indian_mackerel,Indian Mackerel,3220.0,136.0,437920000
+KSD,2,oil_sardine,Indian Oil Sardine,4882.0,38.0,185516000
+KSD,3,penaeid_prawn,Penaeid Prawn / Shrimp,900.7,119.0,107179333
+KSD,4,crab,Crab,231.3,157.0,36319333
+KSD,5,indian_squid,Indian Squid,69.0,276.0,19044000
+KSD,6,ribbon_fish,Ribbon Fish,38.0,145.0,5510000
+MLPM,1,indian_mackerel,Indian Mackerel,3553.0,136.0,483208000
+MLPM,2,indian_squid,Indian Squid,1513.7,276.0,417772000
+MLPM,3,oil_sardine,Indian Oil Sardine,9724.3,38.0,369524667
+MLPM,4,penaeid_prawn,Penaeid Prawn / Shrimp,2049.7,119.0,243910333
+MLPM,5,crab,Crab,407.3,157.0,63951333
+MLPM,6,ribbon_fish,Ribbon Fish,365.7,145.0,53021667
+TCR,1,indian_mackerel,Indian Mackerel,8803.3,136.0,1197253333
+TCR,2,oil_sardine,Indian Oil Sardine,14214.7,38.0,540157333
+TCR,3,penaeid_prawn,Penaeid Prawn / Shrimp,3544.7,119.0,421815333
+TCR,4,indian_squid,Indian Squid,184.0,276.0,50784000
+TCR,5,crab,Crab,181.0,157.0,28417000
+TCR,6,ribbon_fish,Ribbon Fish,11.3,145.0,1643333
+TVPM,1,indian_squid,Indian Squid,4417.0,276.0,1219092000
+TVPM,2,indian_mackerel,Indian Mackerel,8233.0,136.0,1119688000
+TVPM,3,ribbon_fish,Ribbon Fish,3143.7,145.0,455831667
+TVPM,4,oil_sardine,Indian Oil Sardine,1391.3,38.0,52870667
+TVPM,5,penaeid_prawn,Penaeid Prawn / Shrimp,295.3,119.0,35144667
+TVPM,6,crab,Crab,173.0,157.0,27161000

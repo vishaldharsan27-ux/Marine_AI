@@ -1,0 +1,1180 @@
+year,district,species_name_raw,species_key,landing_qty_tonnes
+2022-23,TVPM,Elasmobranchs,shark_ray,444.0
+2022-23,KLM,Elasmobranchs,shark_ray,258.0
+2022-23,ALP,Elasmobranchs,shark_ray,5.0
+2022-23,EKM,Elasmobranchs,shark_ray,3277.0
+2022-23,TCR,Elasmobranchs,shark_ray,15.0
+2022-23,MLPM,Elasmobranchs,shark_ray,56.0
+2022-23,KKD,Elasmobranchs,shark_ray,117.0
+2022-23,KNR,Elasmobranchs,shark_ray,22.0
+2022-23,KSD,Elasmobranchs,shark_ray,18.0
+2022-23,TVPM,Eels,,1.0
+2022-23,KLM,Eels,,1.0
+2022-23,ALP,Eels,,0.0
+2022-23,EKM,Eels,,858.0
+2022-23,TCR,Eels,,0.0
+2022-23,MLPM,Eels,,7.0
+2022-23,KKD,Eels,,97.0
+2022-23,KNR,Eels,,0.0
+2022-23,KSD,Eels,,0.0
+2022-23,TVPM,Cat Fish,cat_fish,12.0
+2022-23,KLM,Cat Fish,cat_fish,5.0
+2022-23,ALP,Cat Fish,cat_fish,5.0
+2022-23,EKM,Cat Fish,cat_fish,137.0
+2022-23,TCR,Cat Fish,cat_fish,4.0
+2022-23,MLPM,Cat Fish,cat_fish,0.0
+2022-23,KKD,Cat Fish,cat_fish,149.0
+2022-23,KNR,Cat Fish,cat_fish,9.0
+2022-23,KSD,Cat Fish,cat_fish,3.0
+2022-23,TVPM,Chirocentrius,,59.0
+2022-23,KLM,Chirocentrius,,38.0
+2022-23,ALP,Chirocentrius,,6.0
+2022-23,EKM,Chirocentrius,,82.0
+2022-23,TCR,Chirocentrius,,0.0
+2022-23,MLPM,Chirocentrius,,22.0
+2022-23,KKD,Chirocentrius,,53.0
+2022-23,KNR,Chirocentrius,,2.0
+2022-23,KSD,Chirocentrius,,0.0
+2022-23,TVPM,Oil Sardines,oil_sardine,1740.0
+2022-23,KLM,Oil Sardines,oil_sardine,14038.0
+2022-23,ALP,Oil Sardines,oil_sardine,15562.0
+2022-23,EKM,Oil Sardines,oil_sardine,23635.0
+2022-23,TCR,Oil Sardines,oil_sardine,14260.0
+2022-23,MLPM,Oil Sardines,oil_sardine,4037.0
+2022-23,KKD,Oil Sardines,oil_sardine,20515.0
+2022-23,KNR,Oil Sardines,oil_sardine,38250.0
+2022-23,KSD,Oil Sardines,oil_sardine,4909.0
+2022-23,TVPM,Lesser Sardines,lesser_sardines,4640.0
+2022-23,KLM,Lesser Sardines,lesser_sardines,6068.0
+2022-23,ALP,Lesser Sardines,lesser_sardines,2173.0
+2022-23,EKM,Lesser Sardines,lesser_sardines,142.0
+2022-23,TCR,Lesser Sardines,lesser_sardines,251.0
+2022-23,MLPM,Lesser Sardines,lesser_sardines,1767.0
+2022-23,KKD,Lesser Sardines,lesser_sardines,870.0
+2022-23,KNR,Lesser Sardines,lesser_sardines,2.0
+2022-23,KSD,Lesser Sardines,lesser_sardines,0.0
+2022-23,TVPM,Hilsa Ilisha,,0.0
+2022-23,KLM,Hilsa Ilisha,,0.0
+2022-23,ALP,Hilsa Ilisha,,0.0
+2022-23,EKM,Hilsa Ilisha,,0.0
+2022-23,TCR,Hilsa Ilisha,,0.0
+2022-23,MLPM,Hilsa Ilisha,,0.0
+2022-23,KKD,Hilsa Ilisha,,0.0
+2022-23,KNR,Hilsa Ilisha,,0.0
+2022-23,KSD,Hilsa Ilisha,,0.0
+2022-23,TVPM,Other Hilsa,,2.0
+2022-23,KLM,Other Hilsa,,24.0
+2022-23,ALP,Other Hilsa,,5.0
+2022-23,EKM,Other Hilsa,,112.0
+2022-23,TCR,Other Hilsa,,16.0
+2022-23,MLPM,Other Hilsa,,0.0
+2022-23,KKD,Other Hilsa,,361.0
+2022-23,KNR,Other Hilsa,,71.0
+2022-23,KSD,Other Hilsa,,10.0
+2022-23,TVPM,Anchovilla,anchovy,5926.0
+2022-23,KLM,Anchovilla,anchovy,15142.0
+2022-23,ALP,Anchovilla,anchovy,5379.0
+2022-23,EKM,Anchovilla,anchovy,4987.0
+2022-23,TCR,Anchovilla,anchovy,402.0
+2022-23,MLPM,Anchovilla,anchovy,2019.0
+2022-23,KKD,Anchovilla,anchovy,10627.0
+2022-23,KNR,Anchovilla,anchovy,270.0
+2022-23,KSD,Anchovilla,anchovy,34.0
+2022-23,TVPM,Trisocles,,34.0
+2022-23,KLM,Trisocles,,598.0
+2022-23,ALP,Trisocles,,236.0
+2022-23,EKM,Trisocles,,714.0
+2022-23,TCR,Trisocles,,206.0
+2022-23,MLPM,Trisocles,,497.0
+2022-23,KKD,Trisocles,,451.0
+2022-23,KNR,Trisocles,,122.0
+2022-23,KSD,Trisocles,,4.0
+2022-23,TVPM,Other Clupeids,,99.0
+2022-23,KLM,Other Clupeids,,309.0
+2022-23,ALP,Other Clupeids,,238.0
+2022-23,EKM,Other Clupeids,,314.0
+2022-23,TCR,Other Clupeids,,74.0
+2022-23,MLPM,Other Clupeids,,69.0
+2022-23,KKD,Other Clupeids,,969.0
+2022-23,KNR,Other Clupeids,,429.0
+2022-23,KSD,Other Clupeids,,296.0
+2022-23,TVPM,Harpodon Nehereus,,0.0
+2022-23,KLM,Harpodon Nehereus,,0.0
+2022-23,ALP,Harpodon Nehereus,,0.0
+2022-23,EKM,Harpodon Nehereus,,0.0
+2022-23,TCR,Harpodon Nehereus,,0.0
+2022-23,MLPM,Harpodon Nehereus,,0.0
+2022-23,KKD,Harpodon Nehereus,,0.0
+2022-23,KNR,Harpodon Nehereus,,0.0
+2022-23,KSD,Harpodon Nehereus,,0.0
+2022-23,TVPM,Saurida & Saurus,,230.0
+2022-23,KLM,Saurida & Saurus,,5242.0
+2022-23,ALP,Saurida & Saurus,,0.0
+2022-23,EKM,Saurida & Saurus,,4768.0
+2022-23,TCR,Saurida & Saurus,,3.0
+2022-23,MLPM,Saurida & Saurus,,237.0
+2022-23,KKD,Saurida & Saurus,,1504.0
+2022-23,KNR,Saurida & Saurus,,29.0
+2022-23,KSD,Saurida & Saurus,,0.0
+2022-23,TVPM,Hemirhamphus& Belone,,184.0
+2022-23,KLM,Hemirhamphus& Belone,,88.0
+2022-23,ALP,Hemirhamphus& Belone,,4.0
+2022-23,EKM,Hemirhamphus& Belone,,239.0
+2022-23,TCR,Hemirhamphus& Belone,,21.0
+2022-23,MLPM,Hemirhamphus& Belone,,32.0
+2022-23,KKD,Hemirhamphus& Belone,,196.0
+2022-23,KNR,Hemirhamphus& Belone,,21.0
+2022-23,KSD,Hemirhamphus& Belone,,4.0
+2022-23,TVPM,Flying Fish,flying_fish,10.0
+2022-23,KLM,Flying Fish,flying_fish,0.0
+2022-23,ALP,Flying Fish,flying_fish,0.0
+2022-23,EKM,Flying Fish,flying_fish,2.0
+2022-23,TCR,Flying Fish,flying_fish,0.0
+2022-23,MLPM,Flying Fish,flying_fish,0.0
+2022-23,KKD,Flying Fish,flying_fish,9.0
+2022-23,KNR,Flying Fish,flying_fish,0.0
+2022-23,KSD,Flying Fish,flying_fish,0.0
+2022-23,TVPM,Perches,perches,2301.0
+2022-23,KLM,Perches,perches,11148.0
+2022-23,ALP,Perches,perches,209.0
+2022-23,EKM,Perches,perches,35463.0
+2022-23,TCR,Perches,perches,224.0
+2022-23,MLPM,Perches,perches,1988.0
+2022-23,KKD,Perches,perches,17936.0
+2022-23,KNR,Perches,perches,376.0
+2022-23,KSD,Perches,perches,86.0
+2022-23,TVPM,Red Mullets,,42.0
+2022-23,KLM,Red Mullets,,34.0
+2022-23,ALP,Red Mullets,,7.0
+2022-23,EKM,Red Mullets,,508.0
+2022-23,TCR,Red Mullets,,0.0
+2022-23,MLPM,Red Mullets,,0.0
+2022-23,KKD,Red Mullets,,15.0
+2022-23,KNR,Red Mullets,,0.0
+2022-23,KSD,Red Mullets,,0.0
+2022-23,TVPM,Polynemids,,0.0
+2022-23,KLM,Polynemids,,0.0
+2022-23,ALP,Polynemids,,0.0
+2022-23,EKM,Polynemids,,0.0
+2022-23,TCR,Polynemids,,0.0
+2022-23,MLPM,Polynemids,,0.0
+2022-23,KKD,Polynemids,,2.0
+2022-23,KNR,Polynemids,,0.0
+2022-23,KSD,Polynemids,,0.0
+2022-23,TVPM,Sciaenids,,441.0
+2022-23,KLM,Sciaenids,,267.0
+2022-23,ALP,Sciaenids,,244.0
+2022-23,EKM,Sciaenids,,1027.0
+2022-23,TCR,Sciaenids,,161.0
+2022-23,MLPM,Sciaenids,,801.0
+2022-23,KKD,Sciaenids,,989.0
+2022-23,KNR,Sciaenids,,199.0
+2022-23,KSD,Sciaenids,,78.0
+2022-23,TVPM,Ribbon Fish,ribbon_fish,2862.0
+2022-23,KLM,Ribbon Fish,ribbon_fish,3630.0
+2022-23,ALP,Ribbon Fish,ribbon_fish,7.0
+2022-23,EKM,Ribbon Fish,ribbon_fish,12964.0
+2022-23,TCR,Ribbon Fish,ribbon_fish,31.0
+2022-23,MLPM,Ribbon Fish,ribbon_fish,338.0
+2022-23,KKD,Ribbon Fish,ribbon_fish,7217.0
+2022-23,KNR,Ribbon Fish,ribbon_fish,557.0
+2022-23,KSD,Ribbon Fish,ribbon_fish,7.0
+2022-23,TVPM,Caranx,,289.0
+2022-23,KLM,Caranx,,179.0
+2022-23,ALP,Caranx,,30.0
+2022-23,EKM,Caranx,,695.0
+2022-23,TCR,Caranx,,24.0
+2022-23,MLPM,Caranx,,0.0
+2022-23,KKD,Caranx,,50.0
+2022-23,KNR,Caranx,,7.0
+2022-23,KSD,Caranx,,13.0
+2022-23,TVPM,Chorinemus,,137.0
+2022-23,KLM,Chorinemus,,32.0
+2022-23,ALP,Chorinemus,,5.0
+2022-23,EKM,Chorinemus,,204.0
+2022-23,TCR,Chorinemus,,6.0
+2022-23,MLPM,Chorinemus,,24.0
+2022-23,KKD,Chorinemus,,251.0
+2022-23,KNR,Chorinemus,,7.0
+2022-23,KSD,Chorinemus,,2.0
+2022-23,TVPM,Thachynotus,,1.0
+2022-23,KLM,Thachynotus,,0.0
+2022-23,ALP,Thachynotus,,1.0
+2022-23,EKM,Thachynotus,,2.0
+2022-23,TCR,Thachynotus,,0.0
+2022-23,MLPM,Thachynotus,,1.0
+2022-23,KKD,Thachynotus,,2.0
+2022-23,KNR,Thachynotus,,0.0
+2022-23,KSD,Thachynotus,,0.0
+2022-23,TVPM,Coryphaena,,293.0
+2022-23,KLM,Coryphaena,,339.0
+2022-23,ALP,Coryphaena,,29.0
+2022-23,EKM,Coryphaena,,1435.0
+2022-23,TCR,Coryphaena,,56.0
+2022-23,MLPM,Coryphaena,,37.0
+2022-23,KKD,Coryphaena,,401.0
+2022-23,KNR,Coryphaena,,63.0
+2022-23,KSD,Coryphaena,,44.0
+2022-23,TVPM,Elacate,,243.0
+2022-23,KLM,Elacate,,48.0
+2022-23,ALP,Elacate,,1.0
+2022-23,EKM,Elacate,,206.0
+2022-23,TCR,Elacate,,0.0
+2022-23,MLPM,Elacate,,3.0
+2022-23,KKD,Elacate,,5.0
+2022-23,KNR,Elacate,,1.0
+2022-23,KSD,Elacate,,1.0
+2022-23,TVPM,Leiognathus,,338.0
+2022-23,KLM,Leiognathus,,423.0
+2022-23,ALP,Leiognathus,,91.0
+2022-23,EKM,Leiognathus,,617.0
+2022-23,TCR,Leiognathus,,60.0
+2022-23,MLPM,Leiognathus,,55.0
+2022-23,KKD,Leiognathus,,580.0
+2022-23,KNR,Leiognathus,,153.0
+2022-23,KSD,Leiognathus,,7.0
+2022-23,TVPM,Gazza,,0.0
+2022-23,KLM,Gazza,,0.0
+2022-23,ALP,Gazza,,0.0
+2022-23,EKM,Gazza,,0.0
+2022-23,TCR,Gazza,,0.0
+2022-23,MLPM,Gazza,,0.0
+2022-23,KKD,Gazza,,0.0
+2022-23,KNR,Gazza,,0.0
+2022-23,KSD,Gazza,,0.0
+2022-23,TVPM,Lactrious,,126.0
+2022-23,KLM,Lactrious,,462.0
+2022-23,ALP,Lactrious,,254.0
+2022-23,EKM,Lactrious,,57.0
+2022-23,TCR,Lactrious,,10.0
+2022-23,MLPM,Lactrious,,19.0
+2022-23,KKD,Lactrious,,248.0
+2022-23,KNR,Lactrious,,42.0
+2022-23,KSD,Lactrious,,1.0
+2022-23,TVPM,Pomfrets,silver_pomfret,10.0
+2022-23,KLM,Pomfrets,silver_pomfret,445.0
+2022-23,ALP,Pomfrets,silver_pomfret,20.0
+2022-23,EKM,Pomfrets,silver_pomfret,514.0
+2022-23,TCR,Pomfrets,silver_pomfret,10.0
+2022-23,MLPM,Pomfrets,silver_pomfret,378.0
+2022-23,KKD,Pomfrets,silver_pomfret,935.0
+2022-23,KNR,Pomfrets,silver_pomfret,41.0
+2022-23,KSD,Pomfrets,silver_pomfret,34.0
+2022-23,TVPM,Mackerel,indian_mackerel,7030.0
+2022-23,KLM,Mackerel,indian_mackerel,20024.0
+2022-23,ALP,Mackerel,indian_mackerel,6722.0
+2022-23,EKM,Mackerel,indian_mackerel,23538.0
+2022-23,TCR,Mackerel,indian_mackerel,13828.0
+2022-23,MLPM,Mackerel,indian_mackerel,3308.0
+2022-23,KKD,Mackerel,indian_mackerel,14583.0
+2022-23,KNR,Mackerel,indian_mackerel,9417.0
+2022-23,KSD,Mackerel,indian_mackerel,3634.0
+2022-23,TVPM,Seer Fish,seer_fish,750.0
+2022-23,KLM,Seer Fish,seer_fish,927.0
+2022-23,ALP,Seer Fish,seer_fish,438.0
+2022-23,EKM,Seer Fish,seer_fish,2180.0
+2022-23,TCR,Seer Fish,seer_fish,402.0
+2022-23,MLPM,Seer Fish,seer_fish,212.0
+2022-23,KKD,Seer Fish,seer_fish,1931.0
+2022-23,KNR,Seer Fish,seer_fish,257.0
+2022-23,KSD,Seer Fish,seer_fish,84.0
+2022-23,TVPM,Tunnis,tuna,8980.0
+2022-23,KLM,Tunnis,tuna,5939.0
+2022-23,ALP,Tunnis,tuna,266.0
+2022-23,EKM,Tunnis,tuna,18667.0
+2022-23,TCR,Tunnis,tuna,521.0
+2022-23,MLPM,Tunnis,tuna,105.0
+2022-23,KKD,Tunnis,tuna,2529.0
+2022-23,KNR,Tunnis,tuna,302.0
+2022-23,KSD,Tunnis,tuna,187.0
+2022-23,TVPM,Sphyraena,barracuda,769.0
+2022-23,KLM,Sphyraena,barracuda,2445.0
+2022-23,ALP,Sphyraena,barracuda,379.0
+2022-23,EKM,Sphyraena,barracuda,3818.0
+2022-23,TCR,Sphyraena,barracuda,39.0
+2022-23,MLPM,Sphyraena,barracuda,23.0
+2022-23,KKD,Sphyraena,barracuda,802.0
+2022-23,KNR,Sphyraena,barracuda,90.0
+2022-23,KSD,Sphyraena,barracuda,9.0
+2022-23,TVPM,Mugil,,38.0
+2022-23,KLM,Mugil,,0.0
+2022-23,ALP,Mugil,,0.0
+2022-23,EKM,Mugil,,10.0
+2022-23,TCR,Mugil,,4.0
+2022-23,MLPM,Mugil,,0.0
+2022-23,KKD,Mugil,,2.0
+2022-23,KNR,Mugil,,2.0
+2022-23,KSD,Mugil,,3.0
+2022-23,TVPM,Bregmaceros,,0.0
+2022-23,KLM,Bregmaceros,,0.0
+2022-23,ALP,Bregmaceros,,0.0
+2022-23,EKM,Bregmaceros,,0.0
+2022-23,TCR,Bregmaceros,,0.0
+2022-23,MLPM,Bregmaceros,,0.0
+2022-23,KKD,Bregmaceros,,0.0
+2022-23,KNR,Bregmaceros,,0.0
+2022-23,KSD,Bregmaceros,,0.0
+2022-23,TVPM,Soles,,563.0
+2022-23,KLM,Soles,,2510.0
+2022-23,ALP,Soles,,184.0
+2022-23,EKM,Soles,,1319.0
+2022-23,TCR,Soles,,1209.0
+2022-23,MLPM,Soles,,1260.0
+2022-23,KKD,Soles,,2352.0
+2022-23,KNR,Soles,,483.0
+2022-23,KSD,Soles,,530.0
+2022-23,TVPM,Penaid Prawn,penaeid_prawn,133.0
+2022-23,KLM,Penaid Prawn,penaeid_prawn,11249.0
+2022-23,ALP,Penaid Prawn,penaeid_prawn,1036.0
+2022-23,EKM,Penaid Prawn,penaeid_prawn,8817.0
+2022-23,TCR,Penaid Prawn,penaeid_prawn,1889.0
+2022-23,MLPM,Penaid Prawn,penaeid_prawn,1778.0
+2022-23,KKD,Penaid Prawn,penaeid_prawn,4369.0
+2022-23,KNR,Penaid Prawn,penaeid_prawn,1573.0
+2022-23,KSD,Penaid Prawn,penaeid_prawn,746.0
+2022-23,TVPM,Non Penaid Prawn,non_penaeid_prawn,3.0
+2022-23,KLM,Non Penaid Prawn,non_penaeid_prawn,6519.0
+2022-23,ALP,Non Penaid Prawn,non_penaeid_prawn,0.0
+2022-23,EKM,Non Penaid Prawn,non_penaeid_prawn,117.0
+2022-23,TCR,Non Penaid Prawn,non_penaeid_prawn,0.0
+2022-23,MLPM,Non Penaid Prawn,non_penaeid_prawn,0.0
+2022-23,KKD,Non Penaid Prawn,non_penaeid_prawn,0.0
+2022-23,KNR,Non Penaid Prawn,non_penaeid_prawn,0.0
+2022-23,KSD,Non Penaid Prawn,non_penaeid_prawn,0.0
+2022-23,TVPM,Lobsters,lobster,21.0
+2022-23,KLM,Lobsters,lobster,68.0
+2022-23,ALP,Lobsters,lobster,0.0
+2022-23,EKM,Lobsters,lobster,20.0
+2022-23,TCR,Lobsters,lobster,0.0
+2022-23,MLPM,Lobsters,lobster,0.0
+2022-23,KKD,Lobsters,lobster,0.0
+2022-23,KNR,Lobsters,lobster,0.0
+2022-23,KSD,Lobsters,lobster,0.0
+2022-23,TVPM,Crabs,crab,130.0
+2022-23,KLM,Crabs,crab,1922.0
+2022-23,ALP,Crabs,crab,112.0
+2022-23,EKM,Crabs,crab,1658.0
+2022-23,TCR,Crabs,crab,82.0
+2022-23,MLPM,Crabs,crab,493.0
+2022-23,KKD,Crabs,crab,1239.0
+2022-23,KNR,Crabs,crab,483.0
+2022-23,KSD,Crabs,crab,315.0
+2022-23,TVPM,Stomatopodes,,0.0
+2022-23,KLM,Stomatopodes,,1.0
+2022-23,ALP,Stomatopodes,,0.0
+2022-23,EKM,Stomatopodes,,46.0
+2022-23,TCR,Stomatopodes,,0.0
+2022-23,MLPM,Stomatopodes,,0.0
+2022-23,KKD,Stomatopodes,,0.0
+2022-23,KNR,Stomatopodes,,0.0
+2022-23,KSD,Stomatopodes,,0.0
+2022-23,TVPM,Cephalopodes,indian_squid,5349.0
+2022-23,KLM,Cephalopodes,indian_squid,12439.0
+2022-23,ALP,Cephalopodes,indian_squid,6.0
+2022-23,EKM,Cephalopodes,indian_squid,18590.0
+2022-23,TCR,Cephalopodes,indian_squid,145.0
+2022-23,MLPM,Cephalopodes,indian_squid,1098.0
+2022-23,KKD,Cephalopodes,indian_squid,8225.0
+2022-23,KNR,Cephalopodes,indian_squid,378.0
+2022-23,KSD,Cephalopodes,indian_squid,45.0
+2022-23,TVPM,Miscellaneous,,567.0
+2022-23,KLM,Miscellaneous,,10829.0
+2022-23,ALP,Miscellaneous,,24.0
+2022-23,EKM,Miscellaneous,,21619.0
+2022-23,TCR,Miscellaneous,,48.0
+2022-23,MLPM,Miscellaneous,,1906.0
+2022-23,KKD,Miscellaneous,,5804.0
+2022-23,KNR,Miscellaneous,,28.0
+2022-23,KSD,Miscellaneous,,57.0
+2023-24,TVPM,Elasmobranchs,shark_ray,256.0
+2023-24,KLM,Elasmobranchs,shark_ray,180.0
+2023-24,ALP,Elasmobranchs,shark_ray,2.0
+2023-24,EKM,Elasmobranchs,shark_ray,2347.0
+2023-24,TCR,Elasmobranchs,shark_ray,22.0
+2023-24,MLPM,Elasmobranchs,shark_ray,24.0
+2023-24,KKD,Elasmobranchs,shark_ray,180.0
+2023-24,KNR,Elasmobranchs,shark_ray,24.0
+2023-24,KSD,Elasmobranchs,shark_ray,23.0
+2023-24,TVPM,Eels,,2.0
+2023-24,KLM,Eels,,4.0
+2023-24,ALP,Eels,,0.0
+2023-24,EKM,Eels,,533.0
+2023-24,TCR,Eels,,0.0
+2023-24,MLPM,Eels,,79.0
+2023-24,KKD,Eels,,334.0
+2023-24,KNR,Eels,,3.0
+2023-24,KSD,Eels,,1.0
+2023-24,TVPM,Cat Fish,cat_fish,11.0
+2023-24,KLM,Cat Fish,cat_fish,71.0
+2023-24,ALP,Cat Fish,cat_fish,22.0
+2023-24,EKM,Cat Fish,cat_fish,76.0
+2023-24,TCR,Cat Fish,cat_fish,5.0
+2023-24,MLPM,Cat Fish,cat_fish,1.0
+2023-24,KKD,Cat Fish,cat_fish,40.0
+2023-24,KNR,Cat Fish,cat_fish,15.0
+2023-24,KSD,Cat Fish,cat_fish,0.0
+2023-24,TVPM,Chirocentrus,,81.0
+2023-24,KLM,Chirocentrus,,31.0
+2023-24,ALP,Chirocentrus,,11.0
+2023-24,EKM,Chirocentrus,,133.0
+2023-24,TCR,Chirocentrus,,1.0
+2023-24,MLPM,Chirocentrus,,72.0
+2023-24,KKD,Chirocentrus,,83.0
+2023-24,KNR,Chirocentrus,,2.0
+2023-24,KSD,Chirocentrus,,0.0
+2023-24,TVPM,Oil Sardine,oil_sardine,1004.0
+2023-24,KLM,Oil Sardine,oil_sardine,29957.0
+2023-24,ALP,Oil Sardine,oil_sardine,15265.0
+2023-24,EKM,Oil Sardine,oil_sardine,21589.0
+2023-24,TCR,Oil Sardine,oil_sardine,12580.0
+2023-24,MLPM,Oil Sardine,oil_sardine,7850.0
+2023-24,KKD,Oil Sardine,oil_sardine,13981.0
+2023-24,KNR,Oil Sardine,oil_sardine,10994.0
+2023-24,KSD,Oil Sardine,oil_sardine,2102.0
+2023-24,TVPM,Lesser Sardines,lesser_sardines,1981.0
+2023-24,KLM,Lesser Sardines,lesser_sardines,3246.0
+2023-24,ALP,Lesser Sardines,lesser_sardines,29.0
+2023-24,EKM,Lesser Sardines,lesser_sardines,63.0
+2023-24,TCR,Lesser Sardines,lesser_sardines,416.0
+2023-24,MLPM,Lesser Sardines,lesser_sardines,0.0
+2023-24,KKD,Lesser Sardines,lesser_sardines,287.0
+2023-24,KNR,Lesser Sardines,lesser_sardines,105.0
+2023-24,KSD,Lesser Sardines,lesser_sardines,9.0
+2023-24,TVPM,Hilsa Ilisha,,0.0
+2023-24,KLM,Hilsa Ilisha,,0.0
+2023-24,ALP,Hilsa Ilisha,,0.0
+2023-24,EKM,Hilsa Ilisha,,0.0
+2023-24,TCR,Hilsa Ilisha,,0.0
+2023-24,MLPM,Hilsa Ilisha,,0.0
+2023-24,KKD,Hilsa Ilisha,,0.0
+2023-24,KNR,Hilsa Ilisha,,0.0
+2023-24,KSD,Hilsa Ilisha,,0.0
+2023-24,TVPM,Other Hilsa,,0.0
+2023-24,KLM,Other Hilsa,,3.0
+2023-24,ALP,Other Hilsa,,2.0
+2023-24,EKM,Other Hilsa,,31.0
+2023-24,TCR,Other Hilsa,,31.0
+2023-24,MLPM,Other Hilsa,,0.0
+2023-24,KKD,Other Hilsa,,220.0
+2023-24,KNR,Other Hilsa,,99.0
+2023-24,KSD,Other Hilsa,,63.0
+2023-24,TVPM,Anchovies,anchovy,11165.0
+2023-24,KLM,Anchovies,anchovy,12327.0
+2023-24,ALP,Anchovies,anchovy,632.0
+2023-24,EKM,Anchovies,anchovy,4146.0
+2023-24,TCR,Anchovies,anchovy,711.0
+2023-24,MLPM,Anchovies,anchovy,663.0
+2023-24,KKD,Anchovies,anchovy,5468.0
+2023-24,KNR,Anchovies,anchovy,415.0
+2023-24,KSD,Anchovies,anchovy,58.0
+2023-24,TVPM,Trisocles,,103.0
+2023-24,KLM,Trisocles,,267.0
+2023-24,ALP,Trisocles,,59.0
+2023-24,EKM,Trisocles,,700.0
+2023-24,TCR,Trisocles,,48.0
+2023-24,MLPM,Trisocles,,781.0
+2023-24,KKD,Trisocles,,423.0
+2023-24,KNR,Trisocles,,287.0
+2023-24,KSD,Trisocles,,101.0
+2023-24,TVPM,Other Clupeids,,455.0
+2023-24,KLM,Other Clupeids,,550.0
+2023-24,ALP,Other Clupeids,,155.0
+2023-24,EKM,Other Clupeids,,348.0
+2023-24,TCR,Other Clupeids,,282.0
+2023-24,MLPM,Other Clupeids,,31.0
+2023-24,KKD,Other Clupeids,,565.0
+2023-24,KNR,Other Clupeids,,375.0
+2023-24,KSD,Other Clupeids,,125.0
+2023-24,TVPM,Harpodon Nehereus,,0.0
+2023-24,KLM,Harpodon Nehereus,,0.0
+2023-24,ALP,Harpodon Nehereus,,0.0
+2023-24,EKM,Harpodon Nehereus,,0.0
+2023-24,TCR,Harpodon Nehereus,,0.0
+2023-24,MLPM,Harpodon Nehereus,,0.0
+2023-24,KKD,Harpodon Nehereus,,0.0
+2023-24,KNR,Harpodon Nehereus,,0.0
+2023-24,KSD,Harpodon Nehereus,,0.0
+2023-24,TVPM,Saurida & Saurus,,337.0
+2023-24,KLM,Saurida & Saurus,,2963.0
+2023-24,ALP,Saurida & Saurus,,1.0
+2023-24,EKM,Saurida & Saurus,,3877.0
+2023-24,TCR,Saurida & Saurus,,16.0
+2023-24,MLPM,Saurida & Saurus,,401.0
+2023-24,KKD,Saurida & Saurus,,1122.0
+2023-24,KNR,Saurida & Saurus,,25.0
+2023-24,KSD,Saurida & Saurus,,6.0
+2023-24,TVPM,Hemirhamphus & Belone,,180.0
+2023-24,KLM,Hemirhamphus & Belone,,125.0
+2023-24,ALP,Hemirhamphus & Belone,,5.0
+2023-24,EKM,Hemirhamphus & Belone,,158.0
+2023-24,TCR,Hemirhamphus & Belone,,6.0
+2023-24,MLPM,Hemirhamphus & Belone,,17.0
+2023-24,KKD,Hemirhamphus & Belone,,101.0
+2023-24,KNR,Hemirhamphus & Belone,,40.0
+2023-24,KSD,Hemirhamphus & Belone,,1.0
+2023-24,TVPM,Flying Fish,flying_fish,0.0
+2023-24,KLM,Flying Fish,flying_fish,0.0
+2023-24,ALP,Flying Fish,flying_fish,0.0
+2023-24,EKM,Flying Fish,flying_fish,12.0
+2023-24,TCR,Flying Fish,flying_fish,0.0
+2023-24,MLPM,Flying Fish,flying_fish,0.0
+2023-24,KKD,Flying Fish,flying_fish,50.0
+2023-24,KNR,Flying Fish,flying_fish,0.0
+2023-24,KSD,Flying Fish,flying_fish,0.0
+2023-24,TVPM,Perches,perches,2047.0
+2023-24,KLM,Perches,perches,9825.0
+2023-24,ALP,Perches,perches,709.0
+2023-24,EKM,Perches,perches,28946.0
+2023-24,TCR,Perches,perches,327.0
+2023-24,MLPM,Perches,perches,2770.0
+2023-24,KKD,Perches,perches,12304.0
+2023-24,KNR,Perches,perches,347.0
+2023-24,KSD,Perches,perches,158.0
+2023-24,TVPM,Goatfishes,,43.0
+2023-24,KLM,Goatfishes,,20.0
+2023-24,ALP,Goatfishes,,0.0
+2023-24,EKM,Goatfishes,,67.0
+2023-24,TCR,Goatfishes,,1.0
+2023-24,MLPM,Goatfishes,,0.0
+2023-24,KKD,Goatfishes,,4.0
+2023-24,KNR,Goatfishes,,0.0
+2023-24,KSD,Goatfishes,,0.0
+2023-24,TVPM,Polynemids,,0.0
+2023-24,KLM,Polynemids,,0.0
+2023-24,ALP,Polynemids,,0.0
+2023-24,EKM,Polynemids,,1.0
+2023-24,TCR,Polynemids,,1.0
+2023-24,MLPM,Polynemids,,0.0
+2023-24,KKD,Polynemids,,2.0
+2023-24,KNR,Polynemids,,4.0
+2023-24,KSD,Polynemids,,0.0
+2023-24,TVPM,Sciaenids,,539.0
+2023-24,KLM,Sciaenids,,389.0
+2023-24,ALP,Sciaenids,,67.0
+2023-24,EKM,Sciaenids,,811.0
+2023-24,TCR,Sciaenids,,145.0
+2023-24,MLPM,Sciaenids,,676.0
+2023-24,KKD,Sciaenids,,327.0
+2023-24,KNR,Sciaenids,,235.0
+2023-24,KSD,Sciaenids,,175.0
+2023-24,TVPM,Ribbon Fish,ribbon_fish,4707.0
+2023-24,KLM,Ribbon Fish,ribbon_fish,2411.0
+2023-24,ALP,Ribbon Fish,ribbon_fish,19.0
+2023-24,EKM,Ribbon Fish,ribbon_fish,11095.0
+2023-24,TCR,Ribbon Fish,ribbon_fish,2.0
+2023-24,MLPM,Ribbon Fish,ribbon_fish,483.0
+2023-24,KKD,Ribbon Fish,ribbon_fish,5260.0
+2023-24,KNR,Ribbon Fish,ribbon_fish,363.0
+2023-24,KSD,Ribbon Fish,ribbon_fish,25.0
+2023-24,TVPM,Caranx,,568.0
+2023-24,KLM,Caranx,,80.0
+2023-24,ALP,Caranx,,17.0
+2023-24,EKM,Caranx,,381.0
+2023-24,TCR,Caranx,,3.0
+2023-24,MLPM,Caranx,,1.0
+2023-24,KKD,Caranx,,23.0
+2023-24,KNR,Caranx,,13.0
+2023-24,KSD,Caranx,,8.0
+2023-24,TVPM,Chorinemus,,53.0
+2023-24,KLM,Chorinemus,,39.0
+2023-24,ALP,Chorinemus,,12.0
+2023-24,EKM,Chorinemus,,215.0
+2023-24,TCR,Chorinemus,,2.0
+2023-24,MLPM,Chorinemus,,12.0
+2023-24,KKD,Chorinemus,,157.0
+2023-24,KNR,Chorinemus,,3.0
+2023-24,KSD,Chorinemus,,1.0
+2023-24,TVPM,Trachinotus,,1.0
+2023-24,KLM,Trachinotus,,3.0
+2023-24,ALP,Trachinotus,,0.0
+2023-24,EKM,Trachinotus,,0.0
+2023-24,TCR,Trachinotus,,0.0
+2023-24,MLPM,Trachinotus,,0.0
+2023-24,KKD,Trachinotus,,0.0
+2023-24,KNR,Trachinotus,,3.0
+2023-24,KSD,Trachinotus,,0.0
+2023-24,TVPM,Other Carangids,,18689.0
+2023-24,KLM,Other Carangids,,11188.0
+2023-24,ALP,Other Carangids,,296.0
+2023-24,EKM,Other Carangids,,9082.0
+2023-24,TCR,Other Carangids,,1606.0
+2023-24,MLPM,Other Carangids,,1929.0
+2023-24,KKD,Other Carangids,,11717.0
+2023-24,KNR,Other Carangids,,3099.0
+2023-24,KSD,Other Carangids,,1175.0
+2023-24,TVPM,Coryphaena,,197.0
+2023-24,KLM,Coryphaena,,134.0
+2023-24,ALP,Coryphaena,,4.0
+2023-24,EKM,Coryphaena,,896.0
+2023-24,TCR,Coryphaena,,26.0
+2023-24,MLPM,Coryphaena,,19.0
+2023-24,KKD,Coryphaena,,663.0
+2023-24,KNR,Coryphaena,,56.0
+2023-24,KSD,Coryphaena,,18.0
+2023-24,TVPM,Elagatis,,201.0
+2023-24,KLM,Elagatis,,12.0
+2023-24,ALP,Elagatis,,0.0
+2023-24,EKM,Elagatis,,56.0
+2023-24,TCR,Elagatis,,0.0
+2023-24,MLPM,Elagatis,,0.0
+2023-24,KKD,Elagatis,,99.0
+2023-24,KNR,Elagatis,,0.0
+2023-24,KSD,Elagatis,,2.0
+2023-24,TVPM,Leiognathus,,689.0
+2023-24,KLM,Leiognathus,,676.0
+2023-24,ALP,Leiognathus,,17.0
+2023-24,EKM,Leiognathus,,496.0
+2023-24,TCR,Leiognathus,,33.0
+2023-24,MLPM,Leiognathus,,60.0
+2023-24,KKD,Leiognathus,,568.0
+2023-24,KNR,Leiognathus,,177.0
+2023-24,KSD,Leiognathus,,28.0
+2023-24,TVPM,Gazza,,0.0
+2023-24,KLM,Gazza,,0.0
+2023-24,ALP,Gazza,,0.0
+2023-24,EKM,Gazza,,0.0
+2023-24,TCR,Gazza,,0.0
+2023-24,MLPM,Gazza,,0.0
+2023-24,KKD,Gazza,,0.0
+2023-24,KNR,Gazza,,0.0
+2023-24,KSD,Gazza,,0.0
+2023-24,TVPM,Lactarius,,69.0
+2023-24,KLM,Lactarius,,50.0
+2023-24,ALP,Lactarius,,18.0
+2023-24,EKM,Lactarius,,92.0
+2023-24,TCR,Lactarius,,3.0
+2023-24,MLPM,Lactarius,,5.0
+2023-24,KKD,Lactarius,,357.0
+2023-24,KNR,Lactarius,,59.0
+2023-24,KSD,Lactarius,,25.0
+2023-24,TVPM,Pomfrets,silver_pomfret,11.0
+2023-24,KLM,Pomfrets,silver_pomfret,86.0
+2023-24,ALP,Pomfrets,silver_pomfret,1.0
+2023-24,EKM,Pomfrets,silver_pomfret,278.0
+2023-24,TCR,Pomfrets,silver_pomfret,236.0
+2023-24,MLPM,Pomfrets,silver_pomfret,283.0
+2023-24,KKD,Pomfrets,silver_pomfret,541.0
+2023-24,KNR,Pomfrets,silver_pomfret,44.0
+2023-24,KSD,Pomfrets,silver_pomfret,25.0
+2023-24,TVPM,Mackerel,indian_mackerel,8031.0
+2023-24,KLM,Mackerel,indian_mackerel,13257.0
+2023-24,ALP,Mackerel,indian_mackerel,4229.0
+2023-24,EKM,Mackerel,indian_mackerel,15575.0
+2023-24,TCR,Mackerel,indian_mackerel,7905.0
+2023-24,MLPM,Mackerel,indian_mackerel,3090.0
+2023-24,KKD,Mackerel,indian_mackerel,8382.0
+2023-24,KNR,Mackerel,indian_mackerel,3549.0
+2023-24,KSD,Mackerel,indian_mackerel,3520.0
+2023-24,TVPM,Seer Fish,seer_fish,368.0
+2023-24,KLM,Seer Fish,seer_fish,495.0
+2023-24,ALP,Seer Fish,seer_fish,148.0
+2023-24,EKM,Seer Fish,seer_fish,876.0
+2023-24,TCR,Seer Fish,seer_fish,176.0
+2023-24,MLPM,Seer Fish,seer_fish,88.0
+2023-24,KKD,Seer Fish,seer_fish,1131.0
+2023-24,KNR,Seer Fish,seer_fish,161.0
+2023-24,KSD,Seer Fish,seer_fish,54.0
+2023-24,TVPM,Tunnies,tuna,6976.0
+2023-24,KLM,Tunnies,tuna,8956.0
+2023-24,ALP,Tunnies,tuna,96.0
+2023-24,EKM,Tunnies,tuna,8434.0
+2023-24,TCR,Tunnies,tuna,368.0
+2023-24,MLPM,Tunnies,tuna,111.0
+2023-24,KKD,Tunnies,tuna,1920.0
+2023-24,KNR,Tunnies,tuna,160.0
+2023-24,KSD,Tunnies,tuna,71.0
+2023-24,TVPM,Sphyraena,barracuda,808.0
+2023-24,KLM,Sphyraena,barracuda,1527.0
+2023-24,ALP,Sphyraena,barracuda,1.0
+2023-24,EKM,Sphyraena,barracuda,2417.0
+2023-24,TCR,Sphyraena,barracuda,45.0
+2023-24,MLPM,Sphyraena,barracuda,119.0
+2023-24,KKD,Sphyraena,barracuda,893.0
+2023-24,KNR,Sphyraena,barracuda,91.0
+2023-24,KSD,Sphyraena,barracuda,43.0
+2023-24,TVPM,Mugil,,33.0
+2023-24,KLM,Mugil,,2.0
+2023-24,ALP,Mugil,,8.0
+2023-24,EKM,Mugil,,14.0
+2023-24,TCR,Mugil,,0.0
+2023-24,MLPM,Mugil,,0.0
+2023-24,KKD,Mugil,,5.0
+2023-24,KNR,Mugil,,4.0
+2023-24,KSD,Mugil,,0.0
+2023-24,TVPM,Bregmaceros,,0.0
+2023-24,KLM,Bregmaceros,,0.0
+2023-24,ALP,Bregmaceros,,0.0
+2023-24,EKM,Bregmaceros,,2.0
+2023-24,TCR,Bregmaceros,,0.0
+2023-24,MLPM,Bregmaceros,,0.0
+2023-24,KKD,Bregmaceros,,0.0
+2023-24,KNR,Bregmaceros,,0.0
+2023-24,KSD,Bregmaceros,,0.0
+2023-24,TVPM,Soles,,193.0
+2023-24,KLM,Soles,,1347.0
+2023-24,ALP,Soles,,99.0
+2023-24,EKM,Soles,,1439.0
+2023-24,TCR,Soles,,1055.0
+2023-24,MLPM,Soles,,1282.0
+2023-24,KKD,Soles,,2422.0
+2023-24,KNR,Soles,,370.0
+2023-24,KSD,Soles,,349.0
+2023-24,TVPM,Penaeid Prawn,penaeid_prawn,696.0
+2023-24,KLM,Penaeid Prawn,penaeid_prawn,12166.0
+2023-24,ALP,Penaeid Prawn,penaeid_prawn,1852.0
+2023-24,EKM,Penaeid Prawn,penaeid_prawn,9206.0
+2023-24,TCR,Penaeid Prawn,penaeid_prawn,3898.0
+2023-24,MLPM,Penaeid Prawn,penaeid_prawn,1886.0
+2023-24,KKD,Penaeid Prawn,penaeid_prawn,4749.0
+2023-24,KNR,Penaeid Prawn,penaeid_prawn,2326.0
+2023-24,KSD,Penaeid Prawn,penaeid_prawn,1025.0
+2023-24,TVPM,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2023-24,KLM,Non-Penaeid Prawn,non_penaeid_prawn,2251.0
+2023-24,ALP,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2023-24,EKM,Non-Penaeid Prawn,non_penaeid_prawn,71.0
+2023-24,TCR,Non-Penaeid Prawn,non_penaeid_prawn,2.0
+2023-24,MLPM,Non-Penaeid Prawn,non_penaeid_prawn,4.0
+2023-24,KKD,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2023-24,KNR,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2023-24,KSD,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2023-24,TVPM,Lobsters,lobster,6.0
+2023-24,KLM,Lobsters,lobster,41.0
+2023-24,ALP,Lobsters,lobster,0.0
+2023-24,EKM,Lobsters,lobster,12.0
+2023-24,TCR,Lobsters,lobster,0.0
+2023-24,MLPM,Lobsters,lobster,0.0
+2023-24,KKD,Lobsters,lobster,4.0
+2023-24,KNR,Lobsters,lobster,0.0
+2023-24,KSD,Lobsters,lobster,0.0
+2023-24,TVPM,Crabs,crab,145.0
+2023-24,KLM,Crabs,crab,1430.0
+2023-24,ALP,Crabs,crab,31.0
+2023-24,EKM,Crabs,crab,1591.0
+2023-24,TCR,Crabs,crab,133.0
+2023-24,MLPM,Crabs,crab,336.0
+2023-24,KKD,Crabs,crab,1156.0
+2023-24,KNR,Crabs,crab,229.0
+2023-24,KSD,Crabs,crab,187.0
+2023-24,TVPM,Stomatopods,,0.0
+2023-24,KLM,Stomatopods,,0.0
+2023-24,ALP,Stomatopods,,0.0
+2023-24,EKM,Stomatopods,,24.0
+2023-24,TCR,Stomatopods,,1.0
+2023-24,MLPM,Stomatopods,,0.0
+2023-24,KKD,Stomatopods,,36.0
+2023-24,KNR,Stomatopods,,0.0
+2023-24,KSD,Stomatopods,,0.0
+2023-24,TVPM,Cephalopods,indian_squid,4280.0
+2023-24,KLM,Cephalopods,indian_squid,14487.0
+2023-24,ALP,Cephalopods,indian_squid,28.0
+2023-24,EKM,Cephalopods,indian_squid,14499.0
+2023-24,TCR,Cephalopods,indian_squid,257.0
+2023-24,MLPM,Cephalopods,indian_squid,1684.0
+2023-24,KKD,Cephalopods,indian_squid,7613.0
+2023-24,KNR,Cephalopods,indian_squid,514.0
+2023-24,KSD,Cephalopods,indian_squid,115.0
+2023-24,TVPM,Miscellaneous,,1247.0
+2023-24,KLM,Miscellaneous,,8761.0
+2023-24,ALP,Miscellaneous,,0.0
+2023-24,EKM,Miscellaneous,,30270.0
+2023-24,TCR,Miscellaneous,,90.0
+2023-24,MLPM,Miscellaneous,,2697.0
+2023-24,KKD,Miscellaneous,,6250.0
+2023-24,KNR,Miscellaneous,,120.0
+2023-24,KSD,Miscellaneous,,71.0
+2024-25,TVPM,Elasmobranchs,shark_ray,322.0
+2024-25,KLM,Elasmobranchs,shark_ray,467.0
+2024-25,ALP,Elasmobranchs,shark_ray,14.0
+2024-25,EKM,Elasmobranchs,shark_ray,2719.0
+2024-25,TCR,Elasmobranchs,shark_ray,9.0
+2024-25,MLPM,Elasmobranchs,shark_ray,108.0
+2024-25,KKD,Elasmobranchs,shark_ray,111.0
+2024-25,KNR,Elasmobranchs,shark_ray,15.0
+2024-25,KSD,Elasmobranchs,shark_ray,18.0
+2024-25,TVPM,Eels,,0.0
+2024-25,KLM,Eels,,35.0
+2024-25,ALP,Eels,,0.0
+2024-25,EKM,Eels,,584.0
+2024-25,TCR,Eels,,0.0
+2024-25,MLPM,Eels,,46.0
+2024-25,KKD,Eels,,181.0
+2024-25,KNR,Eels,,24.0
+2024-25,KSD,Eels,,5.0
+2024-25,TVPM,Cat Fish,cat_fish,12.0
+2024-25,KLM,Cat Fish,cat_fish,0.0
+2024-25,ALP,Cat Fish,cat_fish,12.0
+2024-25,EKM,Cat Fish,cat_fish,43.0
+2024-25,TCR,Cat Fish,cat_fish,1.0
+2024-25,MLPM,Cat Fish,cat_fish,1.0
+2024-25,KKD,Cat Fish,cat_fish,34.0
+2024-25,KNR,Cat Fish,cat_fish,6.0
+2024-25,KSD,Cat Fish,cat_fish,10.0
+2024-25,TVPM,Chirocentrus,,40.0
+2024-25,KLM,Chirocentrus,,34.0
+2024-25,ALP,Chirocentrus,,17.0
+2024-25,EKM,Chirocentrus,,133.0
+2024-25,TCR,Chirocentrus,,2.0
+2024-25,MLPM,Chirocentrus,,75.0
+2024-25,KKD,Chirocentrus,,69.0
+2024-25,KNR,Chirocentrus,,7.0
+2024-25,KSD,Chirocentrus,,2.0
+2024-25,TVPM,Oil Sardine,oil_sardine,1430.0
+2024-25,KLM,Oil Sardine,oil_sardine,21151.0
+2024-25,ALP,Oil Sardine,oil_sardine,22648.0
+2024-25,EKM,Oil Sardine,oil_sardine,24653.0
+2024-25,TCR,Oil Sardine,oil_sardine,15804.0
+2024-25,MLPM,Oil Sardine,oil_sardine,17286.0
+2024-25,KKD,Oil Sardine,oil_sardine,33439.0
+2024-25,KNR,Oil Sardine,oil_sardine,32197.0
+2024-25,KSD,Oil Sardine,oil_sardine,7635.0
+2024-25,TVPM,Lesser Sardines,lesser_sardines,2736.0
+2024-25,KLM,Lesser Sardines,lesser_sardines,5241.0
+2024-25,ALP,Lesser Sardines,lesser_sardines,14.0
+2024-25,EKM,Lesser Sardines,lesser_sardines,279.0
+2024-25,TCR,Lesser Sardines,lesser_sardines,33.0
+2024-25,MLPM,Lesser Sardines,lesser_sardines,77.0
+2024-25,KKD,Lesser Sardines,lesser_sardines,584.0
+2024-25,KNR,Lesser Sardines,lesser_sardines,17.0
+2024-25,KSD,Lesser Sardines,lesser_sardines,3.0
+2024-25,TVPM,Hilsa Ilisha,,0.0
+2024-25,KLM,Hilsa Ilisha,,0.0
+2024-25,ALP,Hilsa Ilisha,,0.0
+2024-25,EKM,Hilsa Ilisha,,0.0
+2024-25,TCR,Hilsa Ilisha,,0.0
+2024-25,MLPM,Hilsa Ilisha,,0.0
+2024-25,KKD,Hilsa Ilisha,,0.0
+2024-25,KNR,Hilsa Ilisha,,0.0
+2024-25,KSD,Hilsa Ilisha,,0.0
+2024-25,TVPM,Other Hilsa,,5.0
+2024-25,KLM,Other Hilsa,,36.0
+2024-25,ALP,Other Hilsa,,2.0
+2024-25,EKM,Other Hilsa,,78.0
+2024-25,TCR,Other Hilsa,,28.0
+2024-25,MLPM,Other Hilsa,,0.0
+2024-25,KKD,Other Hilsa,,351.0
+2024-25,KNR,Other Hilsa,,191.0
+2024-25,KSD,Other Hilsa,,26.0
+2024-25,TVPM,Anchovies,anchovy,7438.0
+2024-25,KLM,Anchovies,anchovy,18052.0
+2024-25,ALP,Anchovies,anchovy,471.0
+2024-25,EKM,Anchovies,anchovy,7880.0
+2024-25,TCR,Anchovies,anchovy,603.0
+2024-25,MLPM,Anchovies,anchovy,1047.0
+2024-25,KKD,Anchovies,anchovy,6415.0
+2024-25,KNR,Anchovies,anchovy,160.0
+2024-25,KSD,Anchovies,anchovy,153.0
+2024-25,TVPM,Trisocles,,61.0
+2024-25,KLM,Trisocles,,376.0
+2024-25,ALP,Trisocles,,30.0
+2024-25,EKM,Trisocles,,870.0
+2024-25,TCR,Trisocles,,54.0
+2024-25,MLPM,Trisocles,,630.0
+2024-25,KKD,Trisocles,,380.0
+2024-25,KNR,Trisocles,,227.0
+2024-25,KSD,Trisocles,,256.0
+2024-25,TVPM,Other Clupeids,,415.0
+2024-25,KLM,Other Clupeids,,322.0
+2024-25,ALP,Other Clupeids,,544.0
+2024-25,EKM,Other Clupeids,,617.0
+2024-25,TCR,Other Clupeids,,320.0
+2024-25,MLPM,Other Clupeids,,185.0
+2024-25,KKD,Other Clupeids,,875.0
+2024-25,KNR,Other Clupeids,,788.0
+2024-25,KSD,Other Clupeids,,559.0
+2024-25,TVPM,Harpodon Nehereus,,0.0
+2024-25,KLM,Harpodon Nehereus,,0.0
+2024-25,ALP,Harpodon Nehereus,,0.0
+2024-25,EKM,Harpodon Nehereus,,0.0
+2024-25,TCR,Harpodon Nehereus,,0.0
+2024-25,MLPM,Harpodon Nehereus,,0.0
+2024-25,KKD,Harpodon Nehereus,,0.0
+2024-25,KNR,Harpodon Nehereus,,0.0
+2024-25,KSD,Harpodon Nehereus,,0.0
+2024-25,TVPM,Saurida & Saurus,,785.0
+2024-25,KLM,Saurida & Saurus,,5066.0
+2024-25,ALP,Saurida & Saurus,,2.0
+2024-25,EKM,Saurida & Saurus,,5423.0
+2024-25,TCR,Saurida & Saurus,,43.0
+2024-25,MLPM,Saurida & Saurus,,440.0
+2024-25,KKD,Saurida & Saurus,,1868.0
+2024-25,KNR,Saurida & Saurus,,55.0
+2024-25,KSD,Saurida & Saurus,,32.0
+2024-25,TVPM,Hemirhamphus & Belone,,112.0
+2024-25,KLM,Hemirhamphus & Belone,,182.0
+2024-25,ALP,Hemirhamphus & Belone,,44.0
+2024-25,EKM,Hemirhamphus & Belone,,104.0
+2024-25,TCR,Hemirhamphus & Belone,,14.0
+2024-25,MLPM,Hemirhamphus & Belone,,65.0
+2024-25,KKD,Hemirhamphus & Belone,,156.0
+2024-25,KNR,Hemirhamphus & Belone,,33.0
+2024-25,KSD,Hemirhamphus & Belone,,20.0
+2024-25,TVPM,Flying Fish,flying_fish,3.0
+2024-25,KLM,Flying Fish,flying_fish,0.0
+2024-25,ALP,Flying Fish,flying_fish,0.0
+2024-25,EKM,Flying Fish,flying_fish,5.0
+2024-25,TCR,Flying Fish,flying_fish,0.0
+2024-25,MLPM,Flying Fish,flying_fish,0.0
+2024-25,KKD,Flying Fish,flying_fish,10.0
+2024-25,KNR,Flying Fish,flying_fish,1.0
+2024-25,KSD,Flying Fish,flying_fish,0.0
+2024-25,TVPM,Perches,perches,1481.0
+2024-25,KLM,Perches,perches,7028.0
+2024-25,ALP,Perches,perches,1470.0
+2024-25,EKM,Perches,perches,27379.0
+2024-25,TCR,Perches,perches,188.0
+2024-25,MLPM,Perches,perches,2514.0
+2024-25,KKD,Perches,perches,15876.0
+2024-25,KNR,Perches,perches,446.0
+2024-25,KSD,Perches,perches,320.0
+2024-25,TVPM,Goatfishes,,35.0
+2024-25,KLM,Goatfishes,,35.0
+2024-25,ALP,Goatfishes,,0.0
+2024-25,EKM,Goatfishes,,82.0
+2024-25,TCR,Goatfishes,,0.0
+2024-25,MLPM,Goatfishes,,0.0
+2024-25,KKD,Goatfishes,,0.0
+2024-25,KNR,Goatfishes,,0.0
+2024-25,KSD,Goatfishes,,0.0
+2024-25,TVPM,Polynemids,,0.0
+2024-25,KLM,Polynemids,,0.0
+2024-25,ALP,Polynemids,,0.0
+2024-25,EKM,Polynemids,,0.0
+2024-25,TCR,Polynemids,,2.0
+2024-25,MLPM,Polynemids,,4.0
+2024-25,KKD,Polynemids,,4.0
+2024-25,KNR,Polynemids,,8.0
+2024-25,KSD,Polynemids,,6.0
+2024-25,TVPM,Sciaenids,,310.0
+2024-25,KLM,Sciaenids,,672.0
+2024-25,ALP,Sciaenids,,73.0
+2024-25,EKM,Sciaenids,,2208.0
+2024-25,TCR,Sciaenids,,176.0
+2024-25,MLPM,Sciaenids,,855.0
+2024-25,KKD,Sciaenids,,202.0
+2024-25,KNR,Sciaenids,,152.0
+2024-25,KSD,Sciaenids,,189.0
+2024-25,TVPM,Ribbon Fish,ribbon_fish,1862.0
+2024-25,KLM,Ribbon Fish,ribbon_fish,6296.0
+2024-25,ALP,Ribbon Fish,ribbon_fish,5.0
+2024-25,EKM,Ribbon Fish,ribbon_fish,7039.0
+2024-25,TCR,Ribbon Fish,ribbon_fish,1.0
+2024-25,MLPM,Ribbon Fish,ribbon_fish,276.0
+2024-25,KKD,Ribbon Fish,ribbon_fish,2759.0
+2024-25,KNR,Ribbon Fish,ribbon_fish,210.0
+2024-25,KSD,Ribbon Fish,ribbon_fish,82.0
+2024-25,TVPM,Caranx,,1201.0
+2024-25,KLM,Caranx,,266.0
+2024-25,ALP,Caranx,,7.0
+2024-25,EKM,Caranx,,1040.0
+2024-25,TCR,Caranx,,22.0
+2024-25,MLPM,Caranx,,39.0
+2024-25,KKD,Caranx,,198.0
+2024-25,KNR,Caranx,,15.0
+2024-25,KSD,Caranx,,8.0
+2024-25,TVPM,Chorinemus,,73.0
+2024-25,KLM,Chorinemus,,47.0
+2024-25,ALP,Chorinemus,,3.0
+2024-25,EKM,Chorinemus,,226.0
+2024-25,TCR,Chorinemus,,14.0
+2024-25,MLPM,Chorinemus,,52.0
+2024-25,KKD,Chorinemus,,268.0
+2024-25,KNR,Chorinemus,,9.0
+2024-25,KSD,Chorinemus,,3.0
+2024-25,TVPM,Trachinotus,,2.0
+2024-25,KLM,Trachinotus,,0.0
+2024-25,ALP,Trachinotus,,0.0
+2024-25,EKM,Trachinotus,,2.0
+2024-25,TCR,Trachinotus,,1.0
+2024-25,MLPM,Trachinotus,,2.0
+2024-25,KKD,Trachinotus,,1.0
+2024-25,KNR,Trachinotus,,0.0
+2024-25,KSD,Trachinotus,,0.0
+2024-25,TVPM,Other Carangids,,12521.0
+2024-25,KLM,Other Carangids,,9094.0
+2024-25,ALP,Other Carangids,,54.0
+2024-25,EKM,Other Carangids,,9233.0
+2024-25,TCR,Other Carangids,,1380.0
+2024-25,MLPM,Other Carangids,,2580.0
+2024-25,KKD,Other Carangids,,10691.0
+2024-25,KNR,Other Carangids,,618.0
+2024-25,KSD,Other Carangids,,141.0
+2024-25,TVPM,Coryphaena,,258.0
+2024-25,KLM,Coryphaena,,239.0
+2024-25,ALP,Coryphaena,,2.0
+2024-25,EKM,Coryphaena,,682.0
+2024-25,TCR,Coryphaena,,17.0
+2024-25,MLPM,Coryphaena,,35.0
+2024-25,KKD,Coryphaena,,619.0
+2024-25,KNR,Coryphaena,,110.0
+2024-25,KSD,Coryphaena,,13.0
+2024-25,TVPM,Elagatis,,28.0
+2024-25,KLM,Elagatis,,36.0
+2024-25,ALP,Elagatis,,0.0
+2024-25,EKM,Elagatis,,66.0
+2024-25,TCR,Elagatis,,0.0
+2024-25,MLPM,Elagatis,,1.0
+2024-25,KKD,Elagatis,,151.0
+2024-25,KNR,Elagatis,,5.0
+2024-25,KSD,Elagatis,,0.0
+2024-25,TVPM,Leiognathus,,447.0
+2024-25,KLM,Leiognathus,,162.0
+2024-25,ALP,Leiognathus,,7.0
+2024-25,EKM,Leiognathus,,432.0
+2024-25,TCR,Leiognathus,,10.0
+2024-25,MLPM,Leiognathus,,235.0
+2024-25,KKD,Leiognathus,,161.0
+2024-25,KNR,Leiognathus,,23.0
+2024-25,KSD,Leiognathus,,30.0
+2024-25,TVPM,Gazza,,0.0
+2024-25,KLM,Gazza,,0.0
+2024-25,ALP,Gazza,,0.0
+2024-25,EKM,Gazza,,0.0
+2024-25,TCR,Gazza,,0.0
+2024-25,MLPM,Gazza,,2.0
+2024-25,KKD,Gazza,,0.0
+2024-25,KNR,Gazza,,0.0
+2024-25,KSD,Gazza,,4.0
+2024-25,TVPM,Lactarius,,25.0
+2024-25,KLM,Lactarius,,64.0
+2024-25,ALP,Lactarius,,15.0
+2024-25,EKM,Lactarius,,86.0
+2024-25,TCR,Lactarius,,7.0
+2024-25,MLPM,Lactarius,,81.0
+2024-25,KKD,Lactarius,,390.0
+2024-25,KNR,Lactarius,,90.0
+2024-25,KSD,Lactarius,,44.0
+2024-25,TVPM,Pomfrets,silver_pomfret,39.0
+2024-25,KLM,Pomfrets,silver_pomfret,470.0
+2024-25,ALP,Pomfrets,silver_pomfret,2.0
+2024-25,EKM,Pomfrets,silver_pomfret,591.0
+2024-25,TCR,Pomfrets,silver_pomfret,23.0
+2024-25,MLPM,Pomfrets,silver_pomfret,238.0
+2024-25,KKD,Pomfrets,silver_pomfret,1311.0
+2024-25,KNR,Pomfrets,silver_pomfret,44.0
+2024-25,KSD,Pomfrets,silver_pomfret,35.0
+2024-25,TVPM,Mackerel,indian_mackerel,9638.0
+2024-25,KLM,Mackerel,indian_mackerel,10829.0
+2024-25,ALP,Mackerel,indian_mackerel,2403.0
+2024-25,EKM,Mackerel,indian_mackerel,16372.0
+2024-25,TCR,Mackerel,indian_mackerel,4677.0
+2024-25,MLPM,Mackerel,indian_mackerel,4261.0
+2024-25,KKD,Mackerel,indian_mackerel,9389.0
+2024-25,KNR,Mackerel,indian_mackerel,3107.0
+2024-25,KSD,Mackerel,indian_mackerel,2506.0
+2024-25,TVPM,Seer Fish,seer_fish,698.0
+2024-25,KLM,Seer Fish,seer_fish,859.0
+2024-25,ALP,Seer Fish,seer_fish,37.0
+2024-25,EKM,Seer Fish,seer_fish,1064.0
+2024-25,TCR,Seer Fish,seer_fish,121.0
+2024-25,MLPM,Seer Fish,seer_fish,198.0
+2024-25,KKD,Seer Fish,seer_fish,1400.0
+2024-25,KNR,Seer Fish,seer_fish,285.0
+2024-25,KSD,Seer Fish,seer_fish,82.0
+2024-25,TVPM,Tunnies,tuna,7703.0
+2024-25,KLM,Tunnies,tuna,8895.0
+2024-25,ALP,Tunnies,tuna,19.0
+2024-25,EKM,Tunnies,tuna,11324.0
+2024-25,TCR,Tunnies,tuna,829.0
+2024-25,MLPM,Tunnies,tuna,196.0
+2024-25,KKD,Tunnies,tuna,2853.0
+2024-25,KNR,Tunnies,tuna,422.0
+2024-25,KSD,Tunnies,tuna,71.0
+2024-25,TVPM,Sphyraena,barracuda,1113.0
+2024-25,KLM,Sphyraena,barracuda,2245.0
+2024-25,ALP,Sphyraena,barracuda,11.0
+2024-25,EKM,Sphyraena,barracuda,2069.0
+2024-25,TCR,Sphyraena,barracuda,30.0
+2024-25,MLPM,Sphyraena,barracuda,118.0
+2024-25,KKD,Sphyraena,barracuda,1087.0
+2024-25,KNR,Sphyraena,barracuda,71.0
+2024-25,KSD,Sphyraena,barracuda,19.0
+2024-25,TVPM,Mugil,,30.0
+2024-25,KLM,Mugil,,1.0
+2024-25,ALP,Mugil,,0.0
+2024-25,EKM,Mugil,,7.0
+2024-25,TCR,Mugil,,7.0
+2024-25,MLPM,Mugil,,0.0
+2024-25,KKD,Mugil,,6.0
+2024-25,KNR,Mugil,,3.0
+2024-25,KSD,Mugil,,1.0
+2024-25,TVPM,Bregmaceros,,0.0
+2024-25,KLM,Bregmaceros,,0.0
+2024-25,ALP,Bregmaceros,,0.0
+2024-25,EKM,Bregmaceros,,0.0
+2024-25,TCR,Bregmaceros,,0.0
+2024-25,MLPM,Bregmaceros,,0.0
+2024-25,KKD,Bregmaceros,,0.0
+2024-25,KNR,Bregmaceros,,0.0
+2024-25,KSD,Bregmaceros,,0.0
+2024-25,TVPM,Soles,,98.0
+2024-25,KLM,Soles,,2803.0
+2024-25,ALP,Soles,,59.0
+2024-25,EKM,Soles,,2485.0
+2024-25,TCR,Soles,,581.0
+2024-25,MLPM,Soles,,982.0
+2024-25,KKD,Soles,,1388.0
+2024-25,KNR,Soles,,290.0
+2024-25,KSD,Soles,,289.0
+2024-25,TVPM,Penaeid Prawn,penaeid_prawn,57.0
+2024-25,KLM,Penaeid Prawn,penaeid_prawn,14590.0
+2024-25,ALP,Penaeid Prawn,penaeid_prawn,2361.0
+2024-25,EKM,Penaeid Prawn,penaeid_prawn,12574.0
+2024-25,TCR,Penaeid Prawn,penaeid_prawn,4847.0
+2024-25,MLPM,Penaeid Prawn,penaeid_prawn,2485.0
+2024-25,KKD,Penaeid Prawn,penaeid_prawn,5161.0
+2024-25,KNR,Penaeid Prawn,penaeid_prawn,1107.0
+2024-25,KSD,Penaeid Prawn,penaeid_prawn,931.0
+2024-25,TVPM,Non-Penaeid Prawn,non_penaeid_prawn,15.0
+2024-25,KLM,Non-Penaeid Prawn,non_penaeid_prawn,2263.0
+2024-25,ALP,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2024-25,EKM,Non-Penaeid Prawn,non_penaeid_prawn,30.0
+2024-25,TCR,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2024-25,MLPM,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2024-25,KKD,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2024-25,KNR,Non-Penaeid Prawn,non_penaeid_prawn,2.0
+2024-25,KSD,Non-Penaeid Prawn,non_penaeid_prawn,0.0
+2024-25,TVPM,Lobsters,lobster,6.0
+2024-25,KLM,Lobsters,lobster,42.0
+2024-25,ALP,Lobsters,lobster,0.0
+2024-25,EKM,Lobsters,lobster,13.0
+2024-25,TCR,Lobsters,lobster,0.0
+2024-25,MLPM,Lobsters,lobster,0.0
+2024-25,KKD,Lobsters,lobster,0.0
+2024-25,KNR,Lobsters,lobster,0.0
+2024-25,KSD,Lobsters,lobster,0.0
+2024-25,TVPM,Crabs,crab,244.0
+2024-25,KLM,Crabs,crab,1017.0
+2024-25,ALP,Crabs,crab,39.0
+2024-25,EKM,Crabs,crab,1443.0
+2024-25,TCR,Crabs,crab,328.0
+2024-25,MLPM,Crabs,crab,393.0
+2024-25,KKD,Crabs,crab,1382.0
+2024-25,KNR,Crabs,crab,263.0
+2024-25,KSD,Crabs,crab,192.0
+2024-25,TVPM,Stomatopods,,0.0
+2024-25,KLM,Stomatopods,,1.0
+2024-25,ALP,Stomatopods,,0.0
+2024-25,EKM,Stomatopods,,130.0
+2024-25,TCR,Stomatopods,,2.0
+2024-25,MLPM,Stomatopods,,0.0
+2024-25,KKD,Stomatopods,,0.0
+2024-25,KNR,Stomatopods,,0.0
+2024-25,KSD,Stomatopods,,141.0
+2024-25,TVPM,Cephalopods,indian_squid,3622.0
+2024-25,KLM,Cephalopods,indian_squid,5398.0
+2024-25,ALP,Cephalopods,indian_squid,84.0
+2024-25,EKM,Cephalopods,indian_squid,15306.0
+2024-25,TCR,Cephalopods,indian_squid,150.0
+2024-25,MLPM,Cephalopods,indian_squid,1759.0
+2024-25,KKD,Cephalopods,indian_squid,6507.0
+2024-25,KNR,Cephalopods,indian_squid,371.0
+2024-25,KSD,Cephalopods,indian_squid,47.0
+2024-25,TVPM,Miscellaneous,,1057.0
+2024-25,KLM,Miscellaneous,,12259.0
+2024-25,ALP,Miscellaneous,,67.0
+2024-25,EKM,Miscellaneous,,29807.0
+2024-25,TCR,Miscellaneous,,118.0
+2024-25,MLPM,Miscellaneous,,3233.0
+2024-25,KKD,Miscellaneous,,6256.0
+2024-25,KNR,Miscellaneous,,292.0
+2024-25,KSD,Miscellaneous,,154.0
