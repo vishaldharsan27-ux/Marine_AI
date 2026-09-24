@@ -10,3 +10,6 @@ __pycache__/
 # Model artifacts (tracked selectively per feature/model-training branch, not wholesale)
 src/ml/models/*.pkl
 src/ml/models/*.joblib
+
+# Large raw data files - too big for plain git (61MB+), keep local-only or move to Git LFS later
+data/raw/weather/*.xlsx

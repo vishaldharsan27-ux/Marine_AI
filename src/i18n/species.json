@@ -1,0 +1,162 @@
+{
+  "oil_sardine": {
+    "scientific_name": "Sardinella longiceps",
+    "english": "Indian Oil Sardine",
+    "malayalam": "മത്തി",
+    "tamil": "மத்தி",
+    "aliases": ["Oil Sardine", "Oil Sardines", "Indian oil sardine", "Sardinella Indian Oil Sardine"]
+  },
+  "lesser_sardines": {
+    "scientific_name": "Sardinella spp.",
+    "english": "Lesser Sardines",
+    "malayalam": "ചാള",
+    "tamil": "சால",
+    "aliases": ["Lesser Sardines"],
+    "needs_review": true
+  },
+  "indian_mackerel": {
+    "scientific_name": "Rastrelliger kanagurta",
+    "english": "Indian Mackerel",
+    "malayalam": "അയല",
+    "tamil": "அயலை",
+    "aliases": ["Mackerel", "Indian mackerel", "Indian mackeral", "Rastelliger Ranagueta Indian Macker"]
+  },
+  "seer_fish": {
+    "scientific_name": "Scomberomorus commerson",
+    "english": "Seer Fish / Kingfish",
+    "malayalam": "അയക്കൂറ / നെയ്മീൻ",
+    "tamil": "வஞ்சிரம்",
+    "aliases": ["Seer Fish", "Streaked seerfish", "Seer Fish Scomberomorus spp.", "Struooed Seerfish (Thazard Cirrus)", "Black King Fish (Cobia)"]
+  },
+  "penaeid_prawn": {
+    "scientific_name": "Penaeus spp.",
+    "english": "Penaeid Prawn / Shrimp",
+    "malayalam": "ചെമ്മീൻ",
+    "tamil": "இறால்",
+    "aliases": ["Penaeid Prawn", "Penaid Prawn", "Decapods - (a) Penaeid Prawn", "Karikkadi/ kiddi shrimp", "Karikkadi", "kiddi shrimp"],
+    "needs_review": true,
+    "notes": "Likely matches the 'Kadhal Shrimp' species named in the original spec - 'Kadal' means 'sea' in Malayalam/Tamil, used generically for marine (as opposed to freshwater) shrimp. Needs confirmation against the exact intended species."
+  },
+  "non_penaeid_prawn": {
+    "scientific_name": "Metapenaeus spp.",
+    "english": "Non-Penaeid Prawn",
+    "malayalam": "കാരച്ചെമ്മീൻ",
+    "tamil": "இறால் (நான்-பீனேயிட்)",
+    "aliases": ["Non-Penaeid Prawn", "Non Penaid Prawn", "Decapods - (b) Non-Penaeid Prawn"],
+    "needs_review": true
+  },
+  "pink_ear_emperor": {
+    "scientific_name": "Lethrinus lentjan",
+    "english": "Pink Ear Emperor",
+    "malayalam": "കൊട്ടൻ",
+    "tamil": "கிளாத்தி",
+    "aliases": ["Pink Ear Emperor", "Emperor red snapper"],
+    "needs_review": true,
+    "notes": "Not yet observed in our current raw datasets (Kerala district data or FMPIS sample) - included per the original spec's example species list."
+  },
+  "ribbon_fish": {
+    "scientific_name": "Trichiurus lepturus",
+    "english": "Ribbon Fish",
+    "malayalam": "വാളമീൻ",
+    "tamil": "வாளை",
+    "aliases": ["Ribbon Fish", "Trichiuridae (Hair Tails)"]
+  },
+  "silver_pomfret": {
+    "scientific_name": "Pampus argenteus",
+    "english": "Silver Pomfret",
+    "malayalam": "ആവോലി",
+    "tamil": "வாவல்",
+    "aliases": ["Silver pomfret", "Pomfrets"]
+  },
+  "black_pomfret": {
+    "scientific_name": "Parastromateus niger",
+    "english": "Black Pomfret",
+    "malayalam": "കരിക്കാവോലി",
+    "tamil": "கருப்பு வாவல்",
+    "aliases": ["Black pomfret"],
+    "needs_review": true
+  },
+  "anchovy": {
+    "scientific_name": "Stolephorus spp.",
+    "english": "Anchovy",
+    "malayalam": "നത്തോലി",
+    "tamil": "நெத்திலி",
+    "aliases": ["Anchovies", "Anchovilla", "Engraulidae (Anchovies)", "Indian anchovy"]
+  },
+  "indian_squid": {
+    "scientific_name": "Uroteuthis duvaucelii",
+    "english": "Indian Squid",
+    "malayalam": "കണവ",
+    "tamil": "கணவாய்",
+    "aliases": ["Indian squid", "Cephalopods - (a) Squid & Cuttle Fish", "Cephalopodes", "Cephalopods"]
+  },
+  "cuttlefish": {
+    "scientific_name": "Sepia spp.",
+    "english": "Cuttlefish",
+    "malayalam": "കൂന്തൽ",
+    "tamil": "கணவாய் மீன்",
+    "aliases": ["Pharaoh cuttlefish", "Cuttlefish"],
+    "needs_review": true
+  },
+  "tuna": {
+    "scientific_name": "Euthynnus / Thunnus spp.",
+    "english": "Tuna",
+    "malayalam": "ചൂര",
+    "tamil": "சூரை",
+    "aliases": ["Tunnies", "Tunnis", "Skip jack tuna", "Katsuwonus Pelamis (Skipjack Tuna)"]
+  },
+  "crab": {
+    "scientific_name": "Portunus spp.",
+    "english": "Crab",
+    "malayalam": "ഞണ്ട്",
+    "tamil": "நண்டு",
+    "aliases": ["Crabs", "Three spot swimming crab", "Blue swimming crab", "Marine Crust Crab"]
+  },
+  "lobster": {
+    "scientific_name": "Panulirus spp.",
+    "english": "Lobster",
+    "malayalam": "കല്ലുമ്മക്കായ / ലോബ്സ്റ്റർ",
+    "tamil": "இறால் மீன் (லாப்ஸ்டர்)",
+    "aliases": ["Lobsters"],
+    "needs_review": true
+  },
+  "perches": {
+    "scientific_name": "Lutjanus / Epinephelus spp.",
+    "english": "Perches / Snappers",
+    "malayalam": "പന്നിമീൻ",
+    "tamil": "வெளவால் மீன்",
+    "aliases": ["Perches", "Lates Sp. Lutjanus (Perches)"],
+    "needs_review": true
+  },
+  "shark_ray": {
+    "scientific_name": "Elasmobranchii (class)",
+    "english": "Sharks, Rays & Skates",
+    "malayalam": "സ്രാവ്",
+    "tamil": "சுறா",
+    "aliases": ["Elasmobranchs", "Elasmobranches (Shark, Rays, Skates)"]
+  },
+  "cat_fish": {
+    "scientific_name": "Tachysurus spp.",
+    "english": "Cat Fish",
+    "malayalam": "കടു",
+    "tamil": "கெளுத்தி",
+    "aliases": ["Cat Fish", "Sea Catfish", "Sea Catfishes"],
+    "needs_review": true
+  },
+  "flying_fish": {
+    "scientific_name": "Exocoetus spp.",
+    "english": "Flying Fish",
+    "malayalam": "പറവ മീൻ",
+    "tamil": "பறவை மீன்",
+    "aliases": ["Flying Fish", "Exocoetus (Flying Fish)"],
+    "needs_review": true
+  },
+  "barracuda": {
+    "scientific_name": "Sphyraena spp.",
+    "english": "Barracuda",
+    "malayalam": "ഇറ്റ്‌ ",
+    "tamil": "ஊழி மீன்",
+    "aliases": ["Sphyraena", "Great barracuda", "Sphyraena spp. (Barracudas)"],
+    "needs_review": true
+  }
+}
