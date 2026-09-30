@@ -59,3 +59,8 @@ uvicorn
 # Data Validation
 # ==========================
 pydantic
+
+# ==========================
+# Frontend
+# ==========================
+streamlit
