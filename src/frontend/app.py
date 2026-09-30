@@ -166,8 +166,112 @@ def season_avg_price(species_info, season_key):
     return sum(values) / len(values)
 
 
+SEASON_ICONS = {"winter": "❄️", "summer": "☀️", "monsoon": "🌧️", "postmonsoon": "🍂"}
+LANG_ICONS = {"en": "🇬🇧", "ml": "🌴", "ta": "🪔"}
+
+CUSTOM_CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] { font-family: 'Inter', -apple-system, sans-serif; }
+h1, h2, h3, .catch-title { font-family: 'Poppins', sans-serif !important; }
+
+.stApp {
+    background: radial-gradient(ellipse at top, #0B3D5C 0%, #04141F 55%, #020B12 100%);
+}
+
+.catch-hero {
+    text-align: center; padding: 28px 16px 20px; margin-bottom: 8px;
+}
+.catch-title {
+    font-size: 2.1rem; font-weight: 700; color: #E8F4F8; margin: 0;
+    letter-spacing: -0.01em;
+}
+.catch-subtitle {
+    color: #8FB8CC; font-size: 0.95rem; margin-top: 8px; max-width: 480px;
+    margin-left: auto; margin-right: auto; line-height: 1.5;
+}
+
+.legend-row {
+    display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
+    margin: 14px 0 6px; font-size: 0.8rem; color: #8FB8CC;
+}
+.legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+
+.step-label {
+    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.05rem;
+    color: #6FE3E9; margin: 26px 0 12px;
+}
+
+/* card-style buttons for season / district / language grids */
+div[data-testid="stButton"] > button {
+    border-radius: 16px !important;
+    border: 1.5px solid rgba(111, 227, 233, 0.25) !important;
+    background: rgba(11, 61, 92, 0.35) !important;
+    color: #E8F4F8 !important;
+    padding: 14px 10px !important;
+    font-weight: 500 !important;
+    transition: all 0.15s ease;
+    white-space: pre-line !important;
+    line-height: 1.4 !important;
+}
+div[data-testid="stButton"] > button:hover {
+    border-color: #6FE3E9 !important;
+    background: rgba(111, 227, 233, 0.12) !important;
+}
+div[data-testid="stButton"] > button[kind="primary"] {
+    background: linear-gradient(135deg, #00C2CB, #0B8FA3) !important;
+    border-color: transparent !important;
+    color: #04141F !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 18px rgba(0, 194, 203, 0.45);
+}
+
+.plan-card {
+    background: rgba(11, 44, 61, 0.55); border: 1px solid rgba(111, 227, 233, 0.18);
+    border-radius: 18px; padding: 18px 20px; margin-bottom: 10px;
+    backdrop-filter: blur(6px);
+}
+.plan-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.plan-row:last-child { border-bottom: none; }
+.plan-name { font-weight: 600; color: #E8F4F8; }
+.plan-detail { font-size: 0.78rem; color: #8FB8CC; margin-top: 2px; }
+.plan-value { font-family: 'Poppins', sans-serif; font-weight: 700; color: #6FE3E9; font-size: 1.05rem; white-space: nowrap; }
+
+.total-card {
+    background: linear-gradient(135deg, rgba(0,194,203,0.18), rgba(11,143,163,0.10));
+    border: 1px solid rgba(111, 227, 233, 0.4); border-radius: 18px;
+    padding: 20px; text-align: center; margin: 18px 0;
+}
+.total-label { color: #8FB8CC; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.total-value { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.2rem; color: #E8F4F8; margin-top: 4px; }
+
+footer, #MainMenu { visibility: hidden; }
+</style>
+"""
+
+
+def option_grid(options, selected_key, session_key, columns=4, icons=None):
+    """Renders a row of card-style buttons; returns the newly selected key."""
+    cols = st.columns(columns)
+    result = selected_key
+    for i, (key, label) in enumerate(options):
+        with cols[i % columns]:
+            icon = (icons or {}).get(key, "")
+            btn_label = f"{icon}\n{label}" if icon else label
+            is_selected = key == selected_key
+            if st.button(btn_label, key=f"{session_key}_{key}", type="primary" if is_selected else "secondary",
+                         use_container_width=True):
+                result = key
+    return result
+
+
 def main():
-    st.set_page_config(page_title="Catch Plan", page_icon=":fish:", layout="centered")
+    st.set_page_config(page_title="Catch Plan", page_icon="🌊", layout="centered")
+    st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
     data, species_dict = load_data()
 
     if "lang" not in st.session_state:
@@ -177,57 +281,60 @@ def main():
     if "district" not in st.session_state:
         st.session_state.district = "EKM"
 
-    # Step 0: language - shown first, plain choice, drives every label below it
-    lang_options = list(UI.keys())
-    lang = st.radio(
-        UI[st.session_state.lang]["step0"],
-        lang_options,
-        format_func=lambda code: UI[code]["lang_name"],
-        index=lang_options.index(st.session_state.lang),
-        horizontal=True,
-        key="lang_radio",
-    )
-    st.session_state.lang = lang
-    t = UI[lang]
+    t = UI[st.session_state.lang]
 
-    st.title(t["title"])
-    st.caption(t["subtitle"])
-    st.markdown(f"🟢 {t['legend_real']}  \n🟡 {t['legend_pred']}")
-    st.divider()
+    st.markdown(f"""
+        <div class="catch-hero">
+            <div class="catch-title">🌊 {t['title']}</div>
+            <div class="catch-subtitle">{t['subtitle']}</div>
+        </div>
+    """, unsafe_allow_html=True)
+
+    # Step 0: language
+    st.markdown(f'<div class="step-label">{t["step0"]}</div>', unsafe_allow_html=True)
+    lang_options = [(code, UI[code]["lang_name"]) for code in UI]
+    new_lang = option_grid(lang_options, st.session_state.lang, "lang", columns=3, icons=LANG_ICONS)
+    if new_lang != st.session_state.lang:
+        st.session_state.lang = new_lang
+        st.rerun()
+    t = UI[st.session_state.lang]
+
+    st.markdown(
+        f'<div class="legend-row">'
+        f'<span><span class="legend-dot" style="background:#3ECF8E"></span>{t["legend_real"]}</span>'
+        f'<span><span class="legend-dot" style="background:#E0B15C"></span>{t["legend_pred"]}</span>'
+        f'</div>', unsafe_allow_html=True)
 
     # Step 1: season
-    st.subheader(t["step1"])
-    season_keys = list(t["seasons"].keys())
-    season = st.radio(
-        t["step1"], season_keys,
-        format_func=lambda k: f"{t['seasons'][k][0]} ({t['seasons'][k][1]})",
-        index=season_keys.index(st.session_state.season),
-        horizontal=True, label_visibility="collapsed", key="season_radio",
-    )
-    st.session_state.season = season
+    st.markdown(f'<div class="step-label">{t["step1"]}</div>', unsafe_allow_html=True)
+    season_options = [(k, f"{v[0]}\n{v[1]}") for k, v in t["seasons"].items()]
+    new_season = option_grid(season_options, st.session_state.season, "season", columns=4, icons=SEASON_ICONS)
+    if new_season != st.session_state.season:
+        st.session_state.season = new_season
+        st.rerun()
 
     # Step 2: district
-    st.subheader(t["step2"])
-    district = st.selectbox(
-        t["step2"], DISTRICT_ORDER,
-        format_func=lambda code: district_label(data, code, lang),
-        index=DISTRICT_ORDER.index(st.session_state.district),
-        label_visibility="collapsed", key="district_select",
-    )
-    st.session_state.district = district
-    ports = data["districts"][district]["target_ports"]
+    st.markdown(f'<div class="step-label">{t["step2"]}</div>', unsafe_allow_html=True)
+    district_options = [(code, district_label(data, code, st.session_state.lang)) for code in DISTRICT_ORDER]
+    new_district = option_grid(district_options, st.session_state.district, "district", columns=3)
+    if new_district != st.session_state.district:
+        st.session_state.district = new_district
+        st.rerun()
+    ports = data["districts"][st.session_state.district]["target_ports"]
     if ports:
-        st.caption(", ".join(ports))
+        st.caption("📍 " + ", ".join(ports))
 
     # Step 3: capacity
-    st.subheader(t["step3"])
+    st.markdown(f'<div class="step-label">{t["step3"]}</div>', unsafe_allow_html=True)
     capacity = st.number_input(t["step3"], min_value=1, value=50, step=1, label_visibility="collapsed")
 
-    st.divider()
+    lang = st.session_state.lang
+    season = st.session_state.season
+    district = st.session_state.district
+    season_name = t["seasons"][season][0]
 
     # Results: price table for the season
-    season_name = t["seasons"][season][0]
-    st.header(f"{t['result_header']} — {season_name}")
+    st.markdown(f'<div class="step-label">📊 {t["result_header"]} — {season_name}</div>', unsafe_allow_html=True)
 
     district_species = data["districts"][district]["species"]
     rows = []
@@ -246,29 +353,39 @@ def main():
     )
 
     # Capacity plan
-    st.header(t["plan_header"])
+    st.markdown(f'<div class="step-label">🎣 {t["plan_header"]}</div>', unsafe_allow_html=True)
     district_plain = district_label(data, district, lang).rsplit(" (", 1)[0]
-    st.write(t["plan_intro"].format(district=district_plain, season=season_name, kg=capacity))
+    st.caption(t["plan_intro"].format(district=district_plain, season=season_name, kg=capacity))
 
     plan_rows = sorted(rows, key=lambda r: -(r["_share"] * r["_price"]))
-    total_value = 0.0
+    total_value = sum(r["_share"] * capacity * r["_price"] for r in plan_rows)
+
+    plan_html = '<div class="plan-card">'
     for r in plan_rows:
         expected_kg = capacity * r["_share"]
         expected_value = expected_kg * r["_price"]
-        total_value += expected_value
-        col1, col2 = st.columns([3, 1])
-        with col1:
-            st.markdown(f"**{species_label(species_dict, r['_sp'], lang)}**")
-            st.caption(t["plan_detail"].format(
-                share=f"{r['_share'] * 100:.1f}", kg=f"{expected_kg:.1f}", price=f"{r['_price']:.0f}"
-            ))
-        with col2:
-            st.markdown(f"**Rs.{expected_value:,.0f}**")
+        detail = t["plan_detail"].format(
+            share=f"{r['_share'] * 100:.1f}", kg=f"{expected_kg:.1f}", price=f"{r['_price']:.0f}"
+        )
+        plan_html += f"""
+            <div class="plan-row">
+                <div>
+                    <div class="plan-name">{species_label(species_dict, r['_sp'], lang)}</div>
+                    <div class="plan-detail">{detail}</div>
+                </div>
+                <div class="plan-value">₹{expected_value:,.0f}</div>
+            </div>
+        """
+    plan_html += "</div>"
+    st.markdown(plan_html, unsafe_allow_html=True)
 
-    st.divider()
-    st.markdown(f"### {t['plan_total']}: Rs.{total_value:,.0f}")
+    st.markdown(f"""
+        <div class="total-card">
+            <div class="total-label">{t['plan_total']}</div>
+            <div class="total-value">₹{total_value:,.0f}</div>
+        </div>
+    """, unsafe_allow_html=True)
 
-    st.divider()
     st.caption(t["footer"])
 
 
