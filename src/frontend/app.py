@@ -53,10 +53,10 @@ UI = {
         "subtitle": "Pick your language, season, district, and boat capacity to see fish prices and your catch plan.",
         "legend_real": "Real: catch data, Kerala Fisheries Dept 2022-25",
         "legend_pred": "Model-predicted: price, trained on synthetic data (prototype, not real market history)",
-        "step0": "0. Choose your language",
-        "step1": "1. Which season are you fishing in?",
-        "step2": "2. Which district are you in?",
-        "step3": "3. Your boat's loading capacity (kg per trip)",
+        "step0": "Choose your language",
+        "step1": "Which season are you fishing in?",
+        "step2": "Which district are you in?",
+        "step3": "Your boat's loading capacity (kg per trip)",
         "result_header": "Market price prediction",
         "plan_header": "Your catch plan",
         "col_species": "Species", "col_price": "Rs / kg", "col_halfkg": "Rs / half-kg", "col_share": "Catch share",
@@ -81,10 +81,10 @@ UI = {
         "subtitle": "മത്സ്യവില അറിയാനും നിങ്ങളുടെ പിടിത്ത പദ്ധതി കാണാനും ഭാഷ, സീസൺ, ജില്ല, ബോട്ട് ശേഷി എന്നിവ തിരഞ്ഞെടുക്കുക.",
         "legend_real": "യഥാർത്ഥം: പിടിത്ത വിവരം, കേരള ഫിഷറീസ് വകുപ്പ് 2022-25",
         "legend_pred": "മാതൃക പ്രവചനം: വില, കൃത്രിമ ഡാറ്റയിൽ പരിശീലിപ്പിച്ചത് (പ്രോട്ടോടൈപ്പ്, യഥാർത്ഥ വിപണി ചരിത്രമല്ല)",
-        "step0": "0. നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക",
-        "step1": "1. ഏത് സീസണിലാണ് നിങ്ങൾ മീൻപിടിക്കുന്നത്?",
-        "step2": "2. നിങ്ങൾ ഏത് ജില്ലയിലാണ്?",
-        "step3": "3. നിങ്ങളുടെ ബോട്ടിന്റെ ശേഷി (കി.ഗ്രാം, ഓരോ യാത്രയ്ക്കും)",
+        "step0": "നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക",
+        "step1": "ഏത് സീസണിലാണ് നിങ്ങൾ മീൻപിടിക്കുന്നത്?",
+        "step2": "നിങ്ങൾ ഏത് ജില്ലയിലാണ്?",
+        "step3": "നിങ്ങളുടെ ബോട്ടിന്റെ ശേഷി (കി.ഗ്രാം, ഓരോ യാത്രയ്ക്കും)",
         "result_header": "വിപണി വില പ്രവചനം",
         "plan_header": "നിങ്ങളുടെ പിടിത്ത പദ്ധതി",
         "col_species": "മത്സ്യം", "col_price": "₹ / കി.ഗ്രാം", "col_halfkg": "₹ / അര കി.ഗ്രാം", "col_share": "പിടിത്ത വിഹിതം",
@@ -108,10 +108,10 @@ UI = {
         "subtitle": "மீன் விலைகளையும் உங்கள் மீன்பிடி திட்டத்தையும் காண மொழி, பருவம், மாவட்டம், படகு திறன் ஆகியவற்றைத் தேர்ந்தெடுக்கவும்.",
         "legend_real": "உண்மையானது: பிடிப்பு தரவு, கேரள மீன்வள துறை 2022-25",
         "legend_pred": "மாதிரி கணிப்பு: விலை, செயற்கை தரவில் பயிற்சி பெற்றது (முன்மாதிரி, உண்மையான சந்தை வரலாறு அல்ல)",
-        "step0": "0. உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
-        "step1": "1. நீங்கள் எந்த பருவத்தில் மீன் பிடிக்கிறீர்கள்?",
-        "step2": "2. நீங்கள் எந்த மாவட்டத்தில் இருக்கிறீர்கள்?",
-        "step3": "3. உங்கள் படகின் ஏற்றும் திறன் (கிலோ, ஒரு பயணத்திற்கு)",
+        "step0": "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
+        "step1": "நீங்கள் எந்த பருவத்தில் மீன் பிடிக்கிறீர்கள்?",
+        "step2": "நீங்கள் எந்த மாவட்டத்தில் இருக்கிறீர்கள்?",
+        "step3": "உங்கள் படகின் ஏற்றும் திறன் (கிலோ, ஒரு பயணத்திற்கு)",
         "result_header": "சந்தை விலை கணிப்பு",
         "plan_header": "உங்கள் மீன்பிடி திட்டம்",
         "col_species": "மீன் வகை", "col_price": "₹ / கிலோ", "col_halfkg": "₹ / அரை கிலோ", "col_share": "பிடிப்பு பங்கு",
@@ -165,9 +165,6 @@ def season_avg_price(species_info, season_key):
     values = [species_info["monthly_prices"][MONTH_NAMES[m]]["price_inr_per_kg"] for m in months]
     return sum(values) / len(values)
 
-
-SEASON_ICONS = {"winter": "❄️", "summer": "☀️", "monsoon": "🌧️", "postmonsoon": "🍂"}
-LANG_ICONS = {"en": "🇬🇧", "ml": "🌴", "ta": "🪔"}
 
 CUSTOM_CSS = """
 <style>
@@ -254,23 +251,21 @@ footer, #MainMenu { visibility: hidden; }
 """
 
 
-def option_grid(options, selected_key, session_key, columns=4, icons=None):
+def option_grid(options, selected_key, session_key, columns=4):
     """Renders a row of card-style buttons; returns the newly selected key."""
     cols = st.columns(columns)
     result = selected_key
     for i, (key, label) in enumerate(options):
         with cols[i % columns]:
-            icon = (icons or {}).get(key, "")
-            btn_label = f"{icon}\n{label}" if icon else label
             is_selected = key == selected_key
-            if st.button(btn_label, key=f"{session_key}_{key}", type="primary" if is_selected else "secondary",
+            if st.button(label, key=f"{session_key}_{key}", type="primary" if is_selected else "secondary",
                          use_container_width=True):
                 result = key
     return result
 
 
 def main():
-    st.set_page_config(page_title="Catch Plan", page_icon="🌊", layout="centered")
+    st.set_page_config(page_title="Catch Plan", layout="centered")
     st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
     data, species_dict = load_data()
 
@@ -285,14 +280,14 @@ def main():
 
     st.markdown(
         f'<div class="catch-hero">'
-        f'<div class="catch-title">🌊 {t["title"]}</div>'
+        f'<div class="catch-title">{t["title"]}</div>'
         f'<div class="catch-subtitle">{t["subtitle"]}</div>'
         f'</div>', unsafe_allow_html=True)
 
     # Step 0: language
     st.markdown(f'<div class="step-label">{t["step0"]}</div>', unsafe_allow_html=True)
     lang_options = [(code, UI[code]["lang_name"]) for code in UI]
-    new_lang = option_grid(lang_options, st.session_state.lang, "lang", columns=3, icons=LANG_ICONS)
+    new_lang = option_grid(lang_options, st.session_state.lang, "lang", columns=3)
     if new_lang != st.session_state.lang:
         st.session_state.lang = new_lang
         st.rerun()
@@ -307,7 +302,7 @@ def main():
     # Step 1: season
     st.markdown(f'<div class="step-label">{t["step1"]}</div>', unsafe_allow_html=True)
     season_options = [(k, f"{v[0]}\n{v[1]}") for k, v in t["seasons"].items()]
-    new_season = option_grid(season_options, st.session_state.season, "season", columns=4, icons=SEASON_ICONS)
+    new_season = option_grid(season_options, st.session_state.season, "season", columns=4)
     if new_season != st.session_state.season:
         st.session_state.season = new_season
         st.rerun()
@@ -321,7 +316,7 @@ def main():
         st.rerun()
     ports = data["districts"][st.session_state.district]["target_ports"]
     if ports:
-        st.caption("📍 " + ", ".join(ports))
+        st.caption(", ".join(ports))
 
     # Step 3: capacity
     st.markdown(f'<div class="step-label">{t["step3"]}</div>', unsafe_allow_html=True)
@@ -333,7 +328,7 @@ def main():
     season_name = t["seasons"][season][0]
 
     # Results: price table for the season
-    st.markdown(f'<div class="step-label">📊 {t["result_header"]} — {season_name}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="step-label">{t["result_header"]} — {season_name}</div>', unsafe_allow_html=True)
 
     district_species = data["districts"][district]["species"]
     rows = []
@@ -352,7 +347,7 @@ def main():
     )
 
     # Capacity plan
-    st.markdown(f'<div class="step-label">🎣 {t["plan_header"]}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="step-label">{t["plan_header"]}</div>', unsafe_allow_html=True)
     district_plain = district_label(data, district, lang).rsplit(" (", 1)[0]
     st.caption(t["plan_intro"].format(district=district_plain, season=season_name, kg=capacity))
 
