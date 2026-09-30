@@ -1,0 +1,3010 @@
+{
+  "generated_note": "price = MODEL-PREDICTED from synthetic mock data. catch = REAL Kerala Fisheries Dept data (2022-23 to 2024-25).",
+  "species_in_both": [
+    "crab",
+    "indian_mackerel",
+    "indian_squid",
+    "oil_sardine",
+    "penaeid_prawn",
+    "ribbon_fish"
+  ],
+  "excluded_species": {
+    "catch_data_only_no_price_model": [
+      "anchovy",
+      "barracuda",
+      "cat_fish",
+      "flying_fish",
+      "lesser_sardines",
+      "lobster",
+      "non_penaeid_prawn",
+      "perches",
+      "seer_fish",
+      "shark_ray",
+      "silver_pomfret",
+      "tuna"
+    ],
+    "price_model_only_no_catch_data": [
+      "cuttlefish"
+    ]
+  },
+  "districts": {
+    "ALP": {
+      "name": "Alappuzha",
+      "target_ports": [],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 60.7,
+          "catch_share_in_district": 0.0021,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 4451.3,
+          "catch_share_in_district": 0.1572,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 39.3,
+          "catch_share_in_district": 0.0014,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 17825.0,
+          "catch_share_in_district": 0.6293,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 1749.7,
+          "catch_share_in_district": 0.0618,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 10.3,
+          "catch_share_in_district": 0.0004,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "EKM": {
+      "name": "Ernakulam",
+      "target_ports": [
+        "Kochi",
+        "Munambam"
+      ],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 1564.0,
+          "catch_share_in_district": 0.0114,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 18495.0,
+          "catch_share_in_district": 0.1352,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 16131.7,
+          "catch_share_in_district": 0.1179,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 23292.3,
+          "catch_share_in_district": 0.1702,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 10199.0,
+          "catch_share_in_district": 0.0745,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 10366.0,
+          "catch_share_in_district": 0.0757,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "KKD": {
+      "name": "Kozhikode",
+      "target_ports": [
+        "Beypore",
+        "Puthiyappa"
+      ],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 1259.0,
+          "catch_share_in_district": 0.0155,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 10784.7,
+          "catch_share_in_district": 0.1324,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 7448.3,
+          "catch_share_in_district": 0.0915,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 22645.0,
+          "catch_share_in_district": 0.278,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 4759.7,
+          "catch_share_in_district": 0.0584,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 5078.7,
+          "catch_share_in_district": 0.0624,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "KLM": {
+      "name": "Kollam",
+      "target_ports": [
+        "Neendakara"
+      ],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 1456.3,
+          "catch_share_in_district": 0.0132,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 14703.3,
+          "catch_share_in_district": 0.1337,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 10774.7,
+          "catch_share_in_district": 0.098,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 21715.3,
+          "catch_share_in_district": 0.1975,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 12668.3,
+          "catch_share_in_district": 0.1152,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 4112.3,
+          "catch_share_in_district": 0.0374,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "KNR": {
+      "name": "Kannur",
+      "target_ports": [],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 325.0,
+          "catch_share_in_district": 0.0089,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 5357.7,
+          "catch_share_in_district": 0.146,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 421.0,
+          "catch_share_in_district": 0.0115,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 27147.0,
+          "catch_share_in_district": 0.7398,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 1668.7,
+          "catch_share_in_district": 0.0455,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 376.7,
+          "catch_share_in_district": 0.0103,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "KSD": {
+      "name": "Kasaragod",
+      "target_ports": [],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 231.3,
+          "catch_share_in_district": 0.0234,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 3220.0,
+          "catch_share_in_district": 0.326,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 69.0,
+          "catch_share_in_district": 0.007,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 4882.0,
+          "catch_share_in_district": 0.4943,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 900.7,
+          "catch_share_in_district": 0.0912,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 38.0,
+          "catch_share_in_district": 0.0038,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "MLPM": {
+      "name": "Malappuram",
+      "target_ports": [],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 407.3,
+          "catch_share_in_district": 0.018,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 3553.0,
+          "catch_share_in_district": 0.1569,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 1513.7,
+          "catch_share_in_district": 0.0668,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 9724.3,
+          "catch_share_in_district": 0.4293,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 2049.7,
+          "catch_share_in_district": 0.0905,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 365.7,
+          "catch_share_in_district": 0.0161,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "TCR": {
+      "name": "Thrissur",
+      "target_ports": [],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 181.0,
+          "catch_share_in_district": 0.0063,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 8803.3,
+          "catch_share_in_district": 0.3042,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 184.0,
+          "catch_share_in_district": 0.0064,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 14214.7,
+          "catch_share_in_district": 0.4911,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 3544.7,
+          "catch_share_in_district": 0.1225,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 11.3,
+          "catch_share_in_district": 0.0004,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    },
+    "TVPM": {
+      "name": "Thiruvananthapuram",
+      "target_ports": [],
+      "species": {
+        "crab": {
+          "avg_catch_tonnes_per_year": 173.0,
+          "catch_share_in_district": 0.0043,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 162.9,
+              "price_inr_per_half_kg": 81.5
+            },
+            "Feb": {
+              "price_inr_per_kg": 157.6,
+              "price_inr_per_half_kg": 78.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 151.8,
+              "price_inr_per_half_kg": 75.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 161.9,
+              "price_inr_per_half_kg": 80.9
+            },
+            "May": {
+              "price_inr_per_kg": 191.0,
+              "price_inr_per_half_kg": 95.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 220.2,
+              "price_inr_per_half_kg": 110.1
+            },
+            "Jul": {
+              "price_inr_per_kg": 216.9,
+              "price_inr_per_half_kg": 108.4
+            },
+            "Aug": {
+              "price_inr_per_kg": 180.3,
+              "price_inr_per_half_kg": 90.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 144.1,
+              "price_inr_per_half_kg": 72.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 129.2,
+              "price_inr_per_half_kg": 64.6
+            },
+            "Nov": {
+              "price_inr_per_kg": 136.2,
+              "price_inr_per_half_kg": 68.1
+            },
+            "Dec": {
+              "price_inr_per_kg": 153.6,
+              "price_inr_per_half_kg": 76.8
+            }
+          }
+        },
+        "indian_mackerel": {
+          "avg_catch_tonnes_per_year": 8233.0,
+          "catch_share_in_district": 0.2024,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 139.4,
+              "price_inr_per_half_kg": 69.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Mar": {
+              "price_inr_per_kg": 129.9,
+              "price_inr_per_half_kg": 64.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 138.5,
+              "price_inr_per_half_kg": 69.3
+            },
+            "May": {
+              "price_inr_per_kg": 163.5,
+              "price_inr_per_half_kg": 81.7
+            },
+            "Jun": {
+              "price_inr_per_kg": 188.4,
+              "price_inr_per_half_kg": 94.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 185.6,
+              "price_inr_per_half_kg": 92.8
+            },
+            "Aug": {
+              "price_inr_per_kg": 154.3,
+              "price_inr_per_half_kg": 77.2
+            },
+            "Sep": {
+              "price_inr_per_kg": 123.3,
+              "price_inr_per_half_kg": 61.6
+            },
+            "Oct": {
+              "price_inr_per_kg": 110.6,
+              "price_inr_per_half_kg": 55.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 116.6,
+              "price_inr_per_half_kg": 58.3
+            },
+            "Dec": {
+              "price_inr_per_kg": 131.4,
+              "price_inr_per_half_kg": 65.7
+            }
+          }
+        },
+        "indian_squid": {
+          "avg_catch_tonnes_per_year": 4417.0,
+          "catch_share_in_district": 0.1086,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 287.5,
+              "price_inr_per_half_kg": 143.7
+            },
+            "Feb": {
+              "price_inr_per_kg": 278.0,
+              "price_inr_per_half_kg": 139.0
+            },
+            "Mar": {
+              "price_inr_per_kg": 267.7,
+              "price_inr_per_half_kg": 133.9
+            },
+            "Apr": {
+              "price_inr_per_kg": 285.6,
+              "price_inr_per_half_kg": 142.8
+            },
+            "May": {
+              "price_inr_per_kg": 337.0,
+              "price_inr_per_half_kg": 168.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 388.4,
+              "price_inr_per_half_kg": 194.2
+            },
+            "Jul": {
+              "price_inr_per_kg": 382.6,
+              "price_inr_per_half_kg": 191.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 318.2,
+              "price_inr_per_half_kg": 159.1
+            },
+            "Sep": {
+              "price_inr_per_kg": 254.2,
+              "price_inr_per_half_kg": 127.1
+            },
+            "Oct": {
+              "price_inr_per_kg": 228.0,
+              "price_inr_per_half_kg": 114.0
+            },
+            "Nov": {
+              "price_inr_per_kg": 240.3,
+              "price_inr_per_half_kg": 120.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 270.9,
+              "price_inr_per_half_kg": 135.5
+            }
+          }
+        },
+        "oil_sardine": {
+          "avg_catch_tonnes_per_year": 1391.3,
+          "catch_share_in_district": 0.0342,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 38.9,
+              "price_inr_per_half_kg": 19.4
+            },
+            "Feb": {
+              "price_inr_per_kg": 37.6,
+              "price_inr_per_half_kg": 18.8
+            },
+            "Mar": {
+              "price_inr_per_kg": 36.2,
+              "price_inr_per_half_kg": 18.1
+            },
+            "Apr": {
+              "price_inr_per_kg": 38.6,
+              "price_inr_per_half_kg": 19.3
+            },
+            "May": {
+              "price_inr_per_kg": 45.6,
+              "price_inr_per_half_kg": 22.8
+            },
+            "Jun": {
+              "price_inr_per_kg": 52.5,
+              "price_inr_per_half_kg": 26.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 51.7,
+              "price_inr_per_half_kg": 25.9
+            },
+            "Aug": {
+              "price_inr_per_kg": 43.0,
+              "price_inr_per_half_kg": 21.5
+            },
+            "Sep": {
+              "price_inr_per_kg": 34.4,
+              "price_inr_per_half_kg": 17.2
+            },
+            "Oct": {
+              "price_inr_per_kg": 30.8,
+              "price_inr_per_half_kg": 15.4
+            },
+            "Nov": {
+              "price_inr_per_kg": 32.5,
+              "price_inr_per_half_kg": 16.2
+            },
+            "Dec": {
+              "price_inr_per_kg": 36.6,
+              "price_inr_per_half_kg": 18.3
+            }
+          }
+        },
+        "penaeid_prawn": {
+          "avg_catch_tonnes_per_year": 295.3,
+          "catch_share_in_district": 0.0073,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 121.8,
+              "price_inr_per_half_kg": 60.9
+            },
+            "Feb": {
+              "price_inr_per_kg": 117.8,
+              "price_inr_per_half_kg": 58.9
+            },
+            "Mar": {
+              "price_inr_per_kg": 113.5,
+              "price_inr_per_half_kg": 56.7
+            },
+            "Apr": {
+              "price_inr_per_kg": 121.0,
+              "price_inr_per_half_kg": 60.5
+            },
+            "May": {
+              "price_inr_per_kg": 142.8,
+              "price_inr_per_half_kg": 71.4
+            },
+            "Jun": {
+              "price_inr_per_kg": 164.6,
+              "price_inr_per_half_kg": 82.3
+            },
+            "Jul": {
+              "price_inr_per_kg": 162.1,
+              "price_inr_per_half_kg": 81.1
+            },
+            "Aug": {
+              "price_inr_per_kg": 134.8,
+              "price_inr_per_half_kg": 67.4
+            },
+            "Sep": {
+              "price_inr_per_kg": 107.7,
+              "price_inr_per_half_kg": 53.9
+            },
+            "Oct": {
+              "price_inr_per_kg": 96.6,
+              "price_inr_per_half_kg": 48.3
+            },
+            "Nov": {
+              "price_inr_per_kg": 101.8,
+              "price_inr_per_half_kg": 50.9
+            },
+            "Dec": {
+              "price_inr_per_kg": 114.8,
+              "price_inr_per_half_kg": 57.4
+            }
+          }
+        },
+        "ribbon_fish": {
+          "avg_catch_tonnes_per_year": 3143.7,
+          "catch_share_in_district": 0.0773,
+          "monthly_prices": {
+            "Jan": {
+              "price_inr_per_kg": 149.2,
+              "price_inr_per_half_kg": 74.6
+            },
+            "Feb": {
+              "price_inr_per_kg": 144.3,
+              "price_inr_per_half_kg": 72.2
+            },
+            "Mar": {
+              "price_inr_per_kg": 139.0,
+              "price_inr_per_half_kg": 69.5
+            },
+            "Apr": {
+              "price_inr_per_kg": 148.3,
+              "price_inr_per_half_kg": 74.1
+            },
+            "May": {
+              "price_inr_per_kg": 174.9,
+              "price_inr_per_half_kg": 87.5
+            },
+            "Jun": {
+              "price_inr_per_kg": 201.7,
+              "price_inr_per_half_kg": 100.8
+            },
+            "Jul": {
+              "price_inr_per_kg": 198.7,
+              "price_inr_per_half_kg": 99.3
+            },
+            "Aug": {
+              "price_inr_per_kg": 165.2,
+              "price_inr_per_half_kg": 82.6
+            },
+            "Sep": {
+              "price_inr_per_kg": 132.0,
+              "price_inr_per_half_kg": 66.0
+            },
+            "Oct": {
+              "price_inr_per_kg": 118.4,
+              "price_inr_per_half_kg": 59.2
+            },
+            "Nov": {
+              "price_inr_per_kg": 124.8,
+              "price_inr_per_half_kg": 62.4
+            },
+            "Dec": {
+              "price_inr_per_kg": 140.7,
+              "price_inr_per_half_kg": 70.3
+            }
+          }
+        }
+      }
+    }
+  }
+}
