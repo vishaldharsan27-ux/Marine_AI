@@ -50,6 +50,11 @@ folium
 openpyxl
 
 # ==========================
+# PDF Parsing (data_pipeline.py)
+# ==========================
+pdfplumber
+
+# ==========================
 # Backend (Future)
 # ==========================
 fastapi
