@@ -283,12 +283,11 @@ def main():
 
     t = UI[st.session_state.lang]
 
-    st.markdown(f"""
-        <div class="catch-hero">
-            <div class="catch-title">🌊 {t['title']}</div>
-            <div class="catch-subtitle">{t['subtitle']}</div>
-        </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        f'<div class="catch-hero">'
+        f'<div class="catch-title">🌊 {t["title"]}</div>'
+        f'<div class="catch-subtitle">{t["subtitle"]}</div>'
+        f'</div>', unsafe_allow_html=True)
 
     # Step 0: language
     st.markdown(f'<div class="step-label">{t["step0"]}</div>', unsafe_allow_html=True)
@@ -367,24 +366,23 @@ def main():
         detail = t["plan_detail"].format(
             share=f"{r['_share'] * 100:.1f}", kg=f"{expected_kg:.1f}", price=f"{r['_price']:.0f}"
         )
-        plan_html += f"""
-            <div class="plan-row">
-                <div>
-                    <div class="plan-name">{species_label(species_dict, r['_sp'], lang)}</div>
-                    <div class="plan-detail">{detail}</div>
-                </div>
-                <div class="plan-value">₹{expected_value:,.0f}</div>
-            </div>
-        """
+        plan_html += (
+            f'<div class="plan-row">'
+            f'<div>'
+            f'<div class="plan-name">{species_label(species_dict, r["_sp"], lang)}</div>'
+            f'<div class="plan-detail">{detail}</div>'
+            f'</div>'
+            f'<div class="plan-value">₹{expected_value:,.0f}</div>'
+            f'</div>'
+        )
     plan_html += "</div>"
     st.markdown(plan_html, unsafe_allow_html=True)
 
-    st.markdown(f"""
-        <div class="total-card">
-            <div class="total-label">{t['plan_total']}</div>
-            <div class="total-value">₹{total_value:,.0f}</div>
-        </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        f'<div class="total-card">'
+        f'<div class="total-label">{t["plan_total"]}</div>'
+        f'<div class="total-value">₹{total_value:,.0f}</div>'
+        f'</div>', unsafe_allow_html=True)
 
     st.caption(t["footer"])
 
