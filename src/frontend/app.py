@@ -19,6 +19,7 @@ before this goes in front of real fishermen.
 import json
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -60,9 +61,19 @@ UI = {
         "result_header": "Market price prediction",
         "plan_header": "Your catch plan",
         "col_species": "Species", "col_price": "Rs / kg", "col_halfkg": "Rs / half-kg", "col_share": "Catch share",
+        "col_district": "District",
         "plan_intro": "Based on {district}'s typical species mix and {season} prices, if you land {kg} kg this trip:",
         "plan_total": "Estimated total value",
         "plan_detail": "{share}% of typical catch  |  ~{kg} kg  |  Rs.{price}/kg",
+        "all_seasons_header": "Price by season (best season highlighted)",
+        "district_compare_header": "Compare districts for one fish",
+        "district_compare_pick": "Pick a fish",
+        "district_compare_col_share": "Typical catch share",
+        "glossary_header": "Fish name glossary",
+        "glossary_col_scientific": "Scientific name",
+        "glossary_col_malayalam": "Malayalam",
+        "glossary_col_tamil": "Tamil",
+        "download_button": "Download this plan",
         "footer": ("Species matched across both datasets: 6 of 21 in the species dictionary. Catch share reflects "
                    "each species' typical proportion of a district's total landings (2022-23 to 2024-25 average). "
                    "Price is a model trained on one real week of prices scaled by a documented seasonal assumption "
@@ -88,9 +99,19 @@ UI = {
         "result_header": "വിപണി വില പ്രവചനം",
         "plan_header": "നിങ്ങളുടെ പിടിത്ത പദ്ധതി",
         "col_species": "മത്സ്യം", "col_price": "₹ / കി.ഗ്രാം", "col_halfkg": "₹ / അര കി.ഗ്രാം", "col_share": "പിടിത്ത വിഹിതം",
+        "col_district": "ജില്ല",
         "plan_intro": "{district}യിലെ സാധാരണ മത്സ്യ ഇനങ്ങളും {season} വിലയും അടിസ്ഥാനമാക്കി, ഈ യാത്രയിൽ {kg} കി.ഗ്രാം പിടിച്ചാൽ:",
         "plan_total": "കണക്കാക്കിയ ആകെ മൂല്യം",
         "plan_detail": "സാധാരണ പിടിത്തത്തിന്റെ {share}%  |  ~{kg} കി.ഗ്രാം  |  ₹{price}/കി.ഗ്രാം",
+        "all_seasons_header": "സീസൺ അനുസരിച്ചുള്ള വില (മികച്ച സീസൺ ഹൈലൈറ്റ് ചെയ്തിരിക്കുന്നു)",
+        "district_compare_header": "ഒരു മത്സ്യത്തിന് ജില്ലകൾ താരതമ്യം ചെയ്യുക",
+        "district_compare_pick": "ഒരു മത്സ്യം തിരഞ്ഞെടുക്കുക",
+        "district_compare_col_share": "സാധാരണ പിടിത്ത വിഹിതം",
+        "glossary_header": "മത്സ്യങ്ങളുടെ പേര് നിഘണ്ടു",
+        "glossary_col_scientific": "ശാസ്ത്രീയ നാമം",
+        "glossary_col_malayalam": "മലയാളം",
+        "glossary_col_tamil": "തമിഴ്",
+        "download_button": "ഈ പദ്ധതി ഡൗൺലോഡ് ചെയ്യുക",
         "footer": ("രണ്ട് ഡാറ്റാസെറ്റുകളിലും പൊരുത്തപ്പെടുന്ന മത്സ്യങ്ങൾ: 21ൽ 6. പിടിത്ത വിഹിതം ഒരു ജില്ലയുടെ മൊത്തം "
                    "പിടിത്തത്തിന്റെ സാധാരണ അനുപാതത്തെ സൂചിപ്പിക്കുന്നു (2022-23 മുതൽ 2024-25 ശരാശരി). വില ഒരു യഥാർത്ഥ "
                    "ആഴ്ചയിലെ വിലയെ അടിസ്ഥാനമാക്കിയുള്ള ഒരു മാതൃകയാണ് - ഇത് ഒരു പ്രോട്ടോടൈപ്പ് ആണ്, വിപണി ഉറപ്പല്ല. "
@@ -115,9 +136,19 @@ UI = {
         "result_header": "சந்தை விலை கணிப்பு",
         "plan_header": "உங்கள் மீன்பிடி திட்டம்",
         "col_species": "மீன் வகை", "col_price": "₹ / கிலோ", "col_halfkg": "₹ / அரை கிலோ", "col_share": "பிடிப்பு பங்கு",
+        "col_district": "மாவட்டம்",
         "plan_intro": "{district} மாவட்டத்தின் வழக்கமான மீன் கலவையும் {season} விலையும் அடிப்படையாகக் கொண்டு, இந்த பயணத்தில் {kg} கிலோ பிடித்தால்:",
         "plan_total": "மதிப்பிடப்பட்ட மொத்த மதிப்பு",
         "plan_detail": "வழக்கமான பிடிப்பில் {share}%  |  ~{kg} கிலோ  |  ₹{price}/கிலோ",
+        "all_seasons_header": "பருவத்தின் அடிப்படையில் விலை (சிறந்த பருவம் தனிப்படுத்தப்பட்டுள்ளது)",
+        "district_compare_header": "ஒரு மீனுக்கு மாவட்டங்களை ஒப்பிடுக",
+        "district_compare_pick": "ஒரு மீனைத் தேர்ந்தெடுக்கவும்",
+        "district_compare_col_share": "வழக்கமான பிடிப்பு பங்கு",
+        "glossary_header": "மீன் பெயர் அகராதி",
+        "glossary_col_scientific": "அறிவியல் பெயர்",
+        "glossary_col_malayalam": "மலையாளம்",
+        "glossary_col_tamil": "தமிழ்",
+        "download_button": "இந்த திட்டத்தை பதிவிறக்கவும்",
         "footer": ("இரு தரவுத்தொகுப்புகளிலும் பொருந்தும் மீன் வகைகள்: 21ல் 6. பிடிப்பு பங்கு ஒரு மாவட்டத்தின் மொத்த "
                    "பிடிப்பில் ஒவ்வொரு மீன் வகையின் வழக்கமான விகிதத்தைக் குறிக்கிறது (2022-23 முதல் 2024-25 சராசரி). "
                    "விலை ஒரு உண்மையான வார விலையை அடிப்படையாகக் கொண்ட ஒரு மாதிரி - இது ஒரு முன்மாதிரி, சந்தை "
@@ -346,6 +377,24 @@ def main():
         hide_index=True, use_container_width=True,
     )
 
+    # All-season comparison: same species, every season's price side by side,
+    # with the best (highest) season highlighted per row - built entirely from
+    # data already loaded above, no new data source needed.
+    st.markdown(f'<div class="step-label">{t["all_seasons_header"]}</div>', unsafe_allow_html=True)
+    season_keys_list = list(t["seasons"].keys())
+    season_col_names = [t["seasons"][sk][0] for sk in season_keys_list]
+    all_season_rows = []
+    for sp, info in district_species.items():
+        row = {t["col_species"]: species_label(species_dict, sp, lang)}
+        for sk, col_name in zip(season_keys_list, season_col_names):
+            row[col_name] = round(season_avg_price(info, sk), 1)
+        all_season_rows.append(row)
+    df_all_seasons = pd.DataFrame(all_season_rows).set_index(t["col_species"])
+    st.dataframe(
+        df_all_seasons.style.highlight_max(axis=1, subset=season_col_names, color="#0B8FA3"),
+        use_container_width=True,
+    )
+
     # Capacity plan
     st.markdown(f'<div class="step-label">{t["plan_header"]}</div>', unsafe_allow_html=True)
     district_plain = district_label(data, district, lang).rsplit(" (", 1)[0]
@@ -355,21 +404,26 @@ def main():
     total_value = sum(r["_share"] * capacity * r["_price"] for r in plan_rows)
 
     plan_html = '<div class="plan-card">'
+    plan_text_lines = [f"{t['title']} - {district_plain}, {season_name}", ""]
     for r in plan_rows:
         expected_kg = capacity * r["_share"]
         expected_value = expected_kg * r["_price"]
+        r["_expected_kg"] = expected_kg
+        r["_expected_value"] = expected_value
+        species_name = species_label(species_dict, r["_sp"], lang)
         detail = t["plan_detail"].format(
             share=f"{r['_share'] * 100:.1f}", kg=f"{expected_kg:.1f}", price=f"{r['_price']:.0f}"
         )
         plan_html += (
             f'<div class="plan-row">'
             f'<div>'
-            f'<div class="plan-name">{species_label(species_dict, r["_sp"], lang)}</div>'
+            f'<div class="plan-name">{species_name}</div>'
             f'<div class="plan-detail">{detail}</div>'
             f'</div>'
             f'<div class="plan-value">₹{expected_value:,.0f}</div>'
             f'</div>'
         )
+        plan_text_lines.append(f"{species_name}: {expected_kg:.1f} kg x Rs.{r['_price']:.0f}/kg = Rs.{expected_value:,.0f}")
     plan_html += "</div>"
     st.markdown(plan_html, unsafe_allow_html=True)
 
@@ -378,6 +432,47 @@ def main():
         f'<div class="total-label">{t["plan_total"]}</div>'
         f'<div class="total-value">₹{total_value:,.0f}</div>'
         f'</div>', unsafe_allow_html=True)
+
+    plan_text_lines += ["", f"{t['plan_total']}: Rs.{total_value:,.0f}"]
+    st.download_button(
+        t["download_button"], data="\n".join(plan_text_lines),
+        file_name="catch_plan.txt", mime="text/plain",
+    )
+
+    # District comparison: how does one species' typical catch SHARE (not
+    # price, which is the same everywhere by design) vary across districts.
+    st.markdown(f'<div class="step-label">{t["district_compare_header"]}</div>', unsafe_allow_html=True)
+    compare_species = st.selectbox(
+        t["district_compare_pick"], data["species_in_both"],
+        format_func=lambda sp: species_label(species_dict, sp, lang),
+        label_visibility="collapsed", key="compare_species_select",
+    )
+    compare_rows = []
+    for code in DISTRICT_ORDER:
+        sp_info = data["districts"][code]["species"].get(compare_species)
+        share = sp_info["catch_share_in_district"] if sp_info else 0.0
+        compare_rows.append({
+            t["col_district"]: district_label(data, code, lang),
+            t["district_compare_col_share"]: share,
+        })
+    compare_rows.sort(key=lambda r: -r[t["district_compare_col_share"]])
+    for r in compare_rows:
+        r[t["district_compare_col_share"]] = f"{r[t['district_compare_col_share']] * 100:.1f}%"
+    st.dataframe(compare_rows, hide_index=True, use_container_width=True)
+
+    # Fish name glossary: static reference from the species dictionary,
+    # independent of the season/district picked above.
+    with st.expander(t["glossary_header"]):
+        glossary_rows = [
+            {
+                t["col_species"]: entry["english"],
+                t["glossary_col_scientific"]: entry.get("scientific_name", ""),
+                t["glossary_col_malayalam"]: entry.get("malayalam", ""),
+                t["glossary_col_tamil"]: entry.get("tamil", ""),
+            }
+            for entry in species_dict.values()
+        ]
+        st.dataframe(glossary_rows, hide_index=True, use_container_width=True)
 
     st.caption(t["footer"])
 
