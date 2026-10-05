@@ -72,6 +72,9 @@ UI = {
     "en": {
         "lang_name": "English",
         "title": "Catch Plan",
+        "brand_tag": "Kerala fishing assistant",
+        "setup_header": "Plan your trip",
+        "sea_now": "Sea right now",
         "subtitle": "Pick your language, season, district, and boat capacity to see fish prices and your catch plan.",
         "legend_real": "Real: catch data, Kerala Fisheries Dept 2022-25",
         "legend_pred": "Model-predicted: price, trained on synthetic data (prototype, not real market history)",
@@ -151,6 +154,9 @@ UI = {
     "ml": {
         "lang_name": "മലയാളം",
         "title": "പിടിത്ത പദ്ധതി",
+        "brand_tag": "കേരള മത്സ്യബന്ധന സഹായി",
+        "setup_header": "നിങ്ങളുടെ യാത്ര ആസൂത്രണം ചെയ്യുക",
+        "sea_now": "ഇപ്പോഴത്തെ കടൽ",
         "subtitle": "മത്സ്യവില അറിയാനും നിങ്ങളുടെ പിടിത്ത പദ്ധതി കാണാനും ഭാഷ, സീസൺ, ജില്ല, ബോട്ട് ശേഷി എന്നിവ തിരഞ്ഞെടുക്കുക.",
         "legend_real": "യഥാർത്ഥം: പിടിത്ത വിവരം, കേരള ഫിഷറീസ് വകുപ്പ് 2022-25",
         "legend_pred": "മാതൃക പ്രവചനം: വില, കൃത്രിമ ഡാറ്റയിൽ പരിശീലിപ്പിച്ചത് (പ്രോട്ടോടൈപ്പ്, യഥാർത്ഥ വിപണി ചരിത്രമല്ല)",
@@ -232,6 +238,9 @@ UI = {
     "ta": {
         "lang_name": "தமிழ்",
         "title": "மீன்பிடி திட்டம்",
+        "brand_tag": "கேரள மீன்பிடி உதவியாளர்",
+        "setup_header": "உங்கள் பயணத்தைத் திட்டமிடுங்கள்",
+        "sea_now": "தற்போதைய கடல்",
         "subtitle": "மீன் விலைகளையும் உங்கள் மீன்பிடி திட்டத்தையும் காண மொழி, பருவம், மாவட்டம், படகு திறன் ஆகியவற்றைத் தேர்ந்தெடுக்கவும்.",
         "legend_real": "உண்மையானது: பிடிப்பு தரவு, கேரள மீன்வள துறை 2022-25",
         "legend_pred": "மாதிரி கணிப்பு: விலை, செயற்கை தரவில் பயிற்சி பெற்றது (முன்மாதிரி, உண்மையான சந்தை வரலாறு அல்ல)",
@@ -354,131 +363,270 @@ def season_avg_price(species_info, season_key):
 
 CUSTOM_CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Geist:wght@400;500;600&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
 
-html, body, [class*="css"] { font-family: 'Inter', -apple-system, sans-serif; }
-h1, h2, h3, .catch-title { font-family: 'Poppins', sans-serif !important; }
+:root {
+    --bg: #F5F9FD;
+    --surface: #FFFFFF;
+    --tint: #EAF3FC;
+    --tint-2: #D6E9FA;
+    --line: #DCE8F4;
+    --ink: #0E2A47;
+    --ink-2: #48627E;
+    --ink-3: #6F869F;
+    --accent: #1E78D6;
+    --accent-deep: #145EAD;
+    --calm: #12875A;    --calm-bg: #E7F6EF;    --calm-line: #B5E3CE;
+    --caution: #A3650A; --caution-bg: #FFF5E3; --caution-line: #F2D49D;
+    --rough: #C2333A;   --rough-bg: #FDECEC;   --rough-line: #F3B9BC;
+    --shadow: 0 1px 2px rgba(14, 42, 71, 0.04), 0 12px 32px -16px rgba(30, 120, 214, 0.22);
+    --font-body: 'Geist', 'Noto Sans Malayalam', 'Noto Sans Tamil', -apple-system, 'Segoe UI', sans-serif;
+    --font-head: 'Outfit', 'Noto Sans Malayalam', 'Noto Sans Tamil', -apple-system, 'Segoe UI', sans-serif;
+}
+
+html, body, .stApp, .stMarkdown, button, input, label, [data-testid="stCaptionContainer"] {
+    font-family: var(--font-body) !important;
+}
+h1, h2, h3, .brand-name, .hero-title, .section-title, .total-value, .sea-status-label {
+    font-family: var(--font-head) !important;
+}
+html { scroll-behavior: smooth; }
 
 .stApp {
-    background: radial-gradient(ellipse at top, #0B3D5C 0%, #04141F 55%, #020B12 100%);
+    background:
+        radial-gradient(900px 420px at 85% -120px, rgba(126, 192, 245, 0.35), transparent 70%),
+        radial-gradient(700px 360px at -10% 0px, rgba(214, 233, 250, 0.9), transparent 70%),
+        var(--bg);
 }
+[data-testid="stHeader"] { background: transparent; }
+.block-container { max-width: 880px; padding-top: 2.2rem; padding-bottom: 4rem; }
+footer, #MainMenu { visibility: hidden; }
 
-.catch-hero {
-    text-align: center; padding: 28px 16px 20px; margin-bottom: 8px;
+/* top bar */
+.brand { display: flex; align-items: center; gap: 10px; padding-top: 4px; }
+.brand-mark {
+    width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; flex: none;
+    background: linear-gradient(160deg, #3D97EA, var(--accent-deep));
+    box-shadow: 0 6px 16px -6px rgba(30, 120, 214, 0.6);
 }
-.catch-title {
-    font-size: 2.1rem; font-weight: 700; color: #E8F4F8; margin: 0;
-    letter-spacing: -0.01em;
-}
-.catch-subtitle {
-    color: #8FB8CC; font-size: 0.95rem; margin-top: 8px; max-width: 480px;
-    margin-left: auto; margin-right: auto; line-height: 1.5;
-}
+.brand-name { font-weight: 600; font-size: 1.05rem; color: var(--ink); letter-spacing: -0.01em; line-height: 1.2; }
+.brand-tag { font-size: 0.72rem; color: var(--ink-3); }
 
-.legend-row {
-    display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
-    margin: 14px 0 6px; font-size: 0.8rem; color: #8FB8CC;
+/* hero */
+.hero {
+    position: relative; overflow: hidden;
+    background: linear-gradient(135deg, #FFFFFF 0%, #EEF6FE 55%, #DDEDFC 100%);
+    border: 1px solid var(--line); border-radius: 24px;
+    padding: 34px 32px 30px; margin: 18px 0 22px; box-shadow: var(--shadow);
 }
-.legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
-
-.step-label {
-    font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.05rem;
-    color: #6FE3E9; margin: 26px 0 12px;
+.hero-waves {
+    position: absolute; right: -20px; bottom: -6px; width: 340px; pointer-events: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 45%); mask-image: linear-gradient(90deg, transparent, #000 45%);
 }
+.hero-title {
+    font-size: 2.6rem; font-weight: 700; color: var(--ink); margin: 0;
+    letter-spacing: -0.03em; line-height: 1.1; position: relative;
+}
+.hero-subtitle {
+    color: var(--ink-2); font-size: 1rem; margin-top: 10px; max-width: 34rem;
+    line-height: 1.55; position: relative; text-wrap: pretty;
+}
+.legend-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; position: relative; }
+.legend-pill {
+    display: inline-flex; align-items: center; gap: 7px; font-size: 0.76rem; color: var(--ink-2);
+    background: rgba(255, 255, 255, 0.88); border: 1px solid var(--line);
+    border-radius: 8px; padding: 5px 10px; line-height: 1.35; max-width: 100%;
+}
+.legend-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; flex: none; }
 
-/* card-style buttons for season / district / language grids */
+/* section cards (st.container with key="sec_...") */
+[class*="st-key-sec_"] {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
+    padding: 24px 24px 26px; margin-bottom: 6px; box-shadow: var(--shadow);
+}
+.section-title {
+    font-weight: 600; font-size: 1.3rem; color: var(--ink); letter-spacing: -0.015em;
+    display: flex; align-items: center; gap: 10px; line-height: 1.3;
+}
+.section-sub { color: var(--ink-3); font-size: 0.84rem; margin-top: 3px; line-height: 1.5; }
+.field-label { font-weight: 500; font-size: 0.9rem; color: var(--ink-2); margin: 14px 0 2px; }
+.sub-label { font-weight: 600; font-size: 0.95rem; color: var(--ink); margin: 18px 0 6px; }
+
+.chip-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font-size: 0.74rem; color: var(--accent-deep); background: var(--tint); border-radius: 6px; padding: 3px 9px; }
+
+/* option cards for season / district */
 div[data-testid="stButton"] > button {
-    border-radius: 16px !important;
-    border: 1.5px solid rgba(111, 227, 233, 0.25) !important;
-    background: rgba(11, 61, 92, 0.35) !important;
-    color: #E8F4F8 !important;
-    padding: 14px 10px !important;
-    font-weight: 500 !important;
-    transition: all 0.15s ease;
-    white-space: pre-line !important;
-    line-height: 1.4 !important;
+    border-radius: 14px !important; border: 1px solid var(--line) !important;
+    background: var(--surface) !important; color: var(--ink) !important;
+    padding: 12px 10px !important; font-weight: 500 !important; min-height: 3.2rem;
+    white-space: pre-line !important; line-height: 1.4 !important;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+div[data-testid="stButton"] > button p {
+    white-space: pre-line !important; overflow: visible !important; text-overflow: clip !important;
+    font-size: 0.9rem; line-height: 1.35;
 }
 div[data-testid="stButton"] > button:hover {
-    border-color: #6FE3E9 !important;
-    background: rgba(111, 227, 233, 0.12) !important;
+    border-color: #9CCBF3 !important; background: #F4F9FE !important;
+    transform: translateY(-1px); box-shadow: 0 6px 16px -10px rgba(30, 120, 214, 0.5);
 }
+div[data-testid="stButton"] > button:active { transform: translateY(0) scale(0.985); }
 div[data-testid="stButton"] > button[kind="primary"] {
-    background: linear-gradient(135deg, #00C2CB, #0B8FA3) !important;
-    border-color: transparent !important;
-    color: #04141F !important;
-    font-weight: 700 !important;
-    box-shadow: 0 0 18px rgba(0, 194, 203, 0.45);
+    background: linear-gradient(160deg, #2C8BE5, var(--accent-deep)) !important;
+    border-color: transparent !important; color: #FFFFFF !important; font-weight: 600 !important;
+    box-shadow: 0 8px 20px -10px rgba(20, 94, 173, 0.75);
+}
+div[data-testid="stButton"] > button:focus-visible,
+div[data-testid="stDownloadButton"] > button:focus-visible {
+    outline: 2px solid var(--accent) !important; outline-offset: 2px;
 }
 
-.plan-card {
-    background: rgba(11, 44, 61, 0.55); border: 1px solid rgba(111, 227, 233, 0.18);
-    border-radius: 18px; padding: 18px 20px; margin-bottom: 10px;
-    backdrop-filter: blur(6px);
+/* download */
+div[data-testid="stDownloadButton"] > button {
+    border-radius: 12px !important; border: 1px solid var(--tint-2) !important;
+    background: var(--tint) !important; color: var(--accent-deep) !important; font-weight: 600 !important;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
+div[data-testid="stDownloadButton"] > button:hover { background: var(--tint-2) !important; transform: translateY(-1px); }
+
+/* metrics as tiles */
+[data-testid="stMetric"] {
+    background: #F8FBFE; border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+}
+[data-testid="stMetricLabel"] p { color: var(--ink-3) !important; font-size: 0.78rem !important; font-weight: 500; }
+[data-testid="stMetricValue"] {
+    font-family: var(--font-head) !important; font-size: 1.4rem !important; font-weight: 600;
+    color: var(--ink); font-variant-numeric: tabular-nums;
+}
+[data-testid="stMetricDelta"] { color: var(--ink-2) !important; font-size: 0.78rem !important; }
+[data-testid="stMetricDelta"] svg { display: none; }
+
+[data-testid="stDataFrame"] { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+[data-testid="stExpander"] details {
+    background: var(--surface); border: 1px solid var(--line) !important; border-radius: 16px; box-shadow: var(--shadow);
+}
+[data-testid="stExpander"] summary p { font-weight: 600; color: var(--ink); }
+[data-testid="stCaptionContainer"] { color: var(--ink-3) !important; }
+
+/* catch plan */
+.plan-list { border: 1px solid var(--line); border-radius: 16px; padding: 2px 18px; background: #FBFDFF; }
 .plan-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    padding: 13px 0; border-bottom: 1px solid #E8F0F8;
 }
 .plan-row:last-child { border-bottom: none; }
-.plan-name { font-weight: 600; color: #E8F4F8; }
-.plan-detail { font-size: 0.78rem; color: #8FB8CC; margin-top: 2px; }
-.plan-value { font-family: 'Poppins', sans-serif; font-weight: 700; color: #6FE3E9; font-size: 1.05rem; white-space: nowrap; }
+.plan-name { font-weight: 600; color: var(--ink); }
+.plan-detail { font-size: 0.78rem; color: var(--ink-3); margin-top: 2px; font-variant-numeric: tabular-nums; }
+.plan-value {
+    font-family: var(--font-head); font-weight: 600; color: var(--accent-deep); font-size: 1.05rem;
+    white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.share-bar { height: 4px; border-radius: 4px; background: var(--tint); margin-top: 8px; width: 160px; max-width: 100%; }
+.share-bar > span { display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #7CC0F5, var(--accent)); }
 
 .total-card {
-    background: linear-gradient(135deg, rgba(0,194,203,0.18), rgba(11,143,163,0.10));
-    border: 1px solid rgba(111, 227, 233, 0.4); border-radius: 18px;
-    padding: 20px; text-align: center; margin: 18px 0;
+    background: linear-gradient(140deg, #2C8BE5 0%, var(--accent-deep) 100%);
+    border-radius: 18px; padding: 22px 24px; margin: 16px 0 14px;
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap;
+    box-shadow: 0 18px 36px -18px rgba(20, 94, 173, 0.8);
 }
-.total-label { color: #8FB8CC; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
-.total-value { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.2rem; color: #E8F4F8; margin-top: 4px; }
+.total-label { color: rgba(255, 255, 255, 0.85); font-size: 0.88rem; font-weight: 500; }
+.total-meta { color: rgba(255, 255, 255, 0.75); font-size: 0.78rem; margin-top: 2px; }
+.total-value {
+    font-weight: 700; font-size: 2.3rem; color: #FFFFFF; letter-spacing: -0.02em;
+    line-height: 1; font-variant-numeric: tabular-nums;
+}
 
+/* sea status */
 .sea-status {
-    border-radius: 18px; padding: 16px 20px; margin: 4px 0 14px;
+    border-radius: 16px; padding: 16px 18px; margin: 6px 0 14px;
     border: 1px solid; display: flex; align-items: center; gap: 16px;
 }
-.sea-status-label { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; white-space: nowrap; }
-.sea-status-advice { color: #E8F4F8; font-size: 0.92rem; line-height: 1.4; }
-.sea-calm { background: rgba(62, 207, 142, 0.12); border-color: rgba(62, 207, 142, 0.5); }
-.sea-calm .sea-status-label { color: #3ECF8E; }
-.sea-caution { background: rgba(224, 177, 92, 0.12); border-color: rgba(224, 177, 92, 0.5); }
-.sea-caution .sea-status-label { color: #E0B15C; }
-.sea-rough { background: rgba(229, 72, 77, 0.14); border-color: rgba(229, 72, 77, 0.6); }
-.sea-rough .sea-status-label { color: #FF6B6F; }
-.live-dot {
-    display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #3ECF8E;
-    margin-right: 8px; animation: pulse 1.6s ease-in-out infinite;
-}
-.alert-card {
-    border-radius: 14px; padding: 12px 16px; margin: 6px 0 10px; border: 1px solid;
-}
-.alert-none {
-    background: rgba(62, 207, 142, 0.08); border-color: rgba(62, 207, 142, 0.35);
-    color: #B8E8D2; font-size: 0.9rem;
-}
-.alert-sea { background: rgba(229, 72, 77, 0.16); border-color: rgba(229, 72, 77, 0.7); }
-.alert-weather { background: rgba(224, 177, 92, 0.12); border-color: rgba(224, 177, 92, 0.55); }
-.alert-kind { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; color: #FFD0A8; }
-.alert-sea .alert-kind { color: #FF9EA1; }
-.alert-headline { color: #E8F4F8; font-weight: 600; margin: 4px 0; line-height: 1.45; }
-.alert-meta { color: #8FB8CC; font-size: 0.78rem; }
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+.sea-status-label { font-weight: 700; font-size: 1.4rem; white-space: nowrap; letter-spacing: -0.01em; }
+.sea-status-advice { color: var(--ink); font-size: 0.92rem; line-height: 1.45; }
+.sea-calm { background: var(--calm-bg); border-color: var(--calm-line); }
+.sea-calm .sea-status-label { color: var(--calm); }
+.sea-caution { background: var(--caution-bg); border-color: var(--caution-line); }
+.sea-caution .sea-status-label { color: var(--caution); }
+.sea-rough { background: var(--rough-bg); border-color: var(--rough-line); }
+.sea-rough .sea-status-label { color: var(--rough); }
 
-footer, #MainMenu { visibility: hidden; }
+.live-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #1FB57A; flex: none;
+    box-shadow: 0 0 0 4px rgba(31, 181, 122, 0.15); animation: pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+.alert-card { border-radius: 14px; padding: 12px 16px; margin: 6px 0 10px; border: 1px solid; }
+.alert-none { background: var(--calm-bg); border-color: var(--calm-line); color: #0F6B48; font-size: 0.88rem; }
+.alert-sea { background: var(--rough-bg); border-color: var(--rough-line); }
+.alert-weather { background: var(--caution-bg); border-color: var(--caution-line); }
+.alert-kind { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.03em; color: var(--caution); }
+.alert-sea .alert-kind { color: var(--rough); }
+.alert-headline { color: var(--ink); font-weight: 600; margin: 4px 0; line-height: 1.45; }
+.alert-meta { color: var(--ink-2); font-size: 0.78rem; }
+
+.map-legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 10px 0 12px; font-size: 0.8rem; color: var(--ink-2); }
+.map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+.page-footer {
+    color: var(--ink-3); font-size: 0.78rem; line-height: 1.6; max-width: 46rem;
+    border-top: 1px solid var(--line); padding-top: 18px; margin-top: 24px;
+}
+
+@media (max-width: 640px) {
+    .hero { padding: 26px 20px 22px; }
+    .hero-title { font-size: 2rem; }
+    .hero-waves { width: 220px; opacity: 0.6; }
+    [class*="st-key-sec_"] { padding: 18px 16px 20px; }
+    .total-value { font-size: 1.9rem; }
+}
 </style>
 """
+
+BRAND_MARK = (
+    '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" '
+    'stroke-linecap="round" stroke-linejoin="round"><path d="M2 16c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/>'
+    '<path d="M2 20c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2" opacity=".6"/>'
+    '<path d="M6 9c2.2-2.6 6.6-2.6 9 0-2.4 2.6-6.8 2.6-9 0Z"/><path d="M15 9l3-2.2v4.4Z"/></svg>'
+)
+HERO_WAVES = (
+    '<svg class="hero-waves" viewBox="0 0 340 120" fill="none" aria-hidden="true">'
+    '<path d="M0 70c40 0 40-18 85-18s45 18 85 18 40-18 85-18 45 18 85 18v50H0Z" fill="#CFE5FA" opacity=".55"/>'
+    '<path d="M0 88c40 0 40-14 85-14s45 14 85 14 40-14 85-14 45 14 85 14v32H0Z" fill="#A9D2F6" opacity=".55"/>'
+    '<path d="M0 104c40 0 40-10 85-10s45 10 85 10 40-10 85-10 45 10 85 10v16H0Z" fill="#7CBBF1" opacity=".5"/>'
+    '</svg>'
+)
 
 
 def option_grid(options, selected_key, session_key, columns=4):
     """Renders a row of card-style buttons; returns the newly selected key."""
-    cols = st.columns(columns)
+    # one st.columns row per line, so phones (where columns stack) keep the reading order
     result = selected_key
     for i, (key, label) in enumerate(options):
+        if i % columns == 0:
+            cols = st.columns(columns)
         with cols[i % columns]:
             is_selected = key == selected_key
             if st.button(label, key=f"{session_key}_{key}", type="primary" if is_selected else "secondary",
-                         use_container_width=True):
+                         width="stretch"):
                 result = key
     return result
+
+
+def section_head(title, sub=None, live=False):
+    dot = '<span class="live-dot"></span>' if live else ""
+    sub_html = f'<div class="section-sub">{html.escape(sub)}</div>' if sub else ""
+    st.markdown(f'<div class="section-title">{dot}{html.escape(title)}</div>{sub_html}', unsafe_allow_html=True)
+
+
+def field_label(text):
+    st.markdown(f'<div class="field-label">{html.escape(text)}</div>', unsafe_allow_html=True)
+
+
+def sub_label(text):
+    st.markdown(f'<div class="sub-label">{html.escape(text)}</div>', unsafe_allow_html=True)
 
 
 @st.cache_data(ttl=900, show_spinner=False)
@@ -501,7 +649,7 @@ def _dir(t, key, degrees):
 
 def official_alerts_block(district_code, district_name, lang):
     t = UI[lang]
-    st.markdown(f'**{t["alerts_header"]}**')
+    sub_label(t["alerts_header"])
     try:
         with st.spinner(t["alerts_loading"]):
             all_alerts, checked_at = cached_official_alerts()
@@ -536,15 +684,17 @@ def official_alerts_block(district_code, district_name, lang):
 def live_sea_panel(district_code, district_name, lang):
     """Official alerts + live sea state for the district's offshore point. Re-runs
     on its own every 15 minutes without reloading the rest of the page."""
+    with st.container(key="sec_sea"):
+        _live_sea_body(district_code, district_name, lang)
+
+
+def _live_sea_body(district_code, district_name, lang):
     t = UI[lang]
-    st.markdown(f'<div class="step-label"><span class="live-dot"></span>{t["sea_header"]}</div>',
-                unsafe_allow_html=True)
-
-    official_alerts_block(district_code, district_name, lang)
-
     try:
         sea = cached_sea_conditions(district_code)
     except (requests.RequestException, KeyError, ValueError):
+        section_head(t["sea_header"], live=True)
+        official_alerts_block(district_code, district_name, lang)
         st.warning(t["sea_error"])
         return
 
@@ -552,7 +702,10 @@ def live_sea_panel(district_code, district_name, lang):
     rating = rate_conditions(now)
     label, advice = t["rating"][rating]
     updated = datetime.fromisoformat(now["time"]).strftime("%H:%M")
-    st.caption(t["sea_point"].format(harbour=harbour_label(sea["harbour"], lang), time=updated))
+    section_head(t["sea_header"], t["sea_point"].format(harbour=harbour_label(sea["harbour"], lang), time=updated),
+                 live=True)
+    official_alerts_block(district_code, district_name, lang)
+    sub_label(t["sea_now"])
     st.markdown(
         f'<div class="sea-status sea-{rating}">'
         f'<div class="sea-status-label">{label}</div>'
@@ -590,7 +743,7 @@ def live_sea_panel(district_code, district_name, lang):
     c9.metric(t["m_rain"], f'{_fmt(now.get("precipitation"))} mm')
 
     # 7-day outlook: one row per day, worst values of that day
-    st.markdown(f'**{t["forecast_header"]}**')
+    sub_label(t["forecast_header"])
     forecast_rows = []
     for day in daily_summary(sea["hourly"]):
         sea_label = t["rating"][day["rating"]][0]
@@ -609,7 +762,7 @@ def live_sea_panel(district_code, district_name, lang):
             t["col_low_tide"]: ", ".join(day["low_tides"]) or "-",
             t["col_rain"]: _fmt(day["total_rain_mm"]),
         })
-    st.dataframe(forecast_rows, hide_index=True, use_container_width=True)
+    st.dataframe(forecast_rows, hide_index=True, width="stretch")
 
     # Hourly charts from the current hour onward
     hourly = pd.DataFrame(sea["hourly"])
@@ -618,13 +771,19 @@ def live_sea_panel(district_code, district_name, lang):
     tab_waves, tab_wind, tab_tide, tab_current = st.tabs(
         [t["chart_waves"], t["chart_wind"], t["chart_tide"], t["chart_current"]])
     with tab_waves:
-        st.line_chart(hourly[["wave_height", "swell_wave_height"]], color=["#6FE3E9", "#3ECF8E"], height=220)
+        st.line_chart(hourly[["wave_height", "swell_wave_height"]].rename(
+            columns={"wave_height": t["m_wave"], "swell_wave_height": t["m_swell"].split(" /")[0]}),
+            color=["#1E78D6", "#7CC0F5"], height=220)
     with tab_wind:
-        st.line_chart(hourly[["wind_speed_10m", "wind_gusts_10m"]], color=["#6FE3E9", "#E0B15C"], height=220)
+        st.line_chart(hourly[["wind_speed_10m", "wind_gusts_10m"]].rename(
+            columns={"wind_speed_10m": t["m_wind"], "wind_gusts_10m": t["m_gust"]}),
+            color=["#1E78D6", "#E39B2D"], height=220)
     with tab_tide:
-        st.line_chart(hourly[["sea_level_height_msl"]], color=["#6FE3E9"], height=220)
+        st.line_chart(hourly[["sea_level_height_msl"]].rename(columns={"sea_level_height_msl": t["chart_tide"]}),
+                      color=["#1E78D6"], height=220)
     with tab_current:
-        st.line_chart(hourly[["ocean_current_velocity"]], color=["#6FE3E9"], height=220)
+        st.line_chart(hourly[["ocean_current_velocity"]].rename(columns={"ocean_current_velocity": t["chart_current"]}),
+                      color=["#1E78D6"], height=220)
 
     st.caption(t["sea_disclaimer"])
 
@@ -639,18 +798,22 @@ def cached_zone_conditions(points):
     return zone_conditions(list(points))
 
 
-RATING_RGB = {"calm": [62, 207, 142], "caution": [224, 177, 92], "rough": [255, 107, 111]}
+RATING_RGB = {"calm": [18, 150, 100], "caution": [222, 140, 20], "rough": [210, 52, 60]}
 
 
 @st.fragment(run_every="15m")
 def fishing_zones_panel(district_code, lang):
     """Official INCOIS fishing zones near the district harbour, on a map, coloured
     by the sea conditions at each zone right now."""
+    with st.container(key="sec_zones"):
+        _fishing_zones_body(district_code, lang)
+
+
+def _fishing_zones_body(district_code, lang):
     t = UI[lang]
     harbour_en, h_lat, h_lon = DISTRICT_HARBOURS[district_code]
     harbour = harbour_label(harbour_en, lang)
-    st.markdown(f'<div class="step-label"><span class="live-dot"></span>{t["zones_header"]}</div>',
-                unsafe_allow_html=True)
+    section_head(t["zones_header"], t["zones_intro"].format(harbour=harbour), live=True)
     try:
         pfz = cached_pfz()
         zones = zones_near_district(pfz, district_code)
@@ -662,8 +825,6 @@ def fishing_zones_panel(district_code, lang):
     if not zones:
         st.info(t["zones_none"].format(harbour=harbour))
         return
-
-    st.caption(t["zones_intro"].format(harbour=harbour))
 
     rows = []
     for n, (z, r) in enumerate(zip(zones, readings), start=1):
@@ -682,14 +843,15 @@ def fishing_zones_panel(district_code, lang):
     layers = [
         # route from harbour to the nearest point of each zone
         pdk.Layer("LineLayer", rows, get_source_position=["h_lon", "h_lat"],
-                  get_target_position=["near_lon", "near_lat"], get_color=[143, 184, 204, 110], get_width=1.5),
+                  get_target_position=["near_lon", "near_lat"], get_color=[30, 120, 214, 120], get_width=1.5),
         pdk.Layer("PathLayer", rows, get_path="path", get_color="color", width_min_pixels=5,
                   pickable=True, cap_rounded=True, joint_rounded=True),
         pdk.Layer("TextLayer", rows, get_position=["mid_lon", "mid_lat"], get_text="n", get_size=16,
-                  get_color=[232, 244, 248], get_pixel_offset=[14, 0], font_weight=700),
+                  get_color=[14, 42, 71], get_pixel_offset=[14, 0], font_weight=700),
         pdk.Layer("ScatterplotLayer", [{"lon": h_lon, "lat": h_lat, "label": t["zones_harbour"], "detail": harbour,
                                         "status": ""}],
-                  get_position=["lon", "lat"], get_fill_color=[232, 244, 248], get_radius=1800,
+                  get_position=["lon", "lat"], get_fill_color=[20, 94, 173], get_line_color=[255, 255, 255],
+                  stroked=True, line_width_min_pixels=2, get_radius=1800,
                   radius_min_pixels=6, pickable=True),
     ]
     all_lats = [p[1] for row in rows for p in row["path"]] + [h_lat]
@@ -697,17 +859,19 @@ def fishing_zones_panel(district_code, lang):
     view = pdk.ViewState(latitude=(min(all_lats) + max(all_lats)) / 2,
                          longitude=(min(all_lons) + max(all_lons)) / 2, zoom=7.6)
     st.pydeck_chart(pdk.Deck(
-        layers=layers, initial_view_state=view, map_style="dark",
+        layers=layers, initial_view_state=view, map_style="light",
         tooltip={"html": "<b>{label}</b><br/>{status}<br/>{detail}",
-                 "style": {"backgroundColor": "#0B2C3D", "color": "#E8F4F8", "fontSize": "12px"}},
+                 "style": {"backgroundColor": "#FFFFFF", "color": "#0E2A47", "fontSize": "12px",
+                           "border": "1px solid #DCE8F4", "borderRadius": "10px",
+                           "boxShadow": "0 8px 24px -12px rgba(30,120,214,0.35)"}},
     ), height=380)
 
     legend = "".join(
         f'<span><span class="legend-dot" style="background:rgb({",".join(map(str, RATING_RGB[k]))})"></span>'
         f'{t["rating"][k][0]}</span>' for k in ["calm", "caution", "rough"])
-    st.markdown(f'<div class="legend-row">{legend}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="map-legend">{legend}</div>', unsafe_allow_html=True)
 
-    cards = '<div class="plan-card">'
+    cards = '<div class="plan-list">'
     for row in rows:
         cards += (
             f'<div class="plan-row"><div>'
@@ -724,8 +888,16 @@ def fishing_zones_panel(district_code, lang):
         st.caption(t["zones_date"].format(date=adv_date.strftime("%d %b %Y") if adv_date else "-"))
 
 
+def _keep_lang():
+    # clicking the active language would clear the control; keep the current one instead
+    if st.session_state.lang_picker is None:
+        st.session_state.lang_picker = st.session_state.lang
+    else:
+        st.session_state.lang = st.session_state.lang_picker
+
+
 def main():
-    st.set_page_config(page_title="Catch Plan", layout="centered")
+    st.set_page_config(page_title="Catch Plan", page_icon=":material/sailing:", layout="centered")
     st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
     data, species_dict = load_data()
 
@@ -736,65 +908,65 @@ def main():
     if "district" not in st.session_state:
         st.session_state.district = "EKM"
 
-    t = UI[st.session_state.lang]
-
-    st.markdown(
-        f'<div class="catch-hero">'
-        f'<div class="catch-title">{t["title"]}</div>'
-        f'<div class="catch-subtitle">{t["subtitle"]}</div>'
-        f'</div>', unsafe_allow_html=True)
-
-    # Step 0: language
-    st.markdown(f'<div class="step-label">{t["step0"]}</div>', unsafe_allow_html=True)
-    lang_options = [(code, UI[code]["lang_name"]) for code in UI]
-    new_lang = option_grid(lang_options, st.session_state.lang, "lang", columns=3)
-    if new_lang != st.session_state.lang:
-        st.session_state.lang = new_lang
-        st.rerun()
-    t = UI[st.session_state.lang]
-
-    st.markdown(
-        f'<div class="legend-row">'
-        f'<span><span class="legend-dot" style="background:#3ECF8E"></span>{t["legend_real"]}</span>'
-        f'<span><span class="legend-dot" style="background:#E0B15C"></span>{t["legend_pred"]}</span>'
-        f'</div>', unsafe_allow_html=True)
-
-    # Step 1: season
-    st.markdown(f'<div class="step-label">{t["step1"]}</div>', unsafe_allow_html=True)
-    season_options = [(k, f"{v[0]}\n{v[1]}") for k, v in t["seasons"].items()]
-    new_season = option_grid(season_options, st.session_state.season, "season", columns=4)
-    if new_season != st.session_state.season:
-        st.session_state.season = new_season
-        st.rerun()
-
-    # Step 2: district
-    st.markdown(f'<div class="step-label">{t["step2"]}</div>', unsafe_allow_html=True)
-    district_options = [(code, district_label(data, code, st.session_state.lang)) for code in DISTRICT_ORDER]
-    new_district = option_grid(district_options, st.session_state.district, "district", columns=3)
-    if new_district != st.session_state.district:
-        st.session_state.district = new_district
-        st.rerun()
-    ports = data["districts"][st.session_state.district]["target_ports"]
-    if ports:
-        st.caption(", ".join(ports))
-
-    live_sea_panel(st.session_state.district,
-                   district_label(data, st.session_state.district, st.session_state.lang).rsplit(" (", 1)[0],
-                   st.session_state.lang)
-    fishing_zones_panel(st.session_state.district, st.session_state.lang)
-
-    # Step 3: capacity
-    st.markdown(f'<div class="step-label">{t["step3"]}</div>', unsafe_allow_html=True)
-    capacity = st.number_input(t["step3"], min_value=1, value=50, step=1, label_visibility="collapsed")
-
+    # Top bar: brand + language switch
+    brand_col, lang_col = st.columns([3, 2], vertical_alignment="center")
+    with lang_col:
+        st.segmented_control(
+            UI[st.session_state.lang]["step0"], list(UI), format_func=lambda c: UI[c]["lang_name"],
+            default=st.session_state.lang, key="lang_picker", on_change=_keep_lang,
+            label_visibility="collapsed", width="stretch",
+        )
     lang = st.session_state.lang
+    t = UI[lang]
+    with brand_col:
+        st.markdown(
+            f'<div class="brand"><div class="brand-mark">{BRAND_MARK}</div><div>'
+            f'<div class="brand-name">{t["title"]}</div><div class="brand-tag">{t["brand_tag"]}</div>'
+            f'</div></div>', unsafe_allow_html=True)
+
+    st.markdown(
+        f'<div class="hero">{HERO_WAVES}'
+        f'<div class="hero-title">{t["title"]}</div>'
+        f'<div class="hero-subtitle">{t["subtitle"]}</div>'
+        f'<div class="legend-row">'
+        f'<span class="legend-pill"><span class="legend-dot" style="background:#12875A"></span>{t["legend_real"]}</span>'
+        f'<span class="legend-pill"><span class="legend-dot" style="background:#E39B2D"></span>{t["legend_pred"]}</span>'
+        f'</div></div>', unsafe_allow_html=True)
+
+    # Trip setup: season, district, boat capacity
+    with st.container(key="sec_setup"):
+        section_head(t["setup_header"])
+
+        field_label(t["step1"])
+        season_options = [(k, f"{v[0]}\n{v[1]}") for k, v in t["seasons"].items()]
+        new_season = option_grid(season_options, st.session_state.season, "season", columns=4)
+        if new_season != st.session_state.season:
+            st.session_state.season = new_season
+            st.rerun()
+
+        field_label(t["step2"])
+        district_options = [(code, district_label(data, code, lang)) for code in DISTRICT_ORDER]
+        new_district = option_grid(district_options, st.session_state.district, "district", columns=3)
+        if new_district != st.session_state.district:
+            st.session_state.district = new_district
+            st.rerun()
+        ports = data["districts"][st.session_state.district]["target_ports"]
+        if ports:
+            chips = "".join(f'<span class="chip">{html.escape(p)}</span>' for p in ports)
+            st.markdown(f'<div class="chip-row">{chips}</div>', unsafe_allow_html=True)
+
+        field_label(t["step3"])
+        capacity = st.number_input(t["step3"], min_value=1, value=50, step=1, label_visibility="collapsed")
+
     season = st.session_state.season
     district = st.session_state.district
     season_name = t["seasons"][season][0]
+    district_plain = district_label(data, district, lang).rsplit(" (", 1)[0]
 
-    # Results: price table for the season
-    st.markdown(f'<div class="step-label">{t["result_header"]} — {season_name}</div>', unsafe_allow_html=True)
+    live_sea_panel(district, district_plain, lang)
+    fishing_zones_panel(district, lang)
 
+    # Market prices for the season, then every season side by side
     district_species = data["districts"][district]["species"]
     rows = []
     for sp, info in district_species.items():
@@ -806,93 +978,98 @@ def main():
             "_sp": sp, "_price": price, "_share": info["catch_share_in_district"],
         })
     rows.sort(key=lambda r: -r["_price"])
-    st.dataframe(
-        [{k: v for k, v in r.items() if not k.startswith("_")} for r in rows],
-        hide_index=True, use_container_width=True,
-    )
 
-    # All-season comparison: same species, every season's price side by side,
-    # with the best (highest) season highlighted per row - built entirely from
-    # data already loaded above, no new data source needed.
-    st.markdown(f'<div class="step-label">{t["all_seasons_header"]}</div>', unsafe_allow_html=True)
-    season_keys_list = list(t["seasons"].keys())
-    season_col_names = [t["seasons"][sk][0] for sk in season_keys_list]
-    all_season_rows = []
-    for sp, info in district_species.items():
-        row = {t["col_species"]: species_label(species_dict, sp, lang)}
-        for sk, col_name in zip(season_keys_list, season_col_names):
-            row[col_name] = round(season_avg_price(info, sk), 1)
-        all_season_rows.append(row)
-    df_all_seasons = pd.DataFrame(all_season_rows).set_index(t["col_species"])
-    st.dataframe(
-        df_all_seasons.style.highlight_max(axis=1, subset=season_col_names, color="#0B8FA3"),
-        use_container_width=True,
-    )
+    with st.container(key="sec_prices"):
+        section_head(f'{t["result_header"]} · {season_name}', t["legend_pred"])
+        st.dataframe(
+            [{k: v for k, v in r.items() if not k.startswith("_")} for r in rows],
+            hide_index=True, width="stretch",
+        )
+
+        sub_label(t["all_seasons_header"])
+        season_keys_list = list(t["seasons"].keys())
+        season_col_names = [t["seasons"][sk][0] for sk in season_keys_list]
+        all_season_rows = []
+        for sp, info in district_species.items():
+            row = {t["col_species"]: species_label(species_dict, sp, lang)}
+            for sk, col_name in zip(season_keys_list, season_col_names):
+                row[col_name] = round(season_avg_price(info, sk), 1)
+            all_season_rows.append(row)
+        df_all_seasons = pd.DataFrame(all_season_rows).set_index(t["col_species"])
+        st.dataframe(
+            df_all_seasons.style.highlight_max(axis=1, subset=season_col_names, color="#D6E9FA")
+            .format("{:.1f}", subset=season_col_names),
+            width="stretch",
+        )
 
     # Capacity plan
-    st.markdown(f'<div class="step-label">{t["plan_header"]}</div>', unsafe_allow_html=True)
-    district_plain = district_label(data, district, lang).rsplit(" (", 1)[0]
-    st.caption(t["plan_intro"].format(district=district_plain, season=season_name, kg=capacity))
-
     plan_rows = sorted(rows, key=lambda r: -(r["_share"] * r["_price"]))
     total_value = sum(r["_share"] * capacity * r["_price"] for r in plan_rows)
+    max_share = max((r["_share"] for r in plan_rows), default=0) or 1
 
-    plan_html = '<div class="plan-card">'
-    plan_text_lines = [f"{t['title']} - {district_plain}, {season_name}", ""]
-    for r in plan_rows:
-        expected_kg = capacity * r["_share"]
-        expected_value = expected_kg * r["_price"]
-        r["_expected_kg"] = expected_kg
-        r["_expected_value"] = expected_value
-        species_name = species_label(species_dict, r["_sp"], lang)
-        detail = t["plan_detail"].format(
-            share=f"{r['_share'] * 100:.1f}", kg=f"{expected_kg:.1f}", price=f"{r['_price']:.0f}"
+    with st.container(key="sec_plan"):
+        section_head(t["plan_header"], t["plan_intro"].format(district=district_plain, season=season_name, kg=capacity))
+
+        plan_html = '<div class="plan-list">'
+        plan_text_lines = [f"{t['title']} - {district_plain}, {season_name}", ""]
+        for r in plan_rows:
+            expected_kg = capacity * r["_share"]
+            expected_value = expected_kg * r["_price"]
+            species_name = species_label(species_dict, r["_sp"], lang)
+            detail = t["plan_detail"].format(
+                share=f"{r['_share'] * 100:.1f}", kg=f"{expected_kg:.1f}", price=f"{r['_price']:.0f}"
+            )
+            plan_html += (
+                f'<div class="plan-row">'
+                f'<div>'
+                f'<div class="plan-name">{html.escape(species_name)}</div>'
+                f'<div class="plan-detail">{html.escape(detail)}</div>'
+                f'<div class="share-bar"><span style="width:{r["_share"] / max_share * 100:.0f}%"></span></div>'
+                f'</div>'
+                f'<div class="plan-value">₹{expected_value:,.0f}</div>'
+                f'</div>'
+            )
+            plan_text_lines.append(
+                f"{species_name}: {expected_kg:.1f} kg x Rs.{r['_price']:.0f}/kg = Rs.{expected_value:,.0f}")
+        plan_html += "</div>"
+        st.markdown(plan_html, unsafe_allow_html=True)
+
+        st.markdown(
+            f'<div class="total-card">'
+            f'<div><div class="total-label">{t["plan_total"]}</div>'
+            f'<div class="total-meta">{html.escape(district_plain)} · {html.escape(season_name)}</div></div>'
+            f'<div class="total-value">₹{total_value:,.0f}</div>'
+            f'</div>', unsafe_allow_html=True)
+
+        plan_text_lines += ["", f"{t['plan_total']}: Rs.{total_value:,.0f}"]
+        st.download_button(
+            t["download_button"], data="\n".join(plan_text_lines),
+            file_name="catch_plan.txt", mime="text/plain", icon=":material/download:",
         )
-        plan_html += (
-            f'<div class="plan-row">'
-            f'<div>'
-            f'<div class="plan-name">{species_name}</div>'
-            f'<div class="plan-detail">{detail}</div>'
-            f'</div>'
-            f'<div class="plan-value">₹{expected_value:,.0f}</div>'
-            f'</div>'
-        )
-        plan_text_lines.append(f"{species_name}: {expected_kg:.1f} kg x Rs.{r['_price']:.0f}/kg = Rs.{expected_value:,.0f}")
-    plan_html += "</div>"
-    st.markdown(plan_html, unsafe_allow_html=True)
-
-    st.markdown(
-        f'<div class="total-card">'
-        f'<div class="total-label">{t["plan_total"]}</div>'
-        f'<div class="total-value">₹{total_value:,.0f}</div>'
-        f'</div>', unsafe_allow_html=True)
-
-    plan_text_lines += ["", f"{t['plan_total']}: Rs.{total_value:,.0f}"]
-    st.download_button(
-        t["download_button"], data="\n".join(plan_text_lines),
-        file_name="catch_plan.txt", mime="text/plain",
-    )
 
     # District comparison: how does one species' typical catch SHARE (not
     # price, which is the same everywhere by design) vary across districts.
-    st.markdown(f'<div class="step-label">{t["district_compare_header"]}</div>', unsafe_allow_html=True)
-    compare_species = st.selectbox(
-        t["district_compare_pick"], data["species_in_both"],
-        format_func=lambda sp: species_label(species_dict, sp, lang),
-        label_visibility="collapsed", key="compare_species_select",
-    )
-    compare_rows = []
-    for code in DISTRICT_ORDER:
-        sp_info = data["districts"][code]["species"].get(compare_species)
-        share = sp_info["catch_share_in_district"] if sp_info else 0.0
-        compare_rows.append({
-            t["col_district"]: district_label(data, code, lang),
-            t["district_compare_col_share"]: share,
-        })
-    compare_rows.sort(key=lambda r: -r[t["district_compare_col_share"]])
-    for r in compare_rows:
-        r[t["district_compare_col_share"]] = f"{r[t['district_compare_col_share']] * 100:.1f}%"
-    st.dataframe(compare_rows, hide_index=True, use_container_width=True)
+    with st.container(key="sec_compare"):
+        section_head(t["district_compare_header"])
+        compare_species = st.selectbox(
+            t["district_compare_pick"], data["species_in_both"],
+            format_func=lambda sp: species_label(species_dict, sp, lang),
+            label_visibility="collapsed", key="compare_species_select",
+        )
+        compare_rows = []
+        for code in DISTRICT_ORDER:
+            sp_info = data["districts"][code]["species"].get(compare_species)
+            share = sp_info["catch_share_in_district"] if sp_info else 0.0
+            compare_rows.append({t["col_district"]: district_label(data, code, lang), "_share": share})
+        compare_rows.sort(key=lambda r: -r["_share"])
+        st.dataframe(
+            pd.DataFrame([{t["col_district"]: r[t["col_district"]],
+                           t["district_compare_col_share"]: r["_share"] * 100} for r in compare_rows]),
+            hide_index=True, width="stretch",
+            column_config={t["district_compare_col_share"]: st.column_config.ProgressColumn(
+                t["district_compare_col_share"], format="%.1f%%", min_value=0,
+                max_value=max(r["_share"] for r in compare_rows) * 100 or 1)},
+        )
 
     # Fish name glossary: static reference from the species dictionary,
     # independent of the season/district picked above.
@@ -906,9 +1083,9 @@ def main():
             }
             for entry in species_dict.values()
         ]
-        st.dataframe(glossary_rows, hide_index=True, use_container_width=True)
+        st.dataframe(glossary_rows, hide_index=True, width="stretch")
 
-    st.caption(t["footer"])
+    st.markdown(f'<div class="page-footer">{html.escape(t["footer"])}</div>', unsafe_allow_html=True)
 
 
 if __name__ == "__main__":

@@ -13,3 +13,7 @@ src/ml/models/*.joblib
 
 # Large raw data files - too big for plain git (61MB+), keep local-only or move to Git LFS later
 data/raw/weather/*.xlsx
+
+# Locally installed agent skills (npx skills add) - personal tooling, not part of the app
+.agents/
+skills-lock.json

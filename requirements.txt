@@ -69,3 +69,4 @@ pydantic
 # Frontend
 # ==========================
 streamlit
+pydeck

@@ -1,7 +1,14 @@
 [theme]
-base = "dark"
-primaryColor = "#00C2CB"
-backgroundColor = "#04141F"
-secondaryBackgroundColor = "#0B2C3D"
-textColor = "#E8F4F8"
-font = "sans serif"
+base = "light"
+primaryColor = "#1E78D6"
+backgroundColor = "#F5F9FD"
+secondaryBackgroundColor = "#EAF3FC"
+textColor = "#0E2A47"
+borderColor = "#DCE8F4"
+showWidgetBorder = true
+baseRadius = "0.75rem"
+font = "Geist:https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
+headingFont = "Outfit:https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap"
+
+[client]
+toolbarMode = "viewer"
