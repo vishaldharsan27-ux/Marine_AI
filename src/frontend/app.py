@@ -17,6 +17,7 @@ before this goes in front of real fishermen.
 """
 
 import html
+import base64
 import json
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -27,9 +28,9 @@ import pydeck as pdk
 import requests
 import streamlit as st
 
-from fishing_zones import DISTRICT_HARBOURS, fetch_kerala_pfz, zone_conditions, zones_near_district
+from fishing_zones import DISTRICT_HARBOURS, fetch_kerala_pfz, offshore_points, zone_conditions, zones_near_district
 from official_alerts import alerts_for_district, fetch_kerala_alerts
-from sea_weather import compass, daily_summary, fetch_sea_conditions, rate_conditions, tide_turns
+from sea_weather import compass, daily_summary, fetch_sea_conditions, rate_conditions, sky_kind, tide_turns
 
 IST = timezone(timedelta(hours=5, minutes=30))
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -139,6 +140,13 @@ UI = {
                        "or during the fishing ban."),
         "zones_error": "Could not load fishing zones from INCOIS right now. Check the SAMUDRA app.",
         "zones_harbour": "Your harbour",
+        "sky": {"clear": "Clear sky", "clear_night": "Clear sky", "partly": "Partly cloudy",
+                "partly_night": "Partly cloudy", "cloudy": "Cloudy", "fog": "Fog / haze",
+                "drizzle": "Drizzle", "rain": "Rain", "storm": "Thunderstorm"},
+        "sky_detail": "{sky}, {cloud}% cloud",
+        "offshore_label": "{km} km out to sea from {harbour}",
+        "offshore_intro": "Weather at sea right now, straight out from {harbour}:",
+        "map_distance_note": "Numbers on the map are distances from the harbour.",
         "footer": ("Species matched across both datasets: 6 of 21 in the species dictionary. Catch share reflects "
                    "each species' typical proportion of a district's total landings (2022-23 to 2024-25 average). "
                    "Price is a model trained on one real week of prices scaled by a documented seasonal assumption "
@@ -224,6 +232,13 @@ UI = {
                        "നിരോധന കാലത്തും INCOIS മേഖലകൾ നൽകാറില്ല."),
         "zones_error": "INCOIS മത്സ്യബന്ധന മേഖലകൾ ഇപ്പോൾ ലഭ്യമല്ല. SAMUDRA ആപ്പ് പരിശോധിക്കുക.",
         "zones_harbour": "നിങ്ങളുടെ തുറമുഖം",
+        "sky": {"clear": "തെളിഞ്ഞ ആകാശം", "clear_night": "തെളിഞ്ഞ ആകാശം", "partly": "ഭാഗികമായി മേഘാവൃതം",
+                "partly_night": "ഭാഗികമായി മേഘാവൃതം", "cloudy": "മേഘാവൃതം", "fog": "മൂടൽമഞ്ഞ്",
+                "drizzle": "ചാറ്റൽമഴ", "rain": "മഴ", "storm": "ഇടിമിന്നലോടു കൂടിയ മഴ"},
+        "sky_detail": "{sky}, മേഘം {cloud}%",
+        "offshore_label": "{harbour} തുറമുഖത്തു നിന്ന് കടലിലേക്ക് {km} കി.മീ",
+        "offshore_intro": "{harbour} തുറമുഖത്തു നിന്ന് നേരെ കടലിലേക്ക്, ഇപ്പോഴത്തെ കാലാവസ്ഥ:",
+        "map_distance_note": "മാപ്പിലെ സംഖ്യകൾ തുറമുഖത്തു നിന്നുള്ള ദൂരമാണ്.",
         "footer": ("രണ്ട് ഡാറ്റാസെറ്റുകളിലും പൊരുത്തപ്പെടുന്ന മത്സ്യങ്ങൾ: 21ൽ 6. പിടിത്ത വിഹിതം ഒരു ജില്ലയുടെ മൊത്തം "
                    "പിടിത്തത്തിന്റെ സാധാരണ അനുപാതത്തെ സൂചിപ്പിക്കുന്നു (2022-23 മുതൽ 2024-25 ശരാശരി). വില ഒരു യഥാർത്ഥ "
                    "ആഴ്ചയിലെ വിലയെ അടിസ്ഥാനമാക്കിയുള്ള ഒരു മാതൃകയാണ് - ഇത് ഒരു പ്രോട്ടോടൈപ്പ് ആണ്, വിപണി ഉറപ്പല്ല. "
@@ -309,6 +324,13 @@ UI = {
                        "காலத்திலும் INCOIS மண்டலங்களை வெளியிடுவதில்லை."),
         "zones_error": "INCOIS மீன்பிடி மண்டலங்களை இப்போது ஏற்ற முடியவில்லை. SAMUDRA செயலியைச் சரிபார்க்கவும்.",
         "zones_harbour": "உங்கள் துறைமுகம்",
+        "sky": {"clear": "தெளிவான வானம்", "clear_night": "தெளிவான வானம்", "partly": "ஓரளவு மேகமூட்டம்",
+                "partly_night": "ஓரளவு மேகமூட்டம்", "cloudy": "மேகமூட்டம்", "fog": "பனிமூட்டம்",
+                "drizzle": "தூறல்", "rain": "மழை", "storm": "இடியுடன் கூடிய மழை"},
+        "sky_detail": "{sky}, மேகம் {cloud}%",
+        "offshore_label": "{harbour} துறைமுகத்திலிருந்து கடலுக்குள் {km} கி.மீ",
+        "offshore_intro": "{harbour} துறைமுகத்திலிருந்து நேராகக் கடலில், தற்போதைய வானிலை:",
+        "map_distance_note": "வரைபடத்தில் உள்ள எண்கள் துறைமுகத்திலிருந்து உள்ள தூரம்.",
         "footer": ("இரு தரவுத்தொகுப்புகளிலும் பொருந்தும் மீன் வகைகள்: 21ல் 6. பிடிப்பு பங்கு ஒரு மாவட்டத்தின் மொத்த "
                    "பிடிப்பில் ஒவ்வொரு மீன் வகையின் வழக்கமான விகிதத்தைக் குறிக்கிறது (2022-23 முதல் 2024-25 சராசரி). "
                    "விலை ஒரு உண்மையான வார விலையை அடிப்படையாகக் கொண்ட ஒரு மாதிரி - இது ஒரு முன்மாதிரி, சந்தை "
@@ -800,13 +822,141 @@ def cached_zone_conditions(points):
 
 RATING_RGB = {"calm": [18, 150, 100], "caution": [222, 140, 20], "rough": [210, 52, 60]}
 
+# Weather pictures for the map: a white badge with the sky drawn inside (64 x 64 SVG).
+_SUN = ('<circle cx="32" cy="32" r="9" fill="#F5B82E"/>'
+        '<g stroke="#F5B82E" stroke-width="3" stroke-linecap="round">'
+        '<path d="M32 15v5M32 44v5M15 32h5M44 32h5M20 20l3.5 3.5M40.5 40.5L44 44M20 44l3.5-3.5M40.5 23.5L44 20"/></g>')
+_MOON = '<path d="M38 18a14 14 0 1 0 8 25a11 11 0 0 1-8-25z" fill="#8A9BB5"/>'
+_SMALL_SUN = ('<circle cx="24" cy="25" r="7" fill="#F5B82E"/><g stroke="#F5B82E" stroke-width="2.5" '
+              'stroke-linecap="round"><path d="M24 12v3M11 25h3M15 16l2 2M33 16l-2 2"/></g>')
+_SMALL_MOON = '<path d="M27 15a9 9 0 1 0 5 16a7 7 0 0 1-5-16z" fill="#8A9BB5"/>'
+
+
+def _cloud(fill="#C9D6E6", y=0):
+    return (f'<path transform="translate(0 {y})" d="M20 42a8 8 0 0 1 1-16a11 11 0 0 1 21-2a9 9 0 0 1 2 18z" '
+            f'fill="{fill}" stroke="#FFFFFF" stroke-width="1.5"/>')
+
+
+_RAIN = '<g stroke="#1E78D6" stroke-width="3" stroke-linecap="round"><path d="M24 44l-2 6M32 44l-2 6M40 44l-2 6"/></g>'
+_DRIZZLE = ('<g fill="#1E78D6"><circle cx="24" cy="48" r="1.8"/><circle cx="32" cy="50" r="1.8"/>'
+            '<circle cx="40" cy="48" r="1.8"/></g>')
+_BOLT = '<path d="M33 40l-6 9h5l-3 8l9-11h-5l3-6z" fill="#F5B82E"/>'
+_FOG = '<g stroke="#8A9BB5" stroke-width="3" stroke-linecap="round"><path d="M17 26h30M14 33h36M19 40h26"/></g>'
+
+SKY_GLYPHS = {
+    "clear": _SUN, "clear_night": _MOON,
+    "partly": _SMALL_SUN + _cloud(y=4), "partly_night": _SMALL_MOON + _cloud(y=4),
+    "cloudy": _cloud("#AFC0D4"), "fog": _FOG,
+    "drizzle": _cloud("#AFC0D4", -4) + _DRIZZLE, "rain": _cloud("#93A7BF", -4) + _RAIN,
+    "storm": _cloud("#6E819A", -6) + _BOLT,
+}
+
+
+def _sky_icon(kind):
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">'
+           '<circle cx="32" cy="32" r="30" fill="#FFFFFF" stroke="#DCE8F4" stroke-width="2"/>'
+           f'{SKY_GLYPHS.get(kind, _cloud())}</svg>')
+    url = "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
+    return {"url": url, "width": 64, "height": 64, "anchorY": 64}
+
+
+def _sky_text(reading, t):
+    kind = sky_kind(reading.get("weather_code"), reading.get("is_day", 1))
+    if kind is None:
+        return kind, ""
+    return kind, t["sky_detail"].format(sky=t["sky"][kind], cloud=_fmt(reading.get("cloud_cover"), "{:.0f}"))
+
+
+def _harbour_layer(h_lat, h_lon, harbour, t):
+    return pdk.Layer("ScatterplotLayer", [{"lon": h_lon, "lat": h_lat, "label": t["zones_harbour"],
+                                           "detail": harbour, "status": "", "sky": ""}],
+                     get_position=["lon", "lat"], get_fill_color=[20, 94, 173], get_line_color=[255, 255, 255],
+                     stroked=True, line_width_min_pixels=2, get_radius=1800,
+                     radius_min_pixels=6, pickable=True)
+
+
+def _sky_layer(rows, lon_key, lat_key):
+    return pdk.Layer("IconLayer", rows, get_icon="icon", get_position=[lon_key, lat_key],
+                     get_size=38, size_units="pixels", get_pixel_offset=[0, -8], pickable=True)
+
+
+def _km_layer(rows, lon_key, lat_key, offset=(0, 0)):
+    # distance badges ("42 km"); map text stays ASCII so it renders in every language
+    return pdk.Layer("TextLayer", rows, get_position=[lon_key, lat_key], get_text="km_text", get_size=13,
+                     get_color=[14, 42, 71], font_weight=700, background=True,
+                     get_background_color=[255, 255, 255, 235], background_padding=[6, 3, 6, 3],
+                     get_border_color=[220, 232, 244], get_border_width=1, get_pixel_offset=list(offset))
+
+
+def _zones_map(layers, view):
+    st.pydeck_chart(pdk.Deck(
+        layers=layers, initial_view_state=view, map_style="light",
+        tooltip={"html": "<b>{label}</b><br/>{status}<br/>{sky}<br/>{detail}",
+                 "style": {"backgroundColor": "#FFFFFF", "color": "#0E2A47", "fontSize": "12px",
+                           "border": "1px solid #DCE8F4", "borderRadius": "10px",
+                           "boxShadow": "0 8px 24px -12px rgba(30,120,214,0.35)"}},
+    ), height=420)
+
+
+def _legend_and_cards(rows, t):
+    legend = "".join(
+        f'<span><span class="legend-dot" style="background:rgb({",".join(map(str, RATING_RGB[k]))})"></span>'
+        f'{t["rating"][k][0]}</span>' for k in ["calm", "caution", "rough"])
+    legend += f'<span>{html.escape(t["map_distance_note"])}</span>'
+    st.markdown(f'<div class="map-legend">{legend}</div>', unsafe_allow_html=True)
+
+    cards = '<div class="plan-list">'
+    for row in rows:
+        detail = "  |  ".join(x for x in (row["sky"], row["detail"]) if x)
+        cards += (
+            f'<div class="plan-row"><div>'
+            f'<div class="plan-name">{html.escape(row["label"])}</div>'
+            f'<div class="plan-detail">{html.escape(detail)}</div>'
+            f'</div><div class="plan-value" style="color:rgb({",".join(map(str, row["color"]))})">'
+            f'{html.escape(row["status"])}</div></div>')
+    st.markdown(cards + "</div>", unsafe_allow_html=True)
+
 
 @st.fragment(run_every="15m")
 def fishing_zones_panel(district_code, lang):
     """Official INCOIS fishing zones near the district harbour, on a map, coloured
-    by the sea conditions at each zone right now."""
+    by the sea conditions at each zone right now, with the weather and distance."""
     with st.container(key="sec_zones"):
         _fishing_zones_body(district_code, lang)
+
+
+def _offshore_weather(district_code, harbour, h_lat, h_lon, t):
+    """No advisory for this coast today: show the weather at points straight out to sea."""
+    points = offshore_points(district_code)
+    readings = cached_zone_conditions(tuple(p["point"] for p in points))
+    rows = []
+    for p, r in zip(points, readings):
+        kind, sky = _sky_text(r, t)
+        rows.append({
+            "lat": p["point"][0], "lon": p["point"][1], "km_text": f'{p["km"]} km',
+            "icon": _sky_icon(kind), "color": RATING_RGB[r["rating"]], "status": t["rating"][r["rating"]][0],
+            "label": t["offshore_label"].format(km=p["km"], harbour=harbour), "sky": sky,
+            "detail": t["zone_detail"].format(lat=f'{p["point"][0]:.3f}', lon=f'{p["point"][1]:.3f}',
+                                              wave=_fmt(r.get("wave_height")),
+                                              wind=_fmt(r.get("wind_speed_10m"), "{:.0f}")),
+        })
+    far = rows[-1]
+    layers = [
+        pdk.Layer("LineLayer", [{"h_lon": h_lon, "h_lat": h_lat, "lon": far["lon"], "lat": far["lat"]}],
+                  get_source_position=["h_lon", "h_lat"], get_target_position=["lon", "lat"],
+                  get_color=[30, 120, 214, 110], get_width=2),
+        pdk.Layer("ScatterplotLayer", rows, get_position=["lon", "lat"], get_fill_color="color",
+                  get_line_color=[255, 255, 255], stroked=True, line_width_min_pixels=2,
+                  radius_min_pixels=6, get_radius=1500, pickable=True),
+        _km_layer(rows, "lon", "lat", offset=(0, 18)),
+        _sky_layer(rows, "lon", "lat"),
+        _harbour_layer(h_lat, h_lon, harbour, t),
+    ]
+    view = pdk.ViewState(latitude=(h_lat + far["lat"]) / 2, longitude=(h_lon + far["lon"]) / 2, zoom=8)
+    _zones_map(layers, view)
+    st.markdown(f'<div class="plan-detail">{html.escape(t["offshore_intro"].format(harbour=harbour))}</div>',
+                unsafe_allow_html=True)
+    _legend_and_cards(rows, t)
 
 
 def _fishing_zones_body(district_code, lang):
@@ -824,10 +974,15 @@ def _fishing_zones_body(district_code, lang):
 
     if not zones:
         st.info(t["zones_none"].format(harbour=harbour))
+        try:
+            _offshore_weather(district_code, harbour, h_lat, h_lon, t)
+        except (requests.RequestException, KeyError, ValueError):
+            st.warning(t["sea_error"])
         return
 
     rows = []
     for n, (z, r) in enumerate(zip(zones, readings), start=1):
+        kind, sky = _sky_text(r, t)
         label = t["zone_label"].format(n=n, km=round(z["nearest_km"]), dir=compass(z["bearing"]), harbour=harbour)
         detail = t["zone_detail"].format(
             lat=f'{z["nearest_point"][0]:.3f}', lon=f'{z["nearest_point"][1]:.3f}',
@@ -836,50 +991,28 @@ def _fishing_zones_body(district_code, lang):
             "n": str(n), "path": z["path"], "mid_lon": z["mid"][1], "mid_lat": z["mid"][0],
             "near_lon": z["nearest_point"][1], "near_lat": z["nearest_point"][0],
             "h_lon": h_lon, "h_lat": h_lat,
+            "line_lon": (h_lon + z["nearest_point"][1]) / 2, "line_lat": (h_lat + z["nearest_point"][0]) / 2,
+            "km_text": f'{n}: {round(z["nearest_km"])} km', "icon": _sky_icon(kind),
             "color": RATING_RGB[r["rating"]], "rating": r["rating"],
-            "label": label, "detail": detail, "status": t["rating"][r["rating"]][0],
+            "label": label, "detail": detail, "sky": sky, "status": t["rating"][r["rating"]][0],
         })
 
     layers = [
-        # route from harbour to the nearest point of each zone
+        # route from harbour to the nearest point of each zone, with its distance halfway along
         pdk.Layer("LineLayer", rows, get_source_position=["h_lon", "h_lat"],
                   get_target_position=["near_lon", "near_lat"], get_color=[30, 120, 214, 120], get_width=1.5),
         pdk.Layer("PathLayer", rows, get_path="path", get_color="color", width_min_pixels=5,
                   pickable=True, cap_rounded=True, joint_rounded=True),
-        pdk.Layer("TextLayer", rows, get_position=["mid_lon", "mid_lat"], get_text="n", get_size=16,
-                  get_color=[14, 42, 71], get_pixel_offset=[14, 0], font_weight=700),
-        pdk.Layer("ScatterplotLayer", [{"lon": h_lon, "lat": h_lat, "label": t["zones_harbour"], "detail": harbour,
-                                        "status": ""}],
-                  get_position=["lon", "lat"], get_fill_color=[20, 94, 173], get_line_color=[255, 255, 255],
-                  stroked=True, line_width_min_pixels=2, get_radius=1800,
-                  radius_min_pixels=6, pickable=True),
+        _km_layer(rows, "line_lon", "line_lat"),
+        _sky_layer(rows, "mid_lon", "mid_lat"),
+        _harbour_layer(h_lat, h_lon, harbour, t),
     ]
     all_lats = [p[1] for row in rows for p in row["path"]] + [h_lat]
     all_lons = [p[0] for row in rows for p in row["path"]] + [h_lon]
     view = pdk.ViewState(latitude=(min(all_lats) + max(all_lats)) / 2,
                          longitude=(min(all_lons) + max(all_lons)) / 2, zoom=7.6)
-    st.pydeck_chart(pdk.Deck(
-        layers=layers, initial_view_state=view, map_style="light",
-        tooltip={"html": "<b>{label}</b><br/>{status}<br/>{detail}",
-                 "style": {"backgroundColor": "#FFFFFF", "color": "#0E2A47", "fontSize": "12px",
-                           "border": "1px solid #DCE8F4", "borderRadius": "10px",
-                           "boxShadow": "0 8px 24px -12px rgba(30,120,214,0.35)"}},
-    ), height=380)
-
-    legend = "".join(
-        f'<span><span class="legend-dot" style="background:rgb({",".join(map(str, RATING_RGB[k]))})"></span>'
-        f'{t["rating"][k][0]}</span>' for k in ["calm", "caution", "rough"])
-    st.markdown(f'<div class="map-legend">{legend}</div>', unsafe_allow_html=True)
-
-    cards = '<div class="plan-list">'
-    for row in rows:
-        cards += (
-            f'<div class="plan-row"><div>'
-            f'<div class="plan-name">{html.escape(row["label"])}</div>'
-            f'<div class="plan-detail">{html.escape(row["detail"])}</div>'
-            f'</div><div class="plan-value" style="color:rgb({",".join(map(str, row["color"]))})">'
-            f'{html.escape(row["status"])}</div></div>')
-    st.markdown(cards + "</div>", unsafe_allow_html=True)
+    _zones_map(layers, view)
+    _legend_and_cards(rows, t)
 
     adv_date = pfz["date"]
     if adv_date and (datetime.now(IST).date() - adv_date).days > 2:

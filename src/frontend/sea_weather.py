@@ -174,6 +174,25 @@ def daily_summary(hourly):
     return summary
 
 
+def sky_kind(weather_code, is_day=1):
+    """Groups a WMO weather code into the sky picture shown on the map."""
+    if weather_code is None:
+        return None
+    if weather_code in THUNDERSTORM_CODES:
+        return "storm"
+    if weather_code >= 61:  # rain, showers (snow codes never occur on this coast)
+        return "rain"
+    if weather_code >= 51:
+        return "drizzle"
+    if weather_code in (45, 48):
+        return "fog"
+    if weather_code == 3:
+        return "cloudy"
+    if weather_code in (1, 2):
+        return "partly" if is_day else "partly_night"
+    return "clear" if is_day else "clear_night"
+
+
 def compass(degrees):
     if degrees is None:
         return "-"

@@ -77,6 +77,26 @@ def _bearing(lat1, lon1, lat2, lon2):
     return (math.degrees(math.atan2(x, y)) + 360) % 360
 
 
+def _destination(lat, lon, bearing, km):
+    r = 6371.0
+    p1, l1, b = math.radians(lat), math.radians(lon), math.radians(bearing)
+    d = km / r
+    p2 = math.asin(math.sin(p1) * math.cos(d) + math.cos(p1) * math.sin(d) * math.cos(b))
+    l2 = l1 + math.atan2(math.sin(b) * math.sin(d) * math.cos(p1), math.cos(d) - math.sin(p1) * math.sin(p2))
+    return math.degrees(p2), math.degrees(l2)
+
+
+OFFSHORE_KM = (10, 25, 50)
+OFFSHORE_BEARING = 250  # straight out to sea: the Kerala coast faces west-south-west
+
+
+def offshore_points(district_code, kms=OFFSHORE_KM):
+    """Sample points straight out to sea from the district harbour, used to show
+    the weather at sea when there is no fishing zone advisory."""
+    _, h_lat, h_lon = DISTRICT_HARBOURS[district_code]
+    return [{"km": km, "point": _destination(h_lat, h_lon, OFFSHORE_BEARING, km)} for km in kms]
+
+
 def zones_near_district(pfz, district_code, max_km=MAX_ZONE_KM):
     """Zones within max_km of the district harbour, nearest first, each with
     nearest-point distance/bearing and the midpoint used for sea conditions."""
@@ -114,7 +134,7 @@ def zone_conditions(points):
         return data if isinstance(data, list) else [data]
 
     marine = get(MARINE_URL, "wave_height")
-    weather = get(FORECAST_URL, "wind_speed_10m,wind_gusts_10m,weather_code")
+    weather = get(FORECAST_URL, "wind_speed_10m,wind_gusts_10m,weather_code,cloud_cover,is_day")
     readings = []
     for m, w in zip(marine, weather):
         reading = {**m.get("current", {}), **w.get("current", {})}
