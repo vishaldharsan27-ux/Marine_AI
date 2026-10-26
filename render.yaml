@@ -1,0 +1,15 @@
+# Render Blueprint: deploys the Marine Fishing AI web app as a single web service.
+# Render reads this file when you create a Blueprint Instance from this repo.
+services:
+  - type: web
+    name: marine-fishing-ai
+    runtime: python
+    plan: free
+    branch: feature/model-training
+    autoDeploy: true
+    # only the packages the web app imports; training/pipeline deps stay in requirements.txt
+    buildCommand: pip install -r requirements-deploy.txt
+    startCommand: streamlit run src/frontend/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
