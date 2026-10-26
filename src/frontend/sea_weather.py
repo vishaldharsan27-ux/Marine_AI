@@ -16,6 +16,8 @@ Rating thresholds below are a first, conservative cut for small/medium boats
 and should be tuned with local fishermen before real use.
 """
 
+import time
+
 import requests
 
 MARINE_URL = "https://marine-api.open-meteo.com/v1/marine"
@@ -58,7 +60,12 @@ def _get(url, lat, lon, variables):
         "current": ",".join(variables), "hourly": ",".join(variables),
         "forecast_days": FORECAST_DAYS,
     }
-    resp = requests.get(url, params=params, timeout=10)
+    # Open-Meteo rate-limits per IP; cloud hosts share IPs, so back off and retry on 429/5xx.
+    for attempt in range(3):
+        resp = requests.get(url, params=params, timeout=10)
+        if resp.status_code not in (429, 500, 502, 503, 504) or attempt == 2:
+            break
+        time.sleep(2 * (attempt + 1))
     resp.raise_for_status()
     return resp.json()
 

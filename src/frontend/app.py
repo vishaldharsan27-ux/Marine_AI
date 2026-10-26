@@ -19,6 +19,7 @@ before this goes in front of real fishermen.
 import html
 import base64
 import json
+import logging
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -35,6 +36,8 @@ from theme import (BRAND_MARK, CSS, FISH_ICON, HERO_LAYERS, MENU_ICON, SCRIPT, S
                    SOURCE_INK, TOKENS, UI_EXTRA, WAVE_INTO_DARK, WAVE_OUT_OF_DARK, hex_rgb)
 
 IST = timezone(timedelta(hours=5, minutes=30))
+# Live-data failures are shown to the user as a friendly warning; the real cause goes to the server log.
+log = logging.getLogger("marine_fishing_ai")
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_PATH = ROOT / "data" / "processed" / "frontend_dataset.json"
 SPECIES_PATH = ROOT / "src" / "i18n" / "species.json"
@@ -447,7 +450,8 @@ def official_alerts_block(district_code, district_name, lang):
     try:
         with st.spinner(t["alerts_loading"]):
             all_alerts, checked_at = cached_official_alerts()
-    except (requests.RequestException, ET.ParseError):
+    except (requests.RequestException, ET.ParseError) as e:
+        log.warning("official alerts failed: %r", e)
         st.warning(t["alerts_error"])
         return
 
@@ -504,7 +508,8 @@ def _live_sea_body(district_code, district_name, lang):
     kicker = f'02 · {t["n_sea"]}'
     try:
         sea = cached_sea_conditions(district_code)
-    except (requests.RequestException, KeyError, ValueError):
+    except (requests.RequestException, KeyError, ValueError) as e:
+        log.warning("sea conditions failed for %s: %r", district_code, e)
         section_head(t["sea_h"], t["sea_header"], live=True, kicker=kicker, anchor_id="mf-sea")
         official_alerts_block(district_code, district_name, lang)
         st.warning(t["sea_error"])
@@ -776,7 +781,8 @@ def _fishing_zones_body(district_code, lang):
         pfz = cached_pfz()
         zones = zones_near_district(pfz, district_code)
         readings = cached_zone_conditions(tuple(z["mid"] for z in zones))
-    except (requests.RequestException, KeyError, ValueError):
+    except (requests.RequestException, KeyError, ValueError) as e:
+        log.warning("fishing zones failed for %s: %r", district_code, e)
         st.warning(t["zones_error"])
         return
 
@@ -785,7 +791,8 @@ def _fishing_zones_body(district_code, lang):
                     unsafe_allow_html=True)
         try:
             _offshore_weather(district_code, harbour, h_lat, h_lon, t)
-        except (requests.RequestException, KeyError, ValueError):
+        except (requests.RequestException, KeyError, ValueError) as e:
+            log.warning("offshore weather failed for %s: %r", district_code, e)
             st.warning(t["sea_error"])
         return
 
