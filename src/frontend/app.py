@@ -38,6 +38,13 @@ from theme import (BRAND_MARK, CSS, FISH_ICON, HERO_LAYERS, MENU_ICON, SCRIPT, S
 IST = timezone(timedelta(hours=5, minutes=30))
 # Live-data failures are shown to the user as a friendly warning; the real cause goes to the server log.
 log = logging.getLogger("marine_fishing_ai")
+
+
+def live_data_failed(what, e, message):
+    """Friendly warning for the user, plus the real cause (temporary, to debug the Render deployment)."""
+    log.warning("%s failed: %r", what, e)
+    st.warning(message)
+    st.caption(f"Technical detail ({what}): {type(e).__name__}: {str(e)[:300]}")
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_PATH = ROOT / "data" / "processed" / "frontend_dataset.json"
 SPECIES_PATH = ROOT / "src" / "i18n" / "species.json"
@@ -451,8 +458,7 @@ def official_alerts_block(district_code, district_name, lang):
         with st.spinner(t["alerts_loading"]):
             all_alerts, checked_at = cached_official_alerts()
     except (requests.RequestException, ET.ParseError) as e:
-        log.warning("official alerts failed: %r", e)
-        st.warning(t["alerts_error"])
+        live_data_failed("official alerts", e, t["alerts_error"])
         return
 
     active = alerts_for_district(all_alerts, district_code)
@@ -509,10 +515,9 @@ def _live_sea_body(district_code, district_name, lang):
     try:
         sea = cached_sea_conditions(district_code)
     except (requests.RequestException, KeyError, ValueError) as e:
-        log.warning("sea conditions failed for %s: %r", district_code, e)
         section_head(t["sea_h"], t["sea_header"], live=True, kicker=kicker, anchor_id="mf-sea")
         official_alerts_block(district_code, district_name, lang)
-        st.warning(t["sea_error"])
+        live_data_failed(f"sea conditions {district_code}", e, t["sea_error"])
         return
 
     now = sea["current"]
@@ -782,8 +787,7 @@ def _fishing_zones_body(district_code, lang):
         zones = zones_near_district(pfz, district_code)
         readings = cached_zone_conditions(tuple(z["mid"] for z in zones))
     except (requests.RequestException, KeyError, ValueError) as e:
-        log.warning("fishing zones failed for %s: %r", district_code, e)
-        st.warning(t["zones_error"])
+        live_data_failed(f"fishing zones {district_code}", e, t["zones_error"])
         return
 
     if not zones:
@@ -792,8 +796,7 @@ def _fishing_zones_body(district_code, lang):
         try:
             _offshore_weather(district_code, harbour, h_lat, h_lon, t)
         except (requests.RequestException, KeyError, ValueError) as e:
-            log.warning("offshore weather failed for %s: %r", district_code, e)
-            st.warning(t["sea_error"])
+            live_data_failed(f"offshore weather {district_code}", e, t["sea_error"])
         return
 
     rows = []
