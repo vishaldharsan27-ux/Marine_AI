@@ -5,6 +5,9 @@ services:
     name: marine-fishing-ai
     runtime: python
     plan: free
+    # closest region to India: NDMA Sachet does not answer US servers, and the
+    # US free-tier shared IPs hit Open-Meteo's per-IP rate limit (429)
+    region: singapore
     branch: feature/model-training
     autoDeploy: true
     # only the packages the web app imports; training/pipeline deps stay in requirements.txt
